@@ -8,8 +8,8 @@ const Interview = () => {
           <br />
           <br />
           Example of a simple React component:
-          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto">
-            <code>
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
 {`const Hello = () => {
   return <h1>Hello, World!</h1>;
 };`}
@@ -26,8 +26,8 @@ const Interview = () => {
           <br />
           <br />
           Example of <code>useState</code>:
-          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto">
-            <code>
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
 {`import { useState } from "react";
 
 const Counter = () => {
@@ -52,13 +52,12 @@ const Counter = () => {
           React Router is a standard library for routing in React. It enables navigation among views of various components in a React application, allows changing the browser URL, and keeps the UI in sync with the URL.
           <br />
           <br />
-          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto">
-            <code>npm i react-router-dom</code>
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">npm i react-router-dom</code>
           </pre>
         </>
       ),
     },
-    
     {
       question: "What is the difference between state and props?",
       answer: (
@@ -67,8 +66,8 @@ const Counter = () => {
           <br />
           <br />
           **Example of Props & State:**
-          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto">
-            <code>
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
 {`const ChildComponent = ({ message }) => {
   return <h1>{message}</h1>;
 };
@@ -89,8 +88,8 @@ const ParentComponent = () => {
           <br />
           <br />
           **How React updates the Virtual DOM:**
-          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto">
-            <code>
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
 {`const App = () => {
   const [count, setCount] = useState(0);
   
@@ -109,7 +108,7 @@ const ParentComponent = () => {
   ];
 
   return (
-    <div className="p-6 mx-auto rounded-xl shadow-md space-y-6 sm:p-8">
+    <div className="p-6 mx-auto max-w-4xl bg-white rounded-xl shadow-md space-y-6 sm:p-8">
       <h2 className="text-2xl font-bold text-center">Interview Questions & Answers</h2>
       <div className="space-y-6">
         {questionsAndAnswers.map((item, index) => (
