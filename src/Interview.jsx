@@ -112,9 +112,9 @@ const ParentComponent = () => {
       <h2 className="text-2xl font-bold text-center">Interview Questions & Answers</h2>
       <div className="space-y-6">
         {questionsAndAnswers.map((item, index) => (
-          <div key={index} className="border-b pb-4 grid gap-4 md:grid-cols-3 md:items-start">
-            <h3 className="text-lg font-semibold md:col-span-1">{item.question}</h3>
-            <div className="text-gray-700 md:col-span-2">{item.answer}</div>
+          <div key={index} className="border-b pb-4 flex flex-col gap-2">
+            <h3 className="text-lg font-semibold">{item.question}</h3>
+            <div className="text-gray-700">{item.answer}</div>
           </div>
         ))}
       </div>
