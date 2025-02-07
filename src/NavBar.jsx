@@ -6,6 +6,7 @@ const Navbar = () => {
     <nav className="navbar">
       <ul className="navbar-list">
         <li className="navbar-item"><Link to="/">Home</Link></li>
+        <li className="navbar-item"><Link to="Interview">Interview</Link></li>
         <li className="navbar-item"><Link to="UseStateHook">UseState</Link></li>
         <li className="navbar-item"><Link to="UseReduce">UseReduce</Link></li>
         <li className="navbar-item"><Link to="UseeffectHook">UseeffectHook</Link></li>
@@ -18,7 +19,6 @@ const Navbar = () => {
         <li className="navbar-item"><Link to="UsersCard">UsersCard</Link></li>
         <li className="navbar-item"><Link to="Quotes">Quotes</Link></li>
         <li className="navbar-item"><Link to="TaskManager">Crud</Link></li>
-        <li className="navbar-item"><Link to="Interview">Interview</Link></li>
       </ul>
     </nav>
   )

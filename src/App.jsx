@@ -36,6 +36,7 @@ function App() {
      <BrowserRouter>
      <Navbar/>
      <Routes>
+     <Route path="Interview" element={<Interview/>}></Route>
      <Route path="/" element={<Axios/>}></Route>
       <Route path="Axios" element={<Axios/>}></Route>
       <Route path="UseReduce" element={<UseReduce/>}></Route>
@@ -50,7 +51,6 @@ function App() {
       <Route path="UseRefHook" element={<UserefHook/>}></Route>
       <Route path="UseCallBack" element={<UseCb/>}></Route>
       <Route path="TaskManager" element={<TaskManager/>}></Route>
-      <Route path="Interview" element={<Interview/>}></Route>
       <Route path="*" element={<ErrorNotFound/>}></Route>
      </Routes>
      </BrowserRouter>
