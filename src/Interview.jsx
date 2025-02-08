@@ -105,6 +105,38 @@ const ParentComponent = () => {
         </>
       ),
     },
+    {
+      question: "usestate with condtional operator (ternary)",
+      answer: (
+        <>
+          <br />
+          **Example code:**
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
+{`import React, { useState }  from 'react';
+const App = () =>{
+     const [number, setNumber] = useState(1)
+   const inc = ( ) => {
+       setNumber(number + 1)
+   }
+      const dec = ( ) => {
+       setNumber(number - 1)
+   }
+    return(
+        <div>
+            <h1 style ={{ backgroundColor: number < 0 ? 'red' : 'green' }}>Hello</h1>
+            <p>{number}</p>
+            <button onClick={inc}>+</button>
+            <button onClick={dec}>-</button>
+        </div>
+    )
+}
+export default App;`}
+            </code>
+          </pre>
+        </>
+      ),
+    },
   ];
 
   return (
