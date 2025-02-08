@@ -46,6 +46,12 @@ const Counter = () => {
       ),
     },
     {
+      question: "What is useState?",
+      answer: (
+        "The React useState Hook allows us to track state in a function component."
+      ),
+    },
+    {
       question: "What is React Router?",
       answer: (
         <>
@@ -84,7 +90,10 @@ const ParentComponent = () => {
       question: "What is the Virtual DOM?",
       answer: (
         <>
-          The **Virtual DOM** is a lightweight JavaScript representation of the actual DOM. React updates the Virtual DOM first and then efficiently updates the real DOM based on changes, improving performance.
+         React creates a Virtual DOM (a lightweight copy of the actual DOM).
+When something changes (like a button click updating text), React updates the Virtual DOM first instead of directly changing the real page.
+React compares the old Virtual DOM with the new one to find the exact changes this process is called diffing.
+It updates only the changed parts in the real DOM instead of reloading the entire page.
           <br />
           <br />
           **How React updates the Virtual DOM:**
@@ -104,6 +113,20 @@ const ParentComponent = () => {
           </pre>
         </>
       ),
+    },
+    {
+    question :"why vite is faster than CRA - create react app",
+    answer:(
+      <>
+      Uses Native ES Modules Instead of Bundling
+CRA - Uses Webpack, which bundles everything before serving it. This makes startup slow.
+Vite - Uses native ES modules ESM, so the browser loads files on demand, making startup instant.
+2. Lightning-Fast Cold Starts No Bundling at Dev Time
+CRA: Webpack compiles the entire project before you can see the app.
+Vite: Only compiles files when they are actually needed.
+Result: The app starts almost instantly, even in large 
+</>
+    )
     },
     {
       question: "usestate with condtional operator (ternary)",
