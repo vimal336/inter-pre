@@ -65,6 +65,26 @@ const Counter = () => {
       ),
     },
     {
+      question: "What is a Source Map?",
+      answer: (
+        <>
+          A source map is a file that maps the minified or transpiled JavaScript code (used in production) back to the original source code (written by the developer). It helps in debugging by allowing developers to see the original code in the browser's developer tools instead of the optimized/minified code.
+          <br />
+          <br />
+        </>
+      ),
+    },
+    {
+      question: "What Is a Prop in React?",
+      answer: (
+        <>
+         A prop (short for property) is used to pass any type of data from one component to another. Props are read-only, meaning components that receive them cannot modify them.
+          <br />
+          <br />
+        </>
+      ),
+    },
+    {
       question: "What is the difference between state and props?",
       answer: (
         <>
@@ -118,13 +138,14 @@ It updates only the changed parts in the real DOM instead of reloading the entir
     question :"why vite is faster than CRA - create react app",
     answer:(
       <>
-      Uses Native ES Modules Instead of Bundling
+      <p className="text-left">
 CRA - Uses Webpack, which bundles everything before serving it. This makes startup slow.
+<br/>
 Vite - Uses native ES modules ESM, so the browser loads files on demand, making startup instant.
-2. Lightning-Fast Cold Starts No Bundling at Dev Time
+<br/> Lightning-Fast Cold Starts No Bundling at Dev Time
 CRA: Webpack compiles the entire project before you can see the app.
-Vite: Only compiles files when they are actually needed.
-Result: The app starts almost instantly, even in large 
+<br/>Vite: Only compiles files when they are actually needed.
+Result: The app starts almost instantly, even in large </p>
 </>
     )
     },
