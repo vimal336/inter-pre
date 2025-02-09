@@ -78,7 +78,7 @@ const Counter = () => {
       question: "What Is a Prop in React?",
       answer: (
         <>
-         A prop (short for property) is used to pass any type of data from one component to another. Props are read-only, meaning components that receive them cannot modify them.
+         A prop [short for property] is used to pass any type of data from one component to another. Props are read-only, meaning components that receive them cannot modify them.
           <br />
           <br />
         </>
