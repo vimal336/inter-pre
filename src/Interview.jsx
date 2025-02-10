@@ -174,8 +174,6 @@ const ParentComponent = () => {
         <>
           <p className="text-left">
             CRA - Uses Webpack, which bundles everything before serving it. This
-            makes startup slow.
-            <br />
             Vite - Uses native ES modules ESM, so the browser loads files on
             demand, making startup instant.
             <br /> Lightning-Fast Cold Starts No Bundling at Dev Time CRA:
@@ -192,18 +190,59 @@ const ParentComponent = () => {
       answer: (
         <>
           <p className="text-left">
-          useEffect hook in React is used to handle side effects in functional components. <br/>
-          Side effects include data fetching, subscriptions, DOM manipulations, and setting up timers.
+            useEffect hook in React is used to handle side effects in functional
+            components. <br />
+            Side effects include data fetching, subscriptions, DOM
+            manipulations, and setting up timers.
           </p>
           <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
             <code className="whitespace-pre">
-              {`useEffect(() => {
-  // Side effect code here
+
+              {`
+Syntax:
+useEffect(() => {
+// Side effect code here
 }, [dependencies]);
 `}
             </code>
+            <code className="whitespace-pre">
+              {`
+1. Run on Every Render (No Dependency Array)
+
+import { useEffect } from "react";
+function Example() {
+  useEffect(() => {
+    console.log("Component rendered!");
+  });
+
+  return <h1>Check the console</h1>;
+}
+
+
+`}
+            </code>
+            <code className="whitespace-pre">
+              {`
+2. Run Only on Mount (Empty Dependency Array [])
+
+import { useEffect } from "react";
+
+function Example() {
+  useEffect(() => {
+    console.log("Component mounted!");
+
+    return () => {
+      console.log("Component unmounted!");
+    };
+  }, []);
+
+  return <h1>Check the console</h1>;
+}
+
+
+`}
+            </code>
           </pre>
-          <img src="https://daqxzxzy8xq3u.cloudfront.net/wp-content/uploads/2019/03/26132737/useEffect-component-did-mount-example.png" alt=""/>
         </>
       ),
     },
