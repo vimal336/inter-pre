@@ -220,8 +220,8 @@ function Example() {
 
 
 `}
-            </code>
-            <code className="whitespace-pre">
+</code>
+<code className="whitespace-pre">
               {`
 2. Run Only on Mount (Empty Dependency Array [])
 
@@ -239,9 +239,32 @@ function Example() {
   return <h1>Check the console</h1>;
 }
 
+`}
+</code>
+<code className="whitespace-pre">
+              {`
+3. Run When Dependencies Change
+If you pass dependencies, the effect runs whenever any dependency changes.
+
+import { useState, useEffect } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log(Count changed: ${"count"});
+  }, [count]); // Runs only when count changes
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
 
 `}
-            </code>
+</code>
           </pre>
         </>
       ),
