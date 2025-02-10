@@ -188,6 +188,17 @@ const ParentComponent = () => {
       ),
     },
     {
+      question: "use effect",
+      answer: (
+        <>
+          <p className="text-left">
+           
+          </p>
+          <img src="" alt="" srcset="" />
+        </>
+      ),
+    },
+    {
       question: "usestate with condtional operator (ternary)",
       answer: (
         <>
