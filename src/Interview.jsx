@@ -192,9 +192,14 @@ const ParentComponent = () => {
       answer: (
         <>
           <p className="text-left">
-           
+          The useEffect Hook allows you to perform side effects in your components.
+
+Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+
+useEffect accepts two arguments. The second argument is optional.
+
           </p>
-          <img src="" alt="" srcset="" />
+          <img src="https://daqxzxzy8xq3u.cloudfront.net/wp-content/uploads/2019/03/26132737/useEffect-component-did-mount-example.png" alt="" srcset="" />
         </>
       ),
     },
