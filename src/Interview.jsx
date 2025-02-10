@@ -188,18 +188,22 @@ const ParentComponent = () => {
       ),
     },
     {
-      question: "use effect",
+      question: "What is Use Effect ?",
       answer: (
         <>
           <p className="text-left">
-          The useEffect Hook allows you to perform side effects in your components.
-
-Some examples of side effects are: fetching data, directly updating the DOM, and timers.
-
-useEffect accepts two arguments. The second argument is optional.
-
+          useEffect hook in React is used to handle side effects in functional components. <br/>
+          Side effects include data fetching, subscriptions, DOM manipulations, and setting up timers.
           </p>
-          <img src="https://daqxzxzy8xq3u.cloudfront.net/wp-content/uploads/2019/03/26132737/useEffect-component-did-mount-example.png" alt="" srcset="" />
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
+              {`useEffect(() => {
+  // Side effect code here
+}, [dependencies]);
+`}
+            </code>
+          </pre>
+          <img src="https://daqxzxzy8xq3u.cloudfront.net/wp-content/uploads/2019/03/26132737/useEffect-component-did-mount-example.png" alt=""/>
         </>
       ),
     },
