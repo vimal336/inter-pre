@@ -48,24 +48,3 @@
 //   )
 // }
 
-import React, { useState, useEffect } from "react";
-
-const Useeffecthook = () => {
-    const [number, setNumber] = useState(0);
-
-    useEffect(()=>{
-          console.log("useEffect called");
-    },[])
-    const add = () =>{
-        setNumber(number+1)
-    }
-    return(
-        <>
-            <h1>Effect</h1>
-            <h1>{number}</h1>
-            <button onClick={add}>+</button>
-        </>
-    )
-}
-
-export default Useeffecthook;
