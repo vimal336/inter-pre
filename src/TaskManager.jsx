@@ -1,5 +1,7 @@
 // import { useState, useEffect } from "react";
 
+import { useState } from "react";
+
 // const TodoApp = () => {
 //   const [tasks, setTasks] = useState([]);
 //   const [task, setTask] = useState("");
@@ -83,12 +85,30 @@
 // export default TodoApp;
 
 const TodoApp = () => {
+
+ const [data, setData] = useState({
+  name:"",
+  age: "",
+  email:"",
+  phone:"",
+ });
+
+const handleChange = (e) =>{
+  const {name, value } = e.target;
+  setData(prev) => {
+    
+  }
+}
+
   return (
     <>
       <h1 className="text-center">Todo List</h1>
-      <div className="flex text-center justify-content flex-row">  
-      <input className="h-[50px] " type="text" placeholder="Enter a Todo"/>
-      <button className="bg-green-500 p-4">+</button>
+      <div className="flex flex-col items-center justify-center">
+      <input className="h-[50px] mt-2 w-[500px]" type="text" value={data.name} onChange={handleChange} name="name" placeholder="Enter a Name"/>
+      <input className="h-[50px] mt-2 w-[500px]" type="text" value={data.age }  onChange={handleChange} name="age" placeholder="Enter a Age"/>
+      <input className="h-[50px] mt-2 w-[500px]" type="text" value={data.email}  onChange={handleChange} name="email" placeholder="Enter a Email"/>
+      <input className="h-[50px] mt-2 w-[500px]" type="text" value={data.phone}  onChange={handleChange} name="phone" placeholder="Enter a Number"/>
+      <button className="bg-green-500 p-4 w-[100px]">Add Data</button>
       </div>
     </>
   );
