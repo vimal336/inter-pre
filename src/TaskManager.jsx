@@ -95,16 +95,23 @@ const TodoApp = () => {
 
  console.log(data)
 
+const handleChange = (e) =>{
+  const { name, value } =  e.target
+  setData((prev) =>({
+   ...prev,
+   [name]:value
+  }))
+}
 
   return (
     <>
       <h1 className="text-center">Todo List</h1>
       <div className="flex flex-col items-center justify-center">
-      <input className="h-[50px] mt-2 w-[500px]" type="text" value={data.name} onChange={e => setData(e.target.value)} name="name" placeholder="Enter a Name"/>
-      <input className="h-[50px] mt-2 w-[500px]" type="text" value={data.age }  onChange={e => e.target.value} name="age" placeholder="Enter a Age"/>
-      <input className="h-[50px] mt-2 w-[500px]" type="text" value={data.email}  onChange={e => e.target.value} name="email" placeholder="Enter a Email"/>
-      <input className="h-[50px] mt-2 w-[500px]" type="text" value={data.phone} onChange={e => e.target.value} name="phone" placeholder="Enter a Number"/>
-      <button className="bg-green-500 p-4 w-[100px]">Add Data</button>
+      <input className="h-[50px] mt-2 w-[500px]" type="text" value={data.name} onChange={handleChange} name="name" placeholder="Enter a Name"/>
+      <input className="h-[50px] mt-2 w-[500px]" type="text" value={data.age }  onChange={handleChange} name="age" placeholder="Enter a Age"/>
+      <input className="h-[50px] mt-2 w-[500px]" type="text" value={data.email}  onChange={handleChange} name="email" placeholder="Enter a Email"/>
+      <input className="h-[50px] mt-2 w-[500px]" type="text" value={data.phone}  onChange={handleChange} name="phone" placeholder="Enter a Number"/>
+      <button className="bg-green-500 p-4 w-[100px]" onSubmit={handleChange}>Add Data</button>
       </div>
     </>
   );
