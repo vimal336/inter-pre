@@ -103,6 +103,16 @@ const handleChange = (e) =>{
   }))
 }
 
+const handleChange = (e) =>{
+  const {name, value} = e.target;
+  setData((prev)=>({
+  ...prev,
+  [name]:value
+  }))
+}
+
+
+
   return (
     <>
       <h1 className="text-center">Todo List</h1>
