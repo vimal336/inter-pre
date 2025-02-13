@@ -19,6 +19,7 @@ const Navbar = () => {
         <li className="navbar-item"><Link to="UsersCard">UsersCard</Link></li>
         <li className="navbar-item"><Link to="Quotes">Quotes</Link></li>
         <li className="navbar-item"><Link to="TaskManager">Crud</Link></li>
+        <li className="navbar-item"><Link to="BoxModel">Model</Link></li>
       </ul>
     </nav>
   )

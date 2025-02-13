@@ -15,6 +15,7 @@ import { UserefHook } from "./UserefHook";
 import { UseStateHook } from "./UseStateHook";
 import TaskManager from "./TaskManager";
 import { Onecomp } from "./components/Onecomp";
+import BoxModel  from "./BoxModel";
 import { Twocomp } from "./components/Twocomp";
 import UseCb from "./UseCb";
 import Interview from "./Interview";
@@ -51,6 +52,7 @@ function App() {
       <Route path="UseRefHook" element={<UserefHook/>}></Route>
       <Route path="UseCallBack" element={<UseCb/>}></Route>
       <Route path="TaskManager" element={<TaskManager/>}></Route>
+      <Route path="BoxModel" element={<BoxModel/>}></Route>
       <Route path="*" element={<ErrorNotFound/>}></Route>
      </Routes>
      </BrowserRouter>
