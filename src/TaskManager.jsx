@@ -93,12 +93,15 @@ const TodoApp = () => {
   phone:"",
  });
 
-const handleChange = (e) =>{
-  const {name, value } = e.target;
-  setData(prev) => {
-    
-  }
-}
+ console.log(data)
+
+ const handleChange = (e) => {
+  const { name, value } = e.target;
+  setData((prev) => ({
+    ...prev,
+    [name]: value,
+  }));
+};
 
   return (
     <>
