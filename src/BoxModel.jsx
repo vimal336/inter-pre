@@ -22,7 +22,7 @@ const ModalExample = () => {
             onClick={(e) => e.stopPropagation()} // Prevents closing when clicking inside
           >
             <h2 className="text-xl font-bold">Modal Title</h2>
-            <p className="mt-2">This is a sample modal.</p>
+            <p className="mt-2">This is a sample example modal.</p>
             <button
               onClick={closeModal}
               className="mt-4 bg-red-400 text-white px-4 py-2 rounded"
