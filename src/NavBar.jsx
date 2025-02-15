@@ -20,6 +20,7 @@ const Navbar = () => {
         <li className="navbar-item"><Link to="Quotes">Quotes</Link></li>
         <li className="navbar-item"><Link to="TaskManager">Crud</Link></li>
         <li className="navbar-item"><Link to="BoxModel">Model</Link></li>
+        <li className="navbar-item"><Link to="Mapping">Mapping</Link></li>
       </ul>
     </nav>
   )
