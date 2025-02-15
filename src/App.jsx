@@ -19,6 +19,7 @@ import BoxModel  from "./BoxModel";
 import { Twocomp } from "./components/Twocomp";
 import UseCb from "./UseCb";
 import Interview from "./Interview";
+import Mapping from "./Mapping";
 
 export const ThemeContext = createContext();
 
@@ -53,6 +54,7 @@ function App() {
       <Route path="UseCallBack" element={<UseCb/>}></Route>
       <Route path="TaskManager" element={<TaskManager/>}></Route>
       <Route path="BoxModel" element={<BoxModel/>}></Route>
+      <Route path="Mapping" element={<Mapping/>}></Route>
       <Route path="*" element={<ErrorNotFound/>}></Route>
      </Routes>
      </BrowserRouter>

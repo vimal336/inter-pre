@@ -1,0 +1,39 @@
+[
+    {
+      "name": "John Doe",
+      "age": 30,
+      "email": "johndoe@example.com",
+      "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "country": "USA"
+      },
+      "work": [
+        {
+          "job": "cleaner",
+          "salary": "10000"
+        }
+      ],
+      "hobbies": ["reading", "traveling", "gaming"],
+      "isEmployed": true
+    },
+    {
+      "name": "Joseph",
+      "age": 33,
+      "email": "joseph@example.com",
+      "address": {
+        "street": "423 Main St",
+        "city": "New York",
+        "country": "USA"
+      },
+      "work": [
+        {
+          "job": "lawyer",
+          "salary": "20000"
+        }
+      ],
+      "hobbies": ["reading", "traveling", "gaming"],
+      "isEmployed": true
+    }
+  ]
+  
