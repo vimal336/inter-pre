@@ -301,6 +301,31 @@ export default App;`}
         </>
       ),
     },
+    {
+      question: "What is the difference between Shallow Copy vs. Deep Copy in JavaScript?",
+      answer: (
+        <>
+         When copying objects or arrays in JavaScript, there are two types of copies:
+
+Shallow Copy → Copies only the first level of properties; nested objects still reference the original.
+Deep Copy → Creates a completely independent copy, including all nested objects and arrays.
+          <br />
+          <br />
+          **Example of Props & State:**
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
+              {`const ChildComponent = ({ message }) => {
+  return <h1>{message}</h1>;
+};
+
+const ParentComponent = () => {
+  return <ChildComponent message="Hello from Parent!" />;
+};`}
+            </code>
+          </pre>
+        </>
+      ),
+    },
   ];
 
   return (
