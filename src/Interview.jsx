@@ -305,22 +305,44 @@ export default App;`}
       question: "What is the difference between Shallow Copy vs. Deep Copy in JavaScript?",
       answer: (
         <>
-         When copying objects or arrays in JavaScript, there are two types of copies:
-
-Shallow Copy → Copies only the first level of properties; nested objects still reference the original.
+         When copying objects or arrays in JavaScript, there are two types of copies: <br/>
+Shallow Copy → Copies only the first level of properties; nested objects still reference the original. <br/>
 Deep Copy → Creates a completely independent copy, including all nested objects and arrays.
           <br />
           <br />
-          **Example of Props & State:**
+          A shallow copy only duplicates the top-level properties. If the object has nested objects, they still reference the original.
+Example of a Shallow Copy
           <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
             <code className="whitespace-pre">
-              {`const ChildComponent = ({ message }) => {
-  return <h1>{message}</h1>;
-};
+              { `const original = { name: "Vinoth", details: { age: 25 } };
 
-const ParentComponent = () => {
-  return <ChildComponent message="Hello from Parent!" />;
-};`}
+// Creating a shallow copy using spread operator
+const shallowCopy = { ...original };
+
+// Modifying the nested object
+shallowCopy.details.age = 30;
+
+console.log(original.details.age); // 30 (also changed in the original)
+console.log(shallowCopy.details.age); // 30
+`}
+            </code>
+          </pre>
+A deep copy duplicates all levels, so even nested objects get a new reference.
+Example of a Deep Copy
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
+              { `const original = { name: "Vino", details: { age: 25 } };
+
+// Creating a deep copy using JSON methods
+const deepCopy = JSON.parse(JSON.stringify(original));
+
+// Modifying the nested object
+deepCopy.details.age = 30;
+
+console.log(original.details.age); // 25 (original remains unchanged)
+console.log(deepCopy.details.age); // 30
+
+`}
             </code>
           </pre>
         </>
