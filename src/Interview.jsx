@@ -347,6 +347,7 @@ console.log(deepCopy.details.age); // 30
           </pre>
         </>
       ),
+      image: "/assets/images/hooks.png",
     },
   ];
 
