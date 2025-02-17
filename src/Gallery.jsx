@@ -5,9 +5,10 @@ import routesImage from "../src/assets/images/routes.jpg";
 import reduxImage from "../src/assets/images/redux.jpg";
 import hoistingImage from "../src/assets/images/hoisting.jpg";
 import uncontrolledImage from "../src/assets/images/uncontrolled.jpg";
+import controlledImage from "../src/assets/images/controlled.jpg";
 import PromiseImage from "../src/assets/images/promise.jpg";
 
-const images = [hooksImage, es6Image, PromiseImage];
+const images = [es6Image, PromiseImage, uncontrolledImage,controlledImage, hoistingImage, hooksImage, reduxImage, routesImage];
 
 const ImageGallery = () => {
   const [fullScreenImage, setFullScreenImage] = useState(null);
