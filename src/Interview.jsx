@@ -1,3 +1,5 @@
+import ImageGallery from "./Gallery";
+
 const Interview = () => {
   const questionsAndAnswers = [
     {
@@ -347,7 +349,6 @@ console.log(deepCopy.details.age); // 30
           </pre>
         </>
       ),
-      image: "/assets/images/hooks.png",
     },
   ];
 
@@ -364,6 +365,7 @@ console.log(deepCopy.details.age); // 30
           </div>
         ))}
       </div>
+      <ImageGallery/>
     </div>
   );
 };
