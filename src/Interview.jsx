@@ -188,6 +188,17 @@ const ParentComponent = () => {
       ),
     },
     {
+      question: "Where to Use Custom Hooks in React? ",
+      answer: (
+        <>
+          <p className="text-left">
+          Custom hooks in React are used whenever you want to reuse logic across multiple components. 
+          They help keep your code clean, modular, and reusable.
+          </p>
+        </>
+      ),
+    },
+    {
       question: "What is Use Effect ?",
       answer: (
         <>
@@ -353,7 +364,7 @@ console.log(deepCopy.details.age); // 30
   ];
 
   return (
-    <div className="p-6 mx-auto max-w-4xl bg-white rounded-xl shadow-md space-y-6 sm:p-8">
+    <div className="p-6 mx-auto bg-white rounded-xl shadow-md space-y-6 sm:p-8">
       <h2 className="text-2xl font-bold text-center">
         Interview Questions & Answers
       </h2>

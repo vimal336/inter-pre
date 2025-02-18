@@ -7,16 +7,17 @@ import hoistingImage from "../src/assets/images/hoisting.jpg";
 import uncontrolledImage from "../src/assets/images/uncontrolled.jpg";
 import controlledImage from "../src/assets/images/controlled.jpg";
 import PromiseImage from "../src/assets/images/promise.jpg";
+import Flexgrid from "../src/assets/images/flexgrid.jpg";
 
-const images = [es6Image, PromiseImage, uncontrolledImage,controlledImage, hoistingImage, hooksImage, reduxImage, routesImage];
+const images = [es6Image, Flexgrid, PromiseImage, uncontrolledImage,controlledImage, hoistingImage, hooksImage, reduxImage, routesImage];
 
 const ImageGallery = () => {
   const [fullScreenImage, setFullScreenImage] = useState(null);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 p-4">
       {images.map((src, index) => (
-        <div key={index} className="overflow-hidden rounded-lg shadow-lg">
+        <div key={index} className="overflow-hidden">
           <img
             src={src}
             alt={`Gallery Image ${index + 1}`}
