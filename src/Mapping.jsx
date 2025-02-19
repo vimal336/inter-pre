@@ -71,7 +71,6 @@ const Mapping = () => {
         <div key={user.id}> 
         <h1>{user.name}</h1></div>
       ))}
-
         </>
     );
 };

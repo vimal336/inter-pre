@@ -7,6 +7,7 @@ const Navbar = () => {
       <ul className="navbar-list">
         <li className="navbar-item"><Link to="/">Home</Link></li>
         <li className="navbar-item"><Link to="Interview">Interview</Link></li>
+        <li className="navbar-item"><Link to="Javascript">Javascript</Link></li>
         <li className="navbar-item"><Link to="UseStateHook">UseState</Link></li>
         <li className="navbar-item"><Link to="UseReduce">UseReduce</Link></li>
         <li className="navbar-item"><Link to="UseeffectHook">UseeffectHook</Link></li>

@@ -20,6 +20,7 @@ import { Twocomp } from "./components/Twocomp";
 import UseCb from "./UseCb";
 import Interview from "./Interview";
 import Mapping from "./Mapping";
+import JavaScript from "./Javscript";
 
 export const ThemeContext = createContext();
 
@@ -56,6 +57,7 @@ function App() {
       <Route path="BoxModel" element={<BoxModel/>}></Route>
       <Route path="Mapping" element={<Mapping/>}></Route>
       <Route path="*" element={<ErrorNotFound/>}></Route>
+      <Route path="*" element={<JavaScript/>}></Route>
      </Routes>
      </BrowserRouter>
 
