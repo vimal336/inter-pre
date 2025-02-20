@@ -366,7 +366,7 @@ console.log(deepCopy.details.age); // 30
   return (
     <div className="p-6 mx-auto bg-white rounded-xl shadow-md space-y-6 sm:p-8">
       <h2 className="text-2xl font-bold text-center">
-        Interview Questions & Answers
+       React Interview Questions & Answers
       </h2>
       <div className="space-y-6">
         {questionsAndAnswers.map((item, index) => (

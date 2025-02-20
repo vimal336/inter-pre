@@ -1,6 +1,6 @@
 import ImageGallery from "./Gallery";
 
-const JavaScript = () => {
+const Javascript = () => {
   const questionsAndAnswers = [
     {
       question: "What pure and impure functions?",
@@ -45,7 +45,7 @@ console.log(add(5));
   return (
     <div className="p-6 mx-auto bg-white rounded-xl shadow-md space-y-6 sm:p-8">
       <h2 className="text-2xl font-bold text-center">
-        Interview Questions & Answers
+        Javascript Interview Questions & Answers
       </h2>
       <div className="space-y-6">
         {questionsAndAnswers.map((item, index) => (
@@ -60,4 +60,6 @@ console.log(add(5));
   );
 };
 
-export default JavaScript;
+export default Javascript;
+
+
