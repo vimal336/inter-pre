@@ -26,10 +26,15 @@ import { useState, useRef } from "react"
   const [add, setAdd] = useState([]);
   const [input, setInput] = useState([]);
 
+  let focusref = useRef(null);
+
   const addTodo = () => {
     setAdd((t)=>[...t, input]);
     setInput("");
+    focusref.current.focus();
   }
+
+
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
@@ -38,6 +43,7 @@ import { useState, useRef } from "react"
         <input
           className="flex-1 bg-white border border-gray-300 px-4 py-2 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           value={input}
+          ref={focusref}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Enter a task..."
         />
