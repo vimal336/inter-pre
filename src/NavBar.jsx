@@ -40,10 +40,6 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-900 text-white px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <div className="text-xl font-bold">MyApp</div>
-
-        {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-x-6">
           <li><Link to="/" className="hover:text-gray-400">Home</Link></li>
           <li><Link to="/interview" className="hover:text-gray-400">Interview</Link></li>
