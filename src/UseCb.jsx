@@ -34,9 +34,7 @@ import { useState, useRef } from "react"
     focusref.current.focus();
   }
 
-
-
-  return (
+return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       {/* Input and Button */}
       <div className="flex gap-2 w-full max-w-md">

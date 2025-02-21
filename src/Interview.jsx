@@ -361,6 +361,55 @@ console.log(deepCopy.details.age); // 30
         </>
       ),
     },
+    {
+      question: "What is usecontext hook?",
+      answer: (
+        <>
+         In React, “context” refers to a mechanism that allows data to be shared across
+          multiple components without explicitly passing it through props. It provides a way to pass data through
+          the component tree without having to pass props down manually at every level. 
+          <br />
+          <br />
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
+              {`
+
+
+import { useState, createContext, useContext } from "react";
+import ReactDOM from "react-dom/client";
+
+const UserContext = createContext();
+
+function Component1() {
+  const [user, setUser] = useState("Jesse Hall");
+
+  return (
+    <UserContext.Provider value={user}>
+      <h1>{Hello dollar{user}!}</h1>
+      <Component2 />
+    </UserContext.Provider>
+  );
+
+  function Component5() {
+  const user = useContext(UserContext);
+
+  return (
+    <>
+      <h1>Component 5</h1>
+      <h2>{Hello dollar{user} again!}</h2>
+    </>
+  );
+}
+}
+              
+              
+              
+              `}
+            </code>
+          </pre>
+        </>
+      ),
+    },
   ];
 
   return (

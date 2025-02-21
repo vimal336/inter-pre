@@ -58,6 +58,7 @@ const Navbar = () => {
           <li><Link to="/TaskManager" className="hover:text-gray-400">CRUD</Link></li>
           <li><Link to="/BoxModel" className="hover:text-gray-400">Model</Link></li>
           <li><Link to="/mapping" className="hover:text-gray-400">Mapping</Link></li>
+          <li><Link to="/useCall" className="hover:text-gray-400">Usecall</Link></li>
         </ul>
 
         {/* Mobile Menu Button */}
