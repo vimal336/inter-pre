@@ -1,0 +1,49 @@
+import ImageGallery from "./Gallery";
+
+const HtmlCss = () => {
+  const questionsAndAnswers = [
+    {
+      question: "Html Entities?",
+      answer: (
+        <>
+        HTML Character Entities. Some characters are reserved in HTML. 
+        If you use the less than (<) or greater than (>) 
+        signs in your HTML text, the browser might mix them with tags. 
+          <br />
+          <br />
+          Example:
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
+                
+              {`
+              < (less than)	&lt;
+             > (greater than) &gt;
+`}
+            </code>
+          </pre>
+        </>
+      ),
+    }
+];
+
+  return (
+    <div className="p-6 mx-auto bg-white rounded-xl shadow-md space-y-6 sm:p-8">
+      <h2 className="text-2xl font-bold text-center">
+        Javascript Interview Questions & Answers
+      </h2>
+      <div className="space-y-6">
+        {questionsAndAnswers.map((item, index) => (
+          <div key={index} className="border-b pb-4 flex flex-col gap-2">
+            <h3 className="text-lg font-semibold">{item.question}</h3>
+            <div className="text-gray-700">{item.answer}</div>
+          </div>
+        ))}
+      </div>
+      <ImageGallery/>
+    </div>
+  );
+};
+
+export default HtmlCss;
+
+

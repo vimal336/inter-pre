@@ -22,6 +22,7 @@ import Interview from "./Interview";
 import Mapping from "./Mapping";
 import UseCall from "./UseCall";
 import Javascript from "./Javascript";
+import HtmlCss from "./HtmlCss";
 
 export const ThemeContext = createContext();
 
@@ -60,6 +61,7 @@ function App() {
       <Route path="UseCall" element={<UseCall/>}></Route>
       <Route path="*" element={<ErrorNotFound/>}></Route>
       <Route path="Javascript" element={<Javascript/>}></Route>
+      <Route path="HtmlCss" element={<HtmlCss/>}></Route>
      </Routes>
      </BrowserRouter>
 
