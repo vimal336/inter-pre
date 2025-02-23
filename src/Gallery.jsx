@@ -8,7 +8,7 @@ import uncontrolledImage from "../src/assets/images/uncontrolled.jpg";
 import controlledImage from "../src/assets/images/controlled.jpg";
 import PromiseImage from "../src/assets/images/promise.jpg";
 import Flexgrid from "../src/assets/images/flexgrid.jpg";
-import React19 from "../src/assets/images/react19.PNG";
+import React19 from "../src/assets/images/react19.png";
 
 const images = [es6Image,  Flexgrid, PromiseImage, uncontrolledImage,controlledImage, hoistingImage, hooksImage, reduxImage,  routesImage, React19];
 
