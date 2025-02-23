@@ -7,7 +7,7 @@ const HtmlCss = () => {
       answer: (
         <>
         HTML Character Entities. Some characters are reserved in HTML. 
-        If you use the less than (<) or greater than (>) 
+        If you use the less than symbol or greater than symbol
         signs in your HTML text, the browser might mix them with tags. 
           <br />
           <br />
@@ -23,13 +23,59 @@ const HtmlCss = () => {
           </pre>
         </>
       ),
-    }
+    },
+
+    {
+        question: "Tailwind config.js file use?",
+        answer: (
+          <>
+         The tailwind.config.js file is the configuration file for Tailwind CSS. It allows you to customize Tailwind's default styles, extend the framework, and enable features like dark mode, theming, custom breakpoints, and plugins.
+
+Purpose of tailwind.config.js
+Customization - Modify default Tailwind settings like colors, spacing, fonts, and more.
+Extend Tailwind - Add custom utility classes, animations, and variants.
+Enable Dark Mode - Set up Tailwinds dark mode behavior.
+Add Plugins - Integrate Tailwind plugins for additional features.
+            <br />
+            <br />
+            Example:
+            <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+              <code className="whitespace-pre">
+                  
+                {`
+               /** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"], // Paths to scan for Tailwind classes
+  theme: {
+    extend: {
+      colors: {
+        primary: "#1E40AF", // Custom primary color
+        secondary: "#F59E0B", // Custom secondary color
+      },
+      spacing: {
+        '128': '32rem', // Custom spacing value
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"], // Custom font
+      },
+    },
+  },
+  darkMode: "class", // Enables dark mode using a "class" strategy
+  plugins: [],
+};
+
+  `}
+              </code>
+            </pre>
+          </>
+        ),
+      }
 ];
 
   return (
     <div className="p-6 mx-auto bg-white rounded-xl shadow-md space-y-6 sm:p-8">
       <h2 className="text-2xl font-bold text-center">
-        Javascript Interview Questions & Answers
+        Html and CSS Interview Questions & Answers
       </h2>
       <div className="space-y-6">
         {questionsAndAnswers.map((item, index) => (

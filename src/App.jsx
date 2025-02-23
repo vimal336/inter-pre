@@ -23,6 +23,7 @@ import Mapping from "./Mapping";
 import UseCall from "./UseCall";
 import Javascript from "./Javascript";
 import HtmlCss from "./HtmlCss";
+import Redux from "./Redux";
 
 export const ThemeContext = createContext();
 
@@ -62,6 +63,7 @@ function App() {
       <Route path="*" element={<ErrorNotFound/>}></Route>
       <Route path="Javascript" element={<Javascript/>}></Route>
       <Route path="HtmlCss" element={<HtmlCss/>}></Route>
+      <Route path="Redux" element={<Redux/>}></Route>
      </Routes>
      </BrowserRouter>
 
