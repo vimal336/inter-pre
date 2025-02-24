@@ -221,6 +221,96 @@ window.open("https://google.com", "_blank");
         </>
       ),
     },
+    {
+      question: "What are Functions in JavaScript?",
+      answer: (
+        <>
+          Functions in JavaScript are reusable blocks of code designed to perform a specific task.  
+          They help in code organization, reusability, and modularity.
+          <br />
+          <br />
+          **Types of Functions in JavaScript:**
+        </>
+      ),
+    },
+    {
+      question: "1. Function Declaration (Named Function)",
+      answer: (
+        <>
+          A **Function Declaration** is a named function that can be called before its definition (due to hoisting).
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">{`
+function greet() {
+    return "Hello, World!";
+}
+console.log(greet()); // Output: Hello, World!
+`}</code>
+          </pre>
+        </>
+      ),
+    },
+    {
+      question: "2. Function Expression",
+      answer: (
+        <>
+          A **Function Expression** defines a function and assigns it to a variable. It is **not hoisted**.
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">{`
+const greet = function() {
+    return "Hello, World!";
+};
+console.log(greet()); // Output: Hello, World!
+`}</code>
+          </pre>
+        </>
+      ),
+    },
+    {
+      question: "3. Arrow Function (ES6)",
+      answer: (
+        <>
+          **Arrow Functions** provide a more concise syntax and do not bind their own `this`.
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">{`
+const greet = () => "Hello, World!";
+console.log(greet()); // Output: Hello, World!
+`}</code>
+          </pre>
+        </>
+      ),
+    },
+    {
+      question: "4. Immediately Invoked Function Expression (IIFE)",
+      answer: (
+        <>
+          An **IIFE** runs immediately after its definition and is often used to avoid polluting the global scope.
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">{`
+(function() {
+    console.log("IIFE executed!");
+})(); // Output: IIFE executed!
+`}</code>
+          </pre>
+        </>
+      ),
+    },
+    {
+      question: "5. Higher-Order Function",
+      answer: (
+        <>
+          A **Higher-Order Function** takes another function as an argument or returns a function.
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">{`
+function operate(a, b, operation) {
+    return operation(a, b);
+}
+const add = (x, y) => x + y;
+console.log(operate(5, 3, add)); // Output: 8
+`}</code>
+          </pre>
+        </>
+      ),
+    },
 ];
 
   return (
