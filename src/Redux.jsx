@@ -1,5 +1,6 @@
 import Reduximg from "../src/assets/images/redux1.png";
 import Reduximg2 from "../src/assets/images/redux.jpg";
+import ReduxFlowDiagram from "./ReduxFlow";
 
 const Redux = () => {
   const questionsAndAnswers = [
@@ -34,6 +35,9 @@ const Redux = () => {
  <p className="text-left mt-4">What is Middleware in Redux? <br/>
 
 Middleware (like Redux Thunk) allows async operations in Redux.</p>
+
+<p>React Component  ---$gt Dispatch Action ---$gt Reducer ---$gt Store ---$gt React Component (Re-Renders)
+</p>
           <h4 className="text-lg font-semibold mt-6">Example:</h4>
           <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
             <code className="whitespace-pre">
@@ -158,6 +162,7 @@ export default Counter;
             <div>{item.answer}</div>
           </div>
         ))}
+            <ReduxFlowDiagram/>
         <img src={Reduximg} alt="" />
         <img src={Reduximg2} alt="" />
       </div>

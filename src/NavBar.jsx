@@ -76,8 +76,8 @@ const Navbar = () => {
             <li><Link to="/" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Home</Link></li>
             <li><Link to="/interview" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Interview</Link></li>
             <li><Link to="/javascript" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Javascript</Link></li>
-            <li><Link to="/HtmlCss" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>Javascript</Link></li>
-            <li><Link to="/Redux" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>Javascript</Link></li>
+            <li><Link to="/HtmlCss" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>HtmlCss</Link></li>
+            <li><Link to="/Redux" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>Redux</Link></li>
             <li><Link to="/use-state-hook" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseState</Link></li>
             <li><Link to="/use-reducer" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseReduce</Link></li>
             <li><Link to="/use-effect-hook" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseEffect</Link></li>

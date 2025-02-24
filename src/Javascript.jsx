@@ -3,6 +3,95 @@ import ImageGallery from "./Gallery";
 const Javascript = () => {
   const questionsAndAnswers = [
     {
+      question: "What are JavaScript Events?",
+      answer: (
+        <>
+          <p>
+            JavaScript Events are actions that happen due to user interactions 
+            through the browser, using input fields, buttons, or other interactive 
+            elements present in the web page.
+          </p>
+
+          <p>
+            Events help create dynamic and interactive web pages. JavaScript provides 
+            event listeners to handle these events efficiently.
+          </p>
+
+          <h3 className="font-semibold mt-4">Types of Events in JavaScript</h3>
+
+          <h4 className="font-semibold mt-2">1. Mouse Events</h4>
+          <ul className="list-disc pl-6">
+            <li><strong>click</strong> – When an element is clicked.</li>
+            <li><strong>dblclick</strong> – When an element is double-clicked.</li>
+            <li><strong>mousedown</strong> – When a mouse button is pressed.</li>
+            <li><strong>mouseup</strong> – When a mouse button is released.</li>
+            <li><strong>mousemove</strong> – When the mouse is moved over an element.</li>
+            <li><strong>mouseover</strong> – When the mouse enters an element.</li>
+            <li><strong>mouseout</strong> – When the mouse leaves an element.</li>
+          </ul>
+
+          <h4 className="font-semibold mt-2">2. Keyboard Events</h4>
+          <ul className="list-disc pl-6">
+            <li><strong>keydown</strong> – When a key is pressed.</li>
+            <li><strong>keyup</strong> – When a key is released.</li>
+            <li><strong>keypress</strong> (deprecated) – When a key is pressed.</li>
+          </ul>
+
+          <h4 className="font-semibold mt-2">3. Form Events</h4>
+          <ul className="list-disc pl-6">
+            <li><strong>submit</strong> – When a form is submitted.</li>
+            <li><strong>change</strong> – When the value of an input/select changes.</li>
+            <li><strong>input</strong> – When the user inputs text.</li>
+            <li><strong>focus</strong> – When an element gains focus.</li>
+            <li><strong>blur</strong> – When an element loses focus.</li>
+          </ul>
+
+          <h4 className="font-semibold mt-2">4. Window/Document Events</h4>
+          <ul className="list-disc pl-6">
+            <li><strong>load</strong> – When the document or an image is fully loaded.</li>
+            <li><strong>DOMContentLoaded</strong> – When the HTML is fully loaded and parsed.</li>
+            <li><strong>resize</strong> – When the window is resized.</li>
+            <li><strong>scroll</strong> – When the user scrolls.</li>
+            <li><strong>unload</strong> – When the page is about to be closed.</li>
+          </ul>
+
+          <h4 className="font-semibold mt-2">5. Clipboard Events</h4>
+          <ul className="list-disc pl-6">
+            <li><strong>copy</strong> – When content is copied.</li>
+            <li><strong>cut</strong> – When content is cut.</li>
+            <li><strong>paste</strong> – When content is pasted.</li>
+          </ul>
+
+          <h4 className="font-semibold mt-2">6. Drag and Drop Events</h4>
+          <ul className="list-disc pl-6">
+            <li><strong>dragstart</strong> – When dragging starts.</li>
+            <li><strong>drag</strong> – When an element is being dragged.</li>
+            <li><strong>dragend</strong> – When dragging ends.</li>
+            <li><strong>drop</strong> – When an element is dropped.</li>
+          </ul>
+
+          <h4 className="font-semibold mt-2">7. Touch Events (for mobile devices)</h4>
+          <ul className="list-disc pl-6">
+            <li><strong>touchstart</strong> – When a touch event starts.</li>
+            <li><strong>touchmove</strong> – When a finger moves on the screen.</li>
+            <li><strong>touchend</strong> – When a touch ends.</li>
+          </ul>
+
+          <h3 className="font-semibold mt-4">Example: Click Event</h3>
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
+              {`
+const btn = document.getElementById("btn");
+btn.onclick = function() {
+    alert("Button clicked!");
+};
+              `}
+            </code>
+          </pre>
+        </>
+      ),
+    },
+    {
       question: "What pure and impure functions?",
       answer: (
         <>
@@ -39,7 +128,99 @@ console.log(add(5));
           </pre>
         </>
       ),
-    }
+    },
+    {
+      question: "What is the DOM (Document Object Model)?",
+      answer: (
+        <>
+          The **DOM (Document Object Model)** represents the structure of an HTML or XML document as a tree.
+          JavaScript can interact with the DOM to manipulate content, structure, and styles dynamically.
+          <br />
+          <br />
+          **Key Features of DOM:**
+          <ul className="list-disc ml-5">
+            <li>Represents the HTML structure as a tree of nodes.</li>
+            <li>Allows manipulation of HTML elements, attributes, and styles.</li>
+            <li>Enables event handling on web pages.</li>
+            <li>Standardized by **W3C**.</li>
+          </ul>
+          <br />
+          **Example: Manipulating an Element**
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">{`
+document.getElementById("demo").innerText = "Hello, DOM!";
+`}</code>
+          </pre>
+        </>
+      ),
+    },
+    {
+      question: "What is the BOM (Browser Object Model)?",
+      answer: (
+        <>
+          The **BOM (Browser Object Model)** allows JavaScript to interact with the **browser window** rather than the document itself.
+          It provides objects like `window`, `navigator`, `location`, `history`, and `screen`.
+          <br />
+          <br />
+          **Key Features of BOM:**
+          <ul className="list-disc ml-5">
+            <li>Handles interactions with the browser itself.</li>
+            <li>Includes `window`, `navigator`, `location`, `history`, `screen`.</li>
+            <li>Not standardized by **W3C**, but widely supported in browsers.</li>
+          </ul>
+          <br />
+          **Example: Open a New Window**
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">{`
+window.open("https://google.com", "_blank");
+`}</code>
+          </pre>
+        </>
+      ),
+    },
+    {
+      question: "DOM vs BOM - Key Differences",
+      answer: (
+        <>
+          <table className="w-full border-collapse border border-gray-300 mt-2">
+            <thead>
+              <tr className="bg-gray-200">
+                <th className="border border-gray-300 p-2">Feature</th>
+                <th className="border border-gray-300 p-2">DOM</th>
+                <th className="border border-gray-300 p-2">BOM</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 p-2">Definition</td>
+                <td className="border border-gray-300 p-2">Represents the structure of a webpage</td>
+                <td className="border border-gray-300 p-2">Represents the browser environment</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 p-2">Focus</td>
+                <td className="border border-gray-300 p-2">Manipulating HTML elements</td>
+                <td className="border border-gray-300 p-2">Interacting with the browser</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 p-2">Standardization</td>
+                <td className="border border-gray-300 p-2">Standardized by W3C</td>
+                <td className="border border-gray-300 p-2">Not standardized</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 p-2">Main Object</td>
+                <td className="border border-gray-300 p-2">`document`</td>
+                <td className="border border-gray-300 p-2">`window`</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 p-2">Examples</td>
+                <td className="border border-gray-300 p-2">`getElementById()`, `innerHTML`, `addEventListener()`</td>
+                <td className="border border-gray-300 p-2">`alert()`, `location.href`, `navigator.userAgent`</td>
+              </tr>
+            </tbody>
+          </table>
+        </>
+      ),
+    },
 ];
 
   return (
