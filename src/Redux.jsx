@@ -1,3 +1,6 @@
+import Reduximg from "../src/assets/images/redux1.png";
+import Reduximg2 from "../src/assets/images/redux.jpg";
+
 const Redux = () => {
   const questionsAndAnswers = [
     {
@@ -155,6 +158,8 @@ export default Counter;
             <div>{item.answer}</div>
           </div>
         ))}
+        <img src={Reduximg} alt="" />
+        <img src={Reduximg2} alt="" />
       </div>
     </div>
   );
