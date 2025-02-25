@@ -313,6 +313,23 @@ console.log(operate(5, 3, add)); // Output: 8
         </>
       ),
     },
+    {
+      question: "Why javascript single threaded language?",
+      answer: (
+        <>
+        javascript is single threaded because it can handle only one task at a time.
+        JavaScript is single-threaded because 
+        it was originally designed for web browsers to handle user interactions efficiently. <br/>
+
+        2. Event Loop Mechanism (How JavaScript Manages Concurrency)
+Even though JavaScript is single-threaded, it can handle multiple tasks asynchronously using:<br/>
+
+Callback queue <br/>
+Promises & Microtasks<br/>
+Web APIs (setTimeout, fetch, DOM events, etc.)
+        </>
+      )
+    },
 ];
 
   return (
