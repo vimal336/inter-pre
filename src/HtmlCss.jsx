@@ -26,6 +26,18 @@ const HtmlCss = () => {
     },
 
     {
+        question: "What is css boxmodel?",
+        answer: (
+          <>
+        The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. 
+        It is used to create the design and layout of web pages. 
+            <br />
+            <img src="https://i1.wp.com/onaircode.com/wp-content/uploads/2019/09/amazing-css-box-model.jpg?resize=1024%2C594&ssl=1"/>
+            <br />
+          </>
+        ),
+      },
+      {
         question: "Tailwind config.js file use?",
         answer: (
           <>
@@ -80,6 +92,8 @@ CSS specificity determines which styles are applied when multiple rules target t
 Specificity Hierarchy
 
 CSS assigns a weight to different types of selectors:
+
+<br/>
 
 Inline styles (style attribute) → 1000 <br/>
 ID selectors (#id) → 100 <br/>
