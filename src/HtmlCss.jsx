@@ -69,6 +69,27 @@ export default {
             </pre>
           </>
         ),
+      },
+      {
+        question: "Specificity in CSS?",
+        answer: (
+          <>
+        Specificity in CSS
+CSS specificity determines which styles are applied when multiple rules target the same element. It is calculated based on the types of selectors used in a rule.
+
+Specificity Hierarchy
+
+CSS assigns a weight to different types of selectors:
+
+Inline styles (style attribute) → 1000 <br/>
+ID selectors (#id) → 100 <br/>
+Class selectors, attributes, pseudo-classes (.class, [attr], :hover) → 10 <br/>
+Element selectors and pseudo-elements (div, h1, ::before) → 1 <br/>
+Universal selector (*) and inherited styles → 0 (lowest specificity) <br/>
+            <br />
+            <br />
+          </>
+        ),
       }
 ];
 
