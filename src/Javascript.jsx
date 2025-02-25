@@ -182,57 +182,59 @@ window.open("https://google.com", "_blank");
       question: "DOM vs BOM - Key Differences",
       answer: (
         <>
-          <table className="w-full border-collapse border border-gray-300 mt-2">
-            <thead>
-              <tr className="bg-gray-200">
-                <th className="border border-gray-300 p-2">Feature</th>
-                <th className="border border-gray-300 p-2">DOM</th>
-                <th className="border border-gray-300 p-2">BOM</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="border border-gray-300 p-2">Definition</td>
-                <td className="border border-gray-300 p-2">Represents the structure of a webpage</td>
-                <td className="border border-gray-300 p-2">Represents the browser environment</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-2">Focus</td>
-                <td className="border border-gray-300 p-2">Manipulating HTML elements</td>
-                <td className="border border-gray-300 p-2">Interacting with the browser</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-2">Standardization</td>
-                <td className="border border-gray-300 p-2">Standardized by W3C</td>
-                <td className="border border-gray-300 p-2">Not standardized</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-2">Main Object</td>
-                <td className="border border-gray-300 p-2">`document`</td>
-                <td className="border border-gray-300 p-2">`window`</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-2">Examples</td>
-                <td className="border border-gray-300 p-2">`getElementById()`, `innerHTML`, `addEventListener()`</td>
-                <td className="border border-gray-300 p-2">`alert()`, `location.href`, `navigator.userAgent`</td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="overflow-x-auto w-full mt-2">
+            <table className="min-w-max border-collapse border border-gray-300">
+              <thead>
+                <tr className="bg-gray-200">
+                  <th className="border border-gray-300 p-2">Feature</th>
+                  <th className="border border-gray-300 p-2">DOM</th>
+                  <th className="border border-gray-300 p-2">BOM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-gray-300 p-2">Definition</td>
+                  <td className="border border-gray-300 p-2">
+                    Represents the structure of a webpage
+                  </td>
+                  <td className="border border-gray-300 p-2">
+                    Represents the browser environment
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 p-2">Focus</td>
+                  <td className="border border-gray-300 p-2">
+                    Manipulating HTML elements
+                  </td>
+                  <td className="border border-gray-300 p-2">
+                    Interacting with the browser
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 p-2">Standardization</td>
+                  <td className="border border-gray-300 p-2">Standardized by W3C</td>
+                  <td className="border border-gray-300 p-2">Not standardized</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 p-2">Main Object</td>
+                  <td className="border border-gray-300 p-2">`document`</td>
+                  <td className="border border-gray-300 p-2">`window`</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 p-2">Examples</td>
+                  <td className="border border-gray-300 p-2">
+                    `getElementById()`, `innerHTML`, `addEventListener()`
+                  </td>
+                  <td className="border border-gray-300 p-2">
+                    `alert()`, `location.href`, `navigator.userAgent`
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </>
       ),
-    },
-    {
-      question: "What are Functions in JavaScript?",
-      answer: (
-        <>
-          Functions in JavaScript are reusable blocks of code designed to perform a specific task.  
-          They help in code organization, reusability, and modularity.
-          <br />
-          <br />
-          **Types of Functions in JavaScript:**
-        </>
-      ),
-    },
+    },    
     {
       question: "1. Function Declaration (Named Function)",
       answer: (
