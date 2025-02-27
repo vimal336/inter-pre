@@ -420,6 +420,14 @@ function Component1() {
         </>
       ),
     },
+    {
+      question: "Explain CORS in React?",
+  answer:
+    "In ReactJS, Cross-Origin Resource Sharing (CORS) refers to the method that allows you to make requests to the server deployed at a different domain. As a reference, if the frontend and backend are at two different domains, we need CORS there.\n\n" +
+    "We can set up the CORS environment in the frontend using two methods:\n\n" +
+    "1. axios\n" +
+    "2. fetch",
+    },
   ];
 
   return (
