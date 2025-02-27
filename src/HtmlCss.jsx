@@ -38,6 +38,18 @@ const HtmlCss = () => {
         ),
       },
       {
+        question: "What is css gradient?",
+        answer: (
+          <>
+       A CSS gradient is a smooth transition between two or more colors. CSS provides two main types of gradients 
+            <br />
+            background: linear-gradient(direction, color1, color2, ...);
+
+            <br />
+          </>
+        ),
+      },
+      {
         question: "Tailwind config.js file use?",
         answer: (
           <>

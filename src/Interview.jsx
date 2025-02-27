@@ -59,6 +59,11 @@ const Counter = () => {
         "The React useState Hook allows us to track state in a function component.",
     },
     {
+      question: "What is react controlled components",
+      answer:
+        "Controlled components are React components where the form data is handled by the state within the component. The form element’s value is controlled via the React state, making the form elements responsive to changes.",
+    },
+    {
       question: "What is React Router?",
       answer: (
         <>
