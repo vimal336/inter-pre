@@ -64,6 +64,11 @@ const Counter = () => {
         "Controlled components are React components where the form data is handled by the state within the component. The form element’s value is controlled via the React state, making the form elements responsive to changes.",
     },
     {
+      question: "What is react uncontrolled components",
+      answer:
+        "Uncontrolled components are form elements where the data is managed by the DOM rather than React. You can access the values using refs instead of binding the value to the state.",
+    },
+    {
       question: "What is React Router?",
       answer: (
         <>
