@@ -346,8 +346,8 @@ Web APIs (setTimeout, fetch, DOM events, etc.)
           </div>
         ))}
       </div>
-      <ImageGallery/>
       <ProblemSolving/>
+      <ImageGallery/>
     </div>
   );
 };
