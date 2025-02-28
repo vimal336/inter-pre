@@ -1,4 +1,5 @@
 import ImageGallery from "./Gallery";
+import ProblemSolving from "./ProblemSolving";
 
 const Javascript = () => {
   const questionsAndAnswers = [
@@ -346,6 +347,7 @@ Web APIs (setTimeout, fetch, DOM events, etc.)
         ))}
       </div>
       <ImageGallery/>
+      <ProblemSolving/>
     </div>
   );
 };

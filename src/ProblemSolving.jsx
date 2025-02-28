@@ -14,8 +14,15 @@ const ProblemSolving = () => {
             <code className="whitespace-pre">
                 
               {`
-              < (less than)	&lt;
-             > (greater than) &gt;
+             const arr = [2, 2, 3, 2, 4, 5, 5];
+
+const countOccurrences = arr.reduce((acc, num) => {
+  acc[num] = (acc[num] || 0) + 1;
+  return acc;
+}, {});
+
+console.log(countOccurrences);
+
 `}
             </code>
           </pre>
