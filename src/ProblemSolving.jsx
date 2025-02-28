@@ -41,6 +41,82 @@ console.log(countOccurrences); //{ '2': 3, '3': 1, '4': 1, '5': 2 }
         </>
       ),
     },
+    {
+        question: "Find the Largest Number in an Array?",
+        answer: (
+          <>
+  
+            <br />
+            <br />
+            Example:
+            <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+              <code className="whitespace-pre">
+                  
+                {`
+  function findMax(arr) {
+  let maxval = Math.max(...arr)
+  return maxval;
+}
+console.log(findMax([10, 5, 20, 8])); // Output: 20
+  
+  `}
+              </code>
+            </pre>
+          </>
+        ),
+      },
+      {
+        question: "Count Vowels in a String?",
+        answer: (
+          <>
+  
+            <br />
+            <br />
+            Example:
+            <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+              <code className="whitespace-pre">
+                  
+                {`
+ 
+function countVowels(str) {
+  let vowels = "aeiouAEIOU";
+  let count = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) { // Check if the character is a vowel
+      count++; // Increment count
+    }
+  }
+  return count;
+}
+
+console.log(countVowels("madam")); // Output: 2
+
+for of approach
+
+const cVowels = (s) => {
+    const vowels = "aeiouAEIOU";
+    let count = 0;
+
+    for (const char of s) {
+        if (vowels.includes(char)) {
+            count++;
+        }
+    }
+
+    return count;
+};
+
+const s = "Hello World";
+console.log(cVowels(s))//3; 
+
+
+  `}
+              </code>
+            </pre>
+          </>
+        ),
+      },
 ];
 
   return (

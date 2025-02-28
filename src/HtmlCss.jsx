@@ -24,7 +24,28 @@ const HtmlCss = () => {
         </>
       ),
     },
+    {
+      question: "Tag vs elemnts?",
+      answer: (
+        <>
+        
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
+                
+              {`
+In HTML, tags represent the structural components of a document, such as <h1> for headings. 
+Elements are formed by tags and encompass both the opening and closing tags along with the content. Attributes provide additional information or properties to elements, 
+enhancing their functionality or appearance.
 
+Tag: <p> (opening tag), </p> (closing tag)
+Element: <p>This is a paragraph.</p>
+`}
+            </code>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231215170608/Group-3-2-(1).jpg" alt="" />
+          </pre>
+        </>
+      ),
+    },
     {
         question: "What is css boxmodel?",
         answer: (
