@@ -2,6 +2,7 @@ import { useState } from "react";
 import data from "./data.json"; // Direct import
 
 const Mapping = () => {
+
   const [userData, setUserData] = useState(data); // Use imported data
 
   return (
@@ -34,28 +35,28 @@ const Mapping = () => {
 
 export default Mapping;
 
-import useFetch from "./hooks/useFetch";
+// import useFetch from "./hooks/useFetch";
 
 
-const Mapping = () => {
-    const { data, error, loading } = useFetch();
+// const Mapping = () => {
+//     const { data, error, loading } = useFetch();
     
-    if (loading) return <div>Loading...</div>;
-    if (error) return <div>Error: {error}</div>;
-    if (!data) return <div>No data found</div>;
+//     if (loading) return <div>Loading...</div>;
+//     if (error) return <div>Error: {error}</div>;
+//     if (!data) return <div>No data found</div>;
 
-    return (
-        <>
-            {data.map((user) => (
-                <div key={user.id}>
-                    <h1>{user.name}</h1>
-                </div>
-            ))}
-        </>
-    );
-};
+//     return (
+//         <>
+//             {data.map((user) => (
+//                 <div key={user.id}>
+//                     <h1>{user.name}</h1>
+//                 </div>
+//             ))}
+//         </>
+//     );
+// };
 
-export default Mapping;
+// export default Mapping;
 
 // import useFetch from "./hooks/useFetch";
 
