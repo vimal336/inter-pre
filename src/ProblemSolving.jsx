@@ -4,9 +4,21 @@ const ProblemSolving = () => {
       question: "Given an array [2,2,3,2,4,5,5] return an object that counts the occurrences of the each element ?",
       answer: (
         <>
-        HTML Character Entities. Some characters are reserved in HTML. 
-        If you use the less than symbol or greater than symbol
-        signs in your HTML text, the browser might mix them with tags. 
+### Explanation:
+1. Start with an empty object `{}` as the accumulator.
+2. Loop through each number in the array.
+3. If the number exists in the object, increment its count.
+4. If not, initialize it with `1`.
+5. Return the final object with counts. <br/>
+
+
+
+Initial State:
+acc = {} (empty object, our initial value)
+First iteration (num = 2):
+
+acc[2] is undefined, so (acc[2] || 0) + 1 = 0 + 1 = 1
+
           <br />
           <br />
           Example:
@@ -14,14 +26,14 @@ const ProblemSolving = () => {
             <code className="whitespace-pre">
                 
               {`
-             const arr = [2, 2, 3, 2, 4, 5, 5];
+const arr = [2, 2, 3, 2, 4, 5, 5];
 
 const countOccurrences = arr.reduce((acc, num) => {
   acc[num] = (acc[num] || 0) + 1;
   return acc;
 }, {});
 
-console.log(countOccurrences);
+console.log(countOccurrences); //{ '2': 3, '3': 1, '4': 1, '5': 2 }
 
 `}
             </code>
@@ -34,7 +46,7 @@ console.log(countOccurrences);
   return (
     <div className="p-6 mx-auto bg-white rounded-xl shadow-md space-y-6 sm:p-8">
       <h2 className="text-2xl font-bold text-center">
-        Html and CSS Interview Questions & Answers
+   Interview problem solving Questions & Answers
       </h2>
       <div className="space-y-6">
         {questionsAndAnswers.map((item, index) => (
