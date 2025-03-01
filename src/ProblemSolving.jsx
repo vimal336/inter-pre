@@ -117,6 +117,31 @@ console.log(cVowels(s))//3;
           </>
         ),
       },
+      {
+        question: "Find the Largest Number in an Array?",
+        answer: (
+          <>
+
+- `parseInt` stops reading when it encounters a non-numeric character.
+- If the first character is invalid for base 10, it returns `NaN`.
+            <br />
+            <br />
+            Example:
+            <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+              <code className="whitespace-pre">
+                  
+                {`
+  console.log(parseInt("10+2")); // 10
+console.log(parseInt("7FM"));  // 7
+console.log(parseInt("F7M"));  // NaN
+
+  
+  `}
+              </code>
+            </pre>
+          </>
+        ),
+      },
 ];
 
   return (

@@ -62,6 +62,40 @@ Element: <p>This is a paragraph.</p>
       ),
     },
     {
+      question: "tags in block vs inline elements",
+      answer: (
+        <>
+          The CSS box model is a container that contains multiple properties
+          including borders, margin, padding, and the content itself. It is used
+          to create the design and layout of web pages.
+          <br />
+          <img src="https://dotnettutorials.net/wp-content/uploads/2021/11/word-image-453.png" />
+          <img src="http://4.bp.blogspot.com/-TiwOixlooJk/U4UyEnv_XpI/AAAAAAAACFs/NuuLz2IvoZ4/s1600/css-display-block-vs-inline-block.png" alt="" />
+          <img src="https://samanthaming.gumlet.io/pictorials/css-inline-vs-inlineblock-vs-block-5.jpg.gz?format=auto" alt=""/>
+          <br />
+        </>
+      ),
+    },
+    {
+      question: "What is Cascading in CSS?",
+      answer: (
+        <>
+         The term Cascading in Cascading Style Sheets (CSS) refers to the way styles are
+          applied to elements when there are multiple conflicting rules.
+          It determines which CSS rule takes precedence based on three key factors:
+        </>
+      ),
+    },
+    {
+      question: "Imperative vs. Declarative Programming in JavaScript?",
+      answer: (
+        <>
+        <b>Imperative:</b>When you need full control over execution (low-level optimizations, game loops, etc.). <br/>
+        <b>Declarative:</b>When you want clean, maintainable, and scalable code (React, Redux, SQL, functional programming).
+        </>
+      ),
+    },
+    {
       question: "What is css gradient?",
       answer: (
         <>
