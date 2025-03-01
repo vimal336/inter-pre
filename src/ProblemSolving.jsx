@@ -118,7 +118,7 @@ console.log(cVowels(s))//3;
         ),
       },
       {
-        question: "Find the Largest Number in an Array?",
+        question: "How parseInt Works?",
         answer: (
           <>
 
