@@ -324,11 +324,19 @@ console.log(operate(5, 3, add)); // Output: 8
        It allows handling an indefinite number of arguments as an array or object.
           <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
             <code className="whitespace-pre">{`
-function operate(a, b, operation) {
-    return operation(a, b);
+
+//spread operator
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1]; // Creates a shallow copy
+console.log(arr2); // [1, 2, 3]
+
+//rest operator
+function sum(...nums) {
+  return nums.reduce((acc, num) => acc + num, 0);
 }
-const add = (x, y) => x + y;
-console.log(operate(5, 3, add)); // Output: 8
+
+console.log(sum(1, 2, 3, 4)); // 10
+
 `}</code>
           </pre>
         </>
