@@ -315,7 +315,7 @@ console.log(operate(5, 3, add)); // Output: 8
       ),
     },
     {
-      question: "5. Higher-Order Function",
+      question: "Spread abd Rest operator?",
       answer: (
         <>
        The spread operator is used to expand an iterable (array, object, or string) into individual elements. 
@@ -323,6 +323,7 @@ console.log(operate(5, 3, add)); // Output: 8
        The rest operator is used to collect multiple values into a single variable, usually in function parameters or destructuring assignments. 
        It allows handling an indefinite number of arguments as an array or object.
           <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <img src="https://i.redd.it/erej5eai49o91.jpg" alt="" />
             <code className="whitespace-pre">{`
 
 //spread operator
