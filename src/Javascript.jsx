@@ -315,6 +315,26 @@ console.log(operate(5, 3, add)); // Output: 8
       ),
     },
     {
+      question: "5. Higher-Order Function",
+      answer: (
+        <>
+       The spread operator is used to expand an iterable (array, object, or string) into individual elements. 
+       It is commonly used for copying, merging, and passing values as function arguments. <br/>
+       The rest operator is used to collect multiple values into a single variable, usually in function parameters or destructuring assignments. 
+       It allows handling an indefinite number of arguments as an array or object.
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">{`
+function operate(a, b, operation) {
+    return operation(a, b);
+}
+const add = (x, y) => x + y;
+console.log(operate(5, 3, add)); // Output: 8
+`}</code>
+          </pre>
+        </>
+      ),
+    },
+    {
       question: "Framework vs library",
       answer: (
         <>
