@@ -1,4 +1,3 @@
-import React from 'react'
 import { Userdetails } from './Userdetails'
 import { useContext } from 'react'
 import { ThemeContext } from '../App'
