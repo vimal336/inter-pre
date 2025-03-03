@@ -298,7 +298,7 @@ console.log(greet()); // Output: Hello, World!
       ),
     },
     {
-      question: "5. Higher-Order Function",
+      question: "5.Higher-Order Function",
       answer: (
         <>
           A **Higher-Order Function** takes another function as an argument or returns a function.
