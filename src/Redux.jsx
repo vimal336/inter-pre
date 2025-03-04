@@ -5,7 +5,7 @@ import ReduxFlowDiagram from "./ReduxFlow";
 const Redux = () => {
   const questionsAndAnswers = [
     {
-      question: "Redux?",
+      question: "Redux ?",
       answer: (
         <div className="prose max-w-full text-gray-700">
           <h3 className="text-xl font-bold">Redux & Its Working</h3>
