@@ -62,6 +62,106 @@ Element: <p>This is a paragraph.</p>
       ),
     },
     {
+      question: "css?",
+      answer: (
+        <>
+ <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
+              {`
+              @import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@500&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&family=Source+Sans+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-image: url("../image/img2.jpg");
+  background-size: cover;
+  height: 2000px;
+ 
+ 
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(18, 2, 75);
+  width: 100%;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 8px;
+}
+
+.menu-line {
+  height: 2px;
+  width: 20px;
+  background-color: blueviolet;
+  margin-bottom: 3px;
+  transition: all 2.1s ease;
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+  }
+  nav li {
+    display: block;
+  }
+  ul {
+    text-align: center;
+  }
+  .logo {
+    align-self: flex-start;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .showmenu {
+    display: block;
+  }
+}
+
+section h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section p{
+  text-align:center;
+}
+
+
+@media (max-width: 900px){
+  
+}
+  `}
+            </code>
+          </pre>
+        </>
+      ),
+    },
+    {
       question: "tags in block vs inline elements",
       answer: (
         <>
