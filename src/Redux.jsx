@@ -152,7 +152,7 @@ export default Counter;
   return (
     <div className=" mx-auto p-6 bg-white rounded-xl shadow-lg space-y-6 sm:p-8">
       <h2 className="text-3xl font-bold text-center text-gray-900">
-        Redux Interview Questions & Answers
+        Redux  Interview Questions & Answers
       </h2>
 
       <div className="space-y-6">
