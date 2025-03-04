@@ -343,6 +343,37 @@ console.log(sum(1, 2, 3, 4)); //10
       ),
     },
     {
+      question: "Event Bubbling vs delegation?",
+      answer: (
+        <>
+      Event Bubbling is When an event occurs on an element, it starts from the target element and bubbles up through its ancestors.
+      Example: If you click a button inside a div, the event first triggers on the button and then propagates up to the div and beyond
+
+      Event Delegation Uses event bubbling to handle events efficiently by attaching a single event listener to a parent element instead of multiple child elements.
+      Useful for dynamically added elements.
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <img src="https://i.redd.it/erej5eai49o91.jpg" alt="" />
+            <code className="whitespace-pre">{`
+
+ //Event Bubbling
+ document.getElementById("parent").addEventListener("click", function () {
+    alert("Parent Div Clicked!");
+});
+           
+//Event Deligation
+document.getElementById("parent").addEventListener("click", function (event) {
+    if (event.target.tagName === "BUTTON") {
+        alert("Button Clicked!");
+    }
+});
+
+
+`}</code>
+          </pre>
+        </>
+      ),
+    },
+    {
       question: "Framework vs library",
       answer: (
         <>
