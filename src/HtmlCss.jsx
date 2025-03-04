@@ -155,6 +155,49 @@ section p{
 @media (max-width: 900px){
   
 }
+
+
+
+crud todo react 
+
+import { useState } from "react";
+
+const App = () =>{
+
+const [add, setAdd] = useState([]);
+const [input, setInput] = useState('');
+
+const Todo = () =>{
+    setAdd((prev)=>[...prev, input])
+}
+
+     const handleDelete = (index) => {
+    setAdd(add.filter((_, i) => i !== index)); // Remove the todo at the given index
+  };
+    
+    return(
+        <>
+        <input placeHolder = "Enter todo" onChange={(e)=> setInput(e.target.value)} value={input}/>
+         <button style={{backgroundColor:'blue', color:'white'}} onClick={Todo}>Add</button>
+
+            {
+            add.length == 0 ? (<h1>no task added</h1>) :     
+           ( add.map((task,i)=>(
+            <div key={i}>
+            <span>{task}</span>
+                <button
+            style={{ backgroundColor: "red", color: "white", border: "none", padding: "5px" }}
+            onClick={() => handleDelete(i)} // Call delete function
+          >
+            Delete
+          </button>
+            </div>
+            )))
+            }
+        </>
+    )
+}
+export default App
   `}
             </code>
           </pre>
