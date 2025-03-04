@@ -389,7 +389,49 @@ menu.addEventListener('click', ()=>{
   menuList.classList.toggle('showmenu')
 })
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+        <div class="logo">
+            <a href="">MATRIX</a>
+        </div>
+       <ul>
+        <li><a href="Home">HOME</a></li>
+        <li><a href="works">WORKS</a></li>
+        <li><a href="service">SERVICE</a></li>
+        <li><a href="contact">CONTACT</a></li>
+       </ul>
 
+       <div class="menu">
+         <div class="menu-line"></div>
+         <div class="menu-line"></div>
+         <div class="menu-line"></div>
+       </div>
+    </nav>
+
+    <section>
+      <div>
+        <h1>Javascript Navigation Bar</h1>
+      </div>
+     
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Dolorem ad quis labore sed ipsam soluta
+           dolore velit repudiandae facilis similique.</p>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
 
 
 `}</code>
