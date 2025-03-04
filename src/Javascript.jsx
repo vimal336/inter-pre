@@ -374,6 +374,30 @@ document.getElementById("parent").addEventListener("click", function (event) {
       ),
     },
     {
+      question: "Event Bubbling vs delegation?",
+      answer: (
+        <>
+      The addEventListener() method attaches an event handler to the specified element.
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">{`
+
+ const menu = document.querySelector('.menu');
+
+const menuList = document.querySelector('nav ul');
+
+menu.addEventListener('click', ()=>{
+  menuList.classList.toggle('showmenu')
+})
+
+
+
+
+`}</code>
+          </pre>
+        </>
+      ),
+    },
+    {
       question: "Framework vs library",
       answer: (
         <>
