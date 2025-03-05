@@ -48,7 +48,7 @@ const Quotes = () => {
 
   return (
     <div>
-      <h1>{advice}</h1>
+      <h1>advice:{advice}</h1>
        <button onClick={uotes}></button>
     </div>
   )
