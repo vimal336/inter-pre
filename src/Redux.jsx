@@ -10,7 +10,7 @@ const Redux = () => {
         <div className="prose max-w-full text-gray-700">
           <h3 className="text-xl font-bold">Redux & Its Working</h3>
           <p>
-            <strong>What is Redux?</strong><br />
+            <strong>What is Redux? </strong><br />
             Redux is a state management library for JavaScript applications, mainly used with React. It helps manage global state in a predictable way by using a single source of truth (store).
           </p>
 
