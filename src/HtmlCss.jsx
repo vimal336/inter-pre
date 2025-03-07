@@ -53,6 +53,15 @@ Element: <p>This is a paragraph.</p>
           <>
             Both select and datalist elements in HTML provide ways to offer users predefined options, 
               but they have different use cases and behaviors. Here’s a comparison:
+
+              select Tag
+Used to create a dropdown list.
+Only allows one option to be selected.
+
+datalist Tag
+Used to provide autocomplete suggestions for an <input> field.
+Allows both predefined options and custom input.
+
             <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
               <code className="whitespace-pre">
                 {`
