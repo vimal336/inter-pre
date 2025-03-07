@@ -65,6 +65,14 @@ Allows both predefined options and custom input.
             <code className="whitespace-pre">
               {`
 
+<label for="cars">Choose a car:</label>
+<select id="cars">
+  <option value="bmw">BMW</option>
+  <option value="audi">Audi</option>
+  <option value="tesla">Tesla</option>
+</select>
+
+
 <label for="cars">Choose or enter a car:</label>
 <input list="car-list" id="cars" name="cars">
 <datalist id="car-list">
