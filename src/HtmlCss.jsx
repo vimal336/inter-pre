@@ -47,37 +47,28 @@ Element: <p>This is a paragraph.</p>
           </pre>
         </>
       ),
-      {
-        question: "Select Tag vs Data List Tag?",
-        answer: (
-          <>
-            Both select and datalist elements in HTML provide ways to offer users predefined options, 
-              but they have different use cases and behaviors. Here’s a comparison:
+    },
+    {
+      question: "Select Tag vs DataList Tag?",
+      answer: (
+        <>
+          Both select and datalist elements in HTML provide ways to offer users predefined options, 
+            but they have different use cases and behaviors. Here’s a comparison:
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
+              {`
 
-              select Tag
-Used to create a dropdown list.
-Only allows one option to be selected.
-
-datalist Tag
-Used to provide autocomplete suggestions for an <input> field.
-Allows both predefined options and custom input.
-
-            <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
-              <code className="whitespace-pre">
-                {`
-  
-  Tag: <p> (opening tag), </p> (closing tag)
-  Element: <p>This is a paragraph.</p>
-  `}
-              </code>
-              <img
-                src="https://media.geeksforgeeks.org/wp-content/uploads/20231215170608/Group-3-2-(1).jpg"
-                alt=""
-              />
-            </pre>
-          </>
-        ),
-      },
+Tag: <p> (opening tag), </p> (closing tag)
+Element: <p>This is a paragraph.</p>
+`}
+            </code>
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20231215170608/Group-3-2-(1).jpg"
+              alt=""
+            />
+          </pre>
+        </>
+      ),
     },
     {
       question: "What is css boxmodel?",
