@@ -454,6 +454,20 @@ It calls your code, not the other way around (Inversion of Control).</p>
       ),
     },
     {
+      question: "Framework vs library",
+      answer: (
+        <>
+<p className="text-left">Both frameworks and libraries help developers build applications, 
+        but they have key differences in how they are used and how much control they give developers.</p>
+        <p className="text-left">A library is a collection of reusable functions/modules that help perform specific tasks.
+        You call the library's functions when needed in your code.</p>
+        <p className="text-left"> A framework provides a complete structure and dictates how your application should be built.
+It calls your code, not the other way around (Inversion of Control).</p>
+        <img src="https://miro.medium.com/max/1602/1*u9zaeCkef5gt4Id72AiP_w.png" alt=""/>
+        </>
+      ),
+    },
+    {
       question: "Why javascript single threaded language?",
       answer: (
         <>
