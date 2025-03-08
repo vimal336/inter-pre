@@ -462,9 +462,6 @@ An execution method is any function that performs a task, operation, or computat
 These methods are meant to be executed as part of the application normal flow.</p>
         <p className="text-left"><b>Test Method:</b> A test method is a function used to verify the correctness of another function or module. 
           It is typically used in unit testing frameworks like Jest, Mocha, or Jasmine.</p>
-        <p className="text-left"> A framework provides a complete structure and dictates how your application should be built.
-It calls your code, not the other way around (Inversion of Control).</p>
-        <img src="https://miro.medium.com/max/1602/1*u9zaeCkef5gt4Id72AiP_w.png" alt=""/>
         </>
       ),
     },
