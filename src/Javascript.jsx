@@ -440,7 +440,7 @@ menu.addEventListener('click', ()=>{
       ),
     },
     {
-      question: "Framework vs library",
+      question: "Framework vs library difference",
       answer: (
         <>
 <p className="text-left">Both frameworks and libraries help developers build applications, 
