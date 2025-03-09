@@ -454,7 +454,7 @@ It calls your code, not the other way around (Inversion of Control).</p>
       ),
     },
     {
-      question: "Execution Method vs Test Method in JavaScript?",
+      question: "Execution Method vs Test Method in JavaScript ?",
       answer: (
         <>
 <p className="text-left"><b>Execution Method :</b>
