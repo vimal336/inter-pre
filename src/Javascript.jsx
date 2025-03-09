@@ -460,7 +460,7 @@ It calls your code, not the other way around (Inversion of Control).</p>
 <p className="text-left"><b>Execution Method :</b>
 An execution method is any function that performs a task, operation, or computation in JavaScript. 
 These methods are meant to be executed as part of the application normal flow.</p>
-        <p className="text-left"><b>Test Method:</b> A test method is a function used to verify the correctness of another function or module. 
+        <p className="text-left"><b>Test Method: </b> A test method is a function used to verify the correctness of another function or module. 
           It is typically used in unit testing frameworks like Jest, Mocha, or Jasmine.</p>
         </>
       ),
