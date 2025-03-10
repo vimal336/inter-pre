@@ -490,7 +490,7 @@ Web APIs (setTimeout, fetch, DOM events, etc.)
        but Axios is often preferred because it provides more built-in features and better error handling<br/>
 
        Axios: Automatically Parses JSON <br/>
-Even though JavaScript is single-threaded, it can handle multiple tasks asynchronously using:<br/>
+       Better Error Handling<br/>
 
 Callback queue <br/>
 Promises & Microtasks<br/>
