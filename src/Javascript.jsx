@@ -492,6 +492,9 @@ Web APIs (setTimeout, fetch, DOM events, etc.)
        Axios: Automatically Parses JSON <br/>
        Better Error Handling<br/>
 
+       Simpler Syntax for Requests
+       ✅ Axios: Short and Clean
+
 Callback queue <br/>
 Promises & Microtasks<br/>
 Web APIs (setTimeout, fetch, DOM events, etc.)
