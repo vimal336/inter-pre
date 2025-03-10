@@ -489,7 +489,7 @@ Web APIs (setTimeout, fetch, DOM events, etc.)
        Both Axios and the Fetch API are used for making HTTP requests in JavaScript, 
        but Axios is often preferred because it provides more built-in features and better error handling<br/>
 
-        2. Event Loop Mechanism (How JavaScript Manages Concurrency)
+       Axios: Automatically Parses JSON <br/>
 Even though JavaScript is single-threaded, it can handle multiple tasks asynchronously using:<br/>
 
 Callback queue <br/>
