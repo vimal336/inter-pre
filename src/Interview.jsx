@@ -441,35 +441,77 @@ function Component1() {
             <code className="whitespace-pre">
               {`
 
+import { useState } from "react";
 
-import { useState, createContext, useContext } from "react";
-import ReactDOM from "react-dom/client";
+const App = () => {
+  const [add, setAdd] = useState([]);
+  const [input, setInput] = useState("");
+  const [editIndex, setEditIndex] = useState(null); // Track editing item
 
-const UserContext = createContext();
+  const handleAdd = () => {
+    if (input.trim() === "") return;
+    
+    if (editIndex !== null) {
+      // Update existing task
+      const updatedTodos = [...add];
+      updatedTodos[editIndex] = input;
+      setAdd(updatedTodos);
+      setEditIndex(null);
+    } else {
+      // Add new task
+      setAdd((prev) => [...prev, input]);
+    }
+    
+    setInput(""); // Clear input after adding/updating
+  };
 
-function Component1() {
-  const [user, setUser] = useState("Jesse Hall");
+  const handleDelete = (index) => {
+    setAdd(add.filter((_, i) => i !== index)); // Remove task
+  };
 
-  return (
-    <UserContext.Provider value={user}>
-      <h1>{Hello dollar{user}!}</h1>
-      <Component2 />
-    </UserContext.Provider>
-  );
-
-  function Component5() {
-  const user = useContext(UserContext);
+  const handleEdit = (index) => {
+    setInput(add[index]); // Set input field to selected task
+    setEditIndex(index); // Store the index of the task being edited
+  };
 
   return (
     <>
-      <h1>Component 5</h1>
-      <h2>{Hello dollar{user} again!}</h2>
+      <input
+        placeholder="Enter task"
+        onChange={(e) => setInput(e.target.value)}
+        value={input}
+      />
+      <button style={{ backgroundColor: "blue", color: "white" }} onClick={handleAdd}>
+        {editIndex !== null ? "Update" : "Add"}
+      </button>
+
+      {add.length === 0 ? (
+        <h1>No tasks added</h1>
+      ) : (
+        add.map((task, i) => (
+          <div key={i} style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <span>{task}</span>
+            <button
+              style={{ backgroundColor: "green", color: "white", border: "none", padding: "5px" }}
+              onClick={() => handleEdit(i)}
+            >
+              Edit
+            </button>
+            <button
+              style={{ backgroundColor: "red", color: "white", border: "none", padding: "5px" }}
+              onClick={() => handleDelete(i)}
+            >
+              Delete
+            </button>
+          </div>
+        ))
+      )}
     </>
   );
-}
-}
-              
-              
+};
+
+export default App;
+          
               
               `}
             </code>
