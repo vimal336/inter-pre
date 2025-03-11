@@ -483,7 +483,7 @@ Web APIs (setTimeout, fetch, DOM events, etc.)
       )
     },
     {
-      question: "Javascript Axios vs fetch?",
+      question: "Javascript Axios vs fetchApi?",
       answer: (
         <>
        Both Axios and the Fetch API are used for making HTTP requests in JavaScript, 
