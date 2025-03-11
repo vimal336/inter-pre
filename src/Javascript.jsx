@@ -478,7 +478,7 @@ Even though JavaScript is single-threaded, it can handle multiple tasks asynchro
 
 Callback queue <br/>
 Promises & Microtasks<br/>
-Web APIs (setTimeout, fetch, DOM events, etc.)
+Web APIs(setTimeout, fetch, DOM events, etc.)
         </>
       )
     },
