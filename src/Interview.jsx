@@ -429,12 +429,9 @@ function Component1() {
     "2. fetch",
     },
     {
-      question: "What is usecontext hook?",
+      question: "React Crud?",
       answer: (
         <>
-         In React, “context” refers to a mechanism that allows data to be shared across
-          multiple components without explicitly passing it through props. It provides a way to pass data through
-          the component tree without having to pass props down manually at every level. 
           <br />
           <br />
           <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
