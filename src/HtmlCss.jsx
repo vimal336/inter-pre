@@ -1,4 +1,5 @@
 import ImageGallery from "./Gallery";
+import BootstrapClasses from "./Bootstrap";
 
 const HtmlCss = () => {
   const questionsAndAnswers = [
@@ -375,6 +376,7 @@ export default {
         ))}
       </div>
       <ImageGallery />
+      <BootstrapClasses/>
     </div>
   );
 };

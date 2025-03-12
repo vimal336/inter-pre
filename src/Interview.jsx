@@ -432,8 +432,7 @@ function Component1() {
       question: "React Crud?",
       answer: (
         <>
-          <br />
-          <br />
+          <img src="" alt="" />
           <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
             <code className="whitespace-pre">
               {`
