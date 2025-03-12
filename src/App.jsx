@@ -24,6 +24,7 @@ import UseCall from "./UseCall";
 import Javascript from "./Javascript";
 import HtmlCss from "./HtmlCss";
 import Redux from "./Redux";
+import Bootstrap from "./Bootstrap";
 
 export const ThemeContext = createContext();
 
@@ -64,6 +65,7 @@ function App() {
       <Route path="Javascript" element={<Javascript/>}></Route>
       <Route path="HtmlCss" element={<HtmlCss/>}></Route>
       <Route path="Redux" element={<Redux/>}></Route>
+      <Route path="Bootstrap" element={<Redux/>}></Route>
      </Routes>
      </BrowserRouter>
 

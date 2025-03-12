@@ -1,5 +1,3 @@
-import React from "react";
-
 const bootstrapClasses = {
   Layout: [
     { name: "container", desc: "Centers content and provides a responsive width." },
