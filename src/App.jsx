@@ -65,7 +65,7 @@ function App() {
       <Route path="Javascript" element={<Javascript/>}></Route>
       <Route path="HtmlCss" element={<HtmlCss/>}></Route>
       <Route path="Redux" element={<Redux/>}></Route>
-      <Route path="Bootstrap" element={<Redux/>}></Route>
+      <Route path="Bootstrap" element={<Bootstrap/>}></Route>
      </Routes>
      </BrowserRouter>
 

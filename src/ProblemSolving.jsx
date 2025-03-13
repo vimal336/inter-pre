@@ -187,6 +187,51 @@ console.log(findmethod);//8
           </>
         ),
       },
+      {
+        question: "find method in js?",
+        answer: (
+          <>
+  Returns only the first matching element in the array. <br/>
+✔ Returns undefined if no match is found. <br/>
+✔ Use .filter() if you need multiple matches instead of just the first one.<br/>
+✔ Works well for finding objects in arrays (like user data)
+            <br />
+            <br />
+            Example:
+            <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+              <code className="whitespace-pre">
+                  
+                {`
+ 
+const words = ["apple", "banana", "grape", "blueberry"];
+
+const foundWord = words.find(word => word.startsWith("b"));
+
+console.log(foundWord); // "banana"
+
+const numbers = [3, 5, 7];
+
+const result = numbers.find(num => num % 2 === 0);
+
+console.log(result); // undefined (no even numbers)
+
+If no match is found, .find() returns undefined
+
+let arr = [1,2,3,4,8,5,6,7]
+
+const findmethod = arr.find((f)=>{
+    let a = f>4
+    return a
+})
+
+console.log(findmethod);//8
+
+  `}
+              </code>
+            </pre>
+          </>
+        ),
+      },
 ];
 
   return (
