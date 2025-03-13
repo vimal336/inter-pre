@@ -203,28 +203,12 @@ console.log(findmethod);//8
                   
                 {`
  
-const words = ["apple", "banana", "grape", "blueberry"];
+function findLongestWord(str) {
+  return str.split(" ").sort((a, b) => b.length - a.length)[0];
+}
 
-const foundWord = words.find(word => word.startsWith("b"));
-
-console.log(foundWord); // "banana"
-
-const numbers = [3, 5, 7];
-
-const result = numbers.find(num => num % 2 === 0);
-
-console.log(result); // undefined (no even numbers)
-
-If no match is found, .find() returns undefined
-
-let arr = [1,2,3,4,8,5,6,7]
-
-const findmethod = arr.find((f)=>{
-    let a = f>4
-    return a
-})
-
-console.log(findmethod);//8
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); 
+// Output: "jumped"
 
   `}
               </code>
