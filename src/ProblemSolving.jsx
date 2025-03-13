@@ -206,6 +206,16 @@ function findLongestWord(str) {
 console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); 
 // Output: "jumped"
 
+//Method :2 
+
+function findLongestWord(str) {
+  return str.split(" ").sort((a, b) => b.length - a.length)[0];
+}
+
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); 
+// Output: "jumped"
+
+
   `}
               </code>
             </pre>
