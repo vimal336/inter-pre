@@ -188,13 +188,9 @@ console.log(findmethod);//8
         ),
       },
       {
-        question: "find method in js?",
+        question: "Finding longest word?",
         answer: (
           <>
-  Returns only the first matching element in the array. <br/>
-✔ Returns undefined if no match is found. <br/>
-✔ Use .filter() if you need multiple matches instead of just the first one.<br/>
-✔ Works well for finding objects in arrays (like user data)
             <br />
             <br />
             Example:
