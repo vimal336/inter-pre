@@ -489,6 +489,7 @@ Web APIs(setTimeout, fetch, DOM events, etc.)
        <ul>
   <li>Use Standard HTML, CSS, and JavaScript (Follow W3C standards).</li>
   <li>Normalize CSS (Use <strong>Normalize.css</strong> to maintain consistency).</li>
+  <li>Test on Multiple Devices (Check performance on desktops, mobiles, and tablets).</li>
   <li>Use Feature Detection (Instead of browser detection, use Modernizr).</li>
   <li>Use Polyfills (For missing features in older browsers).</li>
   <li>Test with Developer Tools (<code>F12</code> in Chrome, Firefox, Edge).</li>
@@ -501,7 +502,6 @@ Web APIs(setTimeout, fetch, DOM events, etc.)
   <li>Handle Different Rendering Engines (Test on Blink, WebKit, Gecko, and Trident).</li>
   <li>Use Progressive Enhancement (Start with basic features, then add advanced ones).</li>
   <li>Check Font Rendering (Fonts may appear differently across browsers).</li>
-  <li>Test on Multiple Devices (Check performance on desktops, mobiles, and tablets).</li>
 </ul>
      </>
       )
