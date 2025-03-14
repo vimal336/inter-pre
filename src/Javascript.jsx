@@ -491,6 +491,7 @@ Web APIs(setTimeout, fetch, DOM events, etc.)
   <li>Normalize CSS (Use <strong>Normalize.css</strong> to maintain consistency).</li>
   <li>Test on Multiple Devices (Check performance on desktops, mobiles, and tablets).</li>
   <li>Use Feature Detection (Instead of browser detection, use Modernizr).</li>
+  <li>Check Font Rendering (Fonts may appear differently across browsers).</li>
   <li>Use Polyfills (For missing features in older browsers).</li>
   <li>Test with Developer Tools (<code>F12</code> in Chrome, Firefox, Edge).</li>
   <li>Use CSS Vendor Prefixes (e.g., <code>-webkit-</code>, <code>-moz-</code>, <code>-ms-</code>).</li>
@@ -501,7 +502,6 @@ Web APIs(setTimeout, fetch, DOM events, etc.)
   <li>Validate Code (Use <a href="https://validator.w3.org/" target="_blank">W3C Validator</a> for HTML & CSS).</li>
   <li>Handle Different Rendering Engines (Test on Blink, WebKit, Gecko, and Trident).</li>
   <li>Use Progressive Enhancement (Start with basic features, then add advanced ones).</li>
-  <li>Check Font Rendering (Fonts may appear differently across browsers).</li>
 </ul>
      </>
       )
