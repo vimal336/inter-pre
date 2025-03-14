@@ -488,11 +488,11 @@ Web APIs(setTimeout, fetch, DOM events, etc.)
         <>
        <ul>
   <li>Use Standard HTML, CSS, and JavaScript (Follow W3C standards).</li>
-  <li>Use CSS Vendor Prefixes (e.g., <code>-webkit-</code>, <code>-moz-</code>, <code>-ms-</code>).</li>
   <li>Normalize CSS (Use <strong>Normalize.css</strong> to maintain consistency).</li>
   <li>Use Feature Detection (Instead of browser detection, use Modernizr).</li>
   <li>Use Polyfills (For missing features in older browsers).</li>
   <li>Test with Developer Tools (<code>F12</code> in Chrome, Firefox, Edge).</li>
+  <li>Use CSS Vendor Prefixes (e.g., <code>-webkit-</code>, <code>-moz-</code>, <code>-ms-</code>).</li>
   <li>Perform Cross-Browser Testing (Use <strong>BrowserStack, LambdaTest</strong>).</li>
   <li>Ensure Responsive Design (Use <strong>media queries</strong> for mobile compatibility).</li>
   <li>Avoid Browser-Specific Code (Stick to universal CSS/JS methods).</li>
