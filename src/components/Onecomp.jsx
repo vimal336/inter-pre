@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useState } from 'react';
+import { useEffect, useReducer, useState } from 'react';
 
 // export const Onecomp = () => {
 //   const [num, Setnum] = useState(0);
