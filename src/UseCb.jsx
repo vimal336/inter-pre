@@ -56,7 +56,7 @@ return (
       {/* List of Tasks */}
       <ul className="mt-6 w-full max-w-md bg-white shadow-md rounded-md p-4">
         {add.length === 0 ? (
-          <li className="text-gray-500 text-center">No tasks added</li>
+          <li className="text-gray-500 text-center">No task added</li>
         ) : (
           add.map((val, i) => (
             <li
