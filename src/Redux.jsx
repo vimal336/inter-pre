@@ -7,9 +7,9 @@ const Redux = () => {
     {
       question: "Redux ?",
       answer: (
-        <div className="prose max-w-full text-gray-700">
+        <div className="prose max-w-full text-gray-600">
           <h3 className="text-xl font-bold">Redux & Its Working</h3>
-          <p>
+          <p className="bg-white">
             <strong>Explain Redux? </strong><br />
             Redux is a state management library for JavaScript applications, mainly used with React. It helps manage global state in a predictable way by using a single source of truth (store).
           </p>
