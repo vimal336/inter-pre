@@ -25,7 +25,7 @@ const Project = () => {
         ),
       },
       {
-        question: "",
+        question: "Memto Admin Panel",
         answer: (
           <>
            
@@ -37,7 +37,7 @@ const Project = () => {
   return (
     <div className="p-6 mx-auto bg-white rounded-xl shadow-md space-y-6 sm:p-8">
       <h2 className="text-2xl font-bold text-center">
-       React Interview Questions & Answers
+       Projects and Teck Stack i worked
       </h2>
       <div className="space-y-6">
         {questionsAndAnswers.map((item, index) => (
