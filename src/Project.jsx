@@ -1,6 +1,41 @@
 const Project = () => {
   const questionsAndAnswers = [
     {
+        question: "Admin Panel for Memto",
+        answer: (
+          <>
+            <h4>
+              At my previous company, <strong>AA</strong>, I worked on the <strong>admin panel</strong> for a mobile app called 
+              <strong> Memto</strong>. Memto is a <strong>social media platform</strong> featuring meme battles and battle coins. 
+              My role was to develop the <strong>admin panel</strong>, which allowed admin to manage content, users, and other backend operations.
+            </h4>
+      
+            <h3 className="font-semibold mt-2">Key Features & Responsibilities:</h3>
+            <ul className="list-disc pl-6 mt-1">
+              <li>Implemented <strong>CRUD operations</strong> for managing user-generated content and app settings.</li>
+              <li>Handled <strong>API integration</strong> to fetch and submit data seamlessly.</li>
+              <li>Created <strong>modal and preview modals</strong> for content management.</li>
+              <li>Developed <strong>form handling</strong> with validation to ensure accurate input.</li>
+              <li>Added <strong>loading indicators</strong> to improve the form submission experience.</li>
+              <li>Implemented <strong>pagination</strong> for handling large datasets efficiently.</li>
+              <li>Built a <strong>file upload system</strong> for managing images and assets.</li>
+            </ul>
+      
+            <h3 className="font-semibold mt-2">Challenges & Solutions:</h3>
+            <ul className="list-disc pl-6 mt-1">
+              <li>
+                <strong>Efficient API Handling:</strong> Optimized API requests using <strong>debouncing</strong> and proper 
+                error handling to improve performance.
+              </li>
+              <li>
+                <strong>Better User Experience:</strong> Ensured smooth interactions by refining <strong>modals, loaders, 
+                and pagination</strong> for an intuitive admin panel.
+              </li>
+            </ul>
+          </>
+        ),
+      },
+    {
         question: "SolarPunk DAO",
         answer: (
           <>
@@ -99,41 +134,6 @@ const Project = () => {
               <li>
                 <strong>Form Performance:</strong> Used <strong>Ant Design</strong> components to enhance form validation 
                 and improve user experience.
-              </li>
-            </ul>
-          </>
-        ),
-      },
-      {
-        question: "Admin Panel for Memto",
-        answer: (
-          <>
-            <h4>
-              At my previous company, <strong>AA</strong>, I worked on the <strong>admin panel</strong> for a mobile app called 
-              <strong> Memto</strong>. Memto is a <strong>social media platform</strong> featuring meme battles and battle coins. 
-              My role was to develop the <strong>admin panel</strong>, which allowed admin to manage content, users, and other backend operations.
-            </h4>
-      
-            <h3 className="font-semibold mt-2">Key Features & Responsibilities:</h3>
-            <ul className="list-disc pl-6 mt-1">
-              <li>Implemented <strong>CRUD operations</strong> for managing user-generated content and app settings.</li>
-              <li>Handled <strong>API integration</strong> to fetch and submit data seamlessly.</li>
-              <li>Created <strong>modal and preview modals</strong> for content management.</li>
-              <li>Developed <strong>form handling</strong> with validation to ensure accurate input.</li>
-              <li>Added <strong>loading indicators</strong> to improve the form submission experience.</li>
-              <li>Implemented <strong>pagination</strong> for handling large datasets efficiently.</li>
-              <li>Built a <strong>file upload system</strong> for managing images and assets.</li>
-            </ul>
-      
-            <h3 className="font-semibold mt-2">Challenges & Solutions:</h3>
-            <ul className="list-disc pl-6 mt-1">
-              <li>
-                <strong>Efficient API Handling:</strong> Optimized API requests using <strong>debouncing</strong> and proper 
-                error handling to improve performance.
-              </li>
-              <li>
-                <strong>Better User Experience:</strong> Ensured smooth interactions by refining <strong>modals, loaders, 
-                and pagination</strong> for an intuitive admin panel.
               </li>
             </ul>
           </>
