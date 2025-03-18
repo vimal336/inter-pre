@@ -25,6 +25,7 @@ import Javascript from "./Javascript";
 import HtmlCss from "./HtmlCss";
 import Redux from "./Redux";
 import Bootstrap from "./Bootstrap";
+import Project from "./Project";
 
 export const ThemeContext = createContext();
 
@@ -51,6 +52,7 @@ function App() {
       <Route path="UseStateHook" element={<UseStateHook/>}></Route>
       <Route path="UseeffectHook" element={<Useeffecthook/>}></Route>
       <Route path="UseLayoutEff" element={<UseLayoutEff/>}></Route>
+      <Route path="Projects" element={<Project/>}></Route>
       <Route path="Todos" element={<Todos/>}></Route>
       <Route path="UseMemoHook" element={<UseMemoHook/>}></Route>
       <Route path="Quotes/:username" element={<Quotes/>}></Route>
