@@ -43,7 +43,7 @@ return (
           value={input}
           ref={focusref}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Enter a task...."
+          placeholder="Enter a task..."
         />
         <button
           className="bg-red-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-red-600 transition"
