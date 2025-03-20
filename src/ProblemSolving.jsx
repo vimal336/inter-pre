@@ -170,7 +170,7 @@ console.log(para(0));
       },
 
       {
-        question: "Factorial Sample program?",
+        question: "finds First and second maximum value?",
         answer: (
           <>
             <br />
@@ -189,6 +189,35 @@ function findMaxAndSecondMax(arr) {
 // Example Usage:
 findMaxAndSecondMax([10, 20, 5, 30, 25]); // Output: Maximum: 30, Second Maximum: 25
 findMaxAndSecondMax([8, 8, 8]); // Output: Maximum: 8, Second Maximum: 8 (not ideal for unique second max)
+  `}
+              </code>
+            </pre>
+          </>
+        ),
+      },
+      {
+        question: "Remove Duplicate Array",
+        answer: (
+          <>
+            <br />
+            <br />
+            Example:
+            <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+              <code className="whitespace-pre">
+                  
+                {`
+function removeDuplicates(arr) {
+    return [...new Set(arr)];
+}
+
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); 
+// Output: [1, 2, 3, 4, 5]
+
+let duplicate = [4,6,79,99,999,8,8];
+
+let uniqueArray = [...new Set(duplicate)];
+console.log(uniqueArray); //[ 4, 6, 79, 99, 999, 8 ]
+
   `}
               </code>
             </pre>

@@ -1,5 +1,5 @@
 import ImageGallery from "./Gallery";
-import ProblemSolving from "./ProblemSolving";
+//import ProblemSolving from "./ProblemSolving";
 
 const Javascript = () => {
   const questionsAndAnswers = [
@@ -179,6 +179,7 @@ window.open("https://google.com", "_blank");
         </>
       ),
     },
+    
     {
       question: "DOM vs BOM - Key Differences",
       answer: (
@@ -540,7 +541,7 @@ Web APIs (setTimeout, fetch, DOM events, etc.)
           </div>
         ))}
       </div>
-      <ProblemSolving/>
+      {/* <ProblemSolving/> */}
       <ImageGallery/>
     </div>
   );

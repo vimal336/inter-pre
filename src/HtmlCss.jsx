@@ -106,13 +106,49 @@ Allows both predefined options and custom input.
       ),
     },
     {
+      question: "CSS Selectors?",
+      answer: (
+        <>
+          <ul>
+            <li><b>Element:</b> <code>div {'{'} color: red; {'}'}</code></li>
+            <li><b>ID:</b> <code>#myId {'{'} font-size: 20px; {'}'}</code></li>
+            <li><b>Class:</b> <code>.myClass {'{'} background: blue; {'}'}</code></li>
+            <li><b>Universal:</b> <code>* {'{'} margin: 0; {'}'}</code></li>
+            <li><b>Attribute:</b> <code>[type="text"] {'{'} border: 1px solid; {'}'}</code></li>
+            <li><b>Child:</b> <code>div &gt; p {'{'} color: green; {'}'}</code></li>
+            <li><b>Descendant:</b> <code>div p {'{'} font-weight: bold; {'}'}</code></li>
+            <li><b>Adjacent Sibling:</b> <code>h1 + p {'{'} font-style: italic; {'}'}</code></li>
+            <li><b>General Sibling:</b> <code>h1 ~ p {'{'} color: gray; {'}'}</code></li>
+            <li><b>Pseudo-class:</b> <code>a:hover {'{'} color: orange; {'}'}</code></li>
+            <li><b>Pseudo-element:</b> <code>p::first-letter {'{'} font-size: 30px; {'}'}</code></li>
+          </ul>
+        </>
+      ),
+    },
+    
+    {
+      question: "CSS Position?",
+      answer: (
+        <>
+          <ul>
+            <li><b>Static:</b> <code>position: static;</code> (Default, normal flow)</li>
+            <li><b>Relative:</b> <code>position: relative;</code> (Moves relative to itself)</li>
+            <li><b>Absolute:</b> <code>position: absolute;</code> (Relative to nearest positioned ancestor)</li>
+            <li><b>Fixed:</b> <code>position: fixed;</code> (Relative to viewport, stays on scroll)</li>
+            <li><b>Sticky:</b> <code>position: sticky;</code> (Switches between relative & fixed)</li>
+          </ul>
+        </>
+      ),
+    },
+    
+    {
       question: "css?",
       answer: (
         <>
  <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
             <code className="whitespace-pre">
               {`
-              @import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@500&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@500&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&family=Source+Sans+Pro&display=swap");
 
 * {
@@ -199,49 +235,117 @@ section p{
 @media (max-width: 900px){
   
 }
-
-
-
-crud todo react 
-
-import { useState } from "react";
-
-const App = () =>{
-
-const [add, setAdd] = useState([]);
-const [input, setInput] = useState('');
-
-const Todo = () =>{
-    setAdd((prev)=>[...prev, input])
-}
-
-     const handleDelete = (index) => {
-    setAdd(add.filter((_, i) => i !== index)); // Remove the todo at the given index
-  };
-    
-    return(
-        <>
-        <input placeHolder = "Enter todo" onChange={(e)=> setInput(e.target.value)} value={input}/>
-         <button style={{backgroundColor:'blue', color:'white'}} onClick={Todo}>Add</button>
-
-            {
-            add.length == 0 ? (<h1>no task added</h1>) :     
-           ( add.map((task,i)=>(
-            <div key={i}>
-            <span>{task}</span>
-                <button
-            style={{ backgroundColor: "red", color: "white", border: "none", padding: "5px" }}
-            onClick={() => handleDelete(i)} // Call delete function
-          >
-            Delete
-          </button>
-            </div>
-            )))
-            }
+  `}
+            </code>
+          </pre>
         </>
-    )
-}
-export default App
+      ),
+    },
+
+    {
+      question: "Crud",
+      answer: (
+        <>
+ <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
+              {`
+delete and edit functionality
+
+import { useState, useRef } from "react";
+
+const Crud = () => {
+  const [tasks, setTasks] = useState([]); // Holds list of tasks
+  const [input, setInput] = useState(""); // Holds current input value
+  const [editingIndex, setEditingIndex] = useState(null); // Tracks which task is being edited
+
+  let focusRef = useRef(null);
+
+  // Function to add or update a task
+  const handleAddOrUpdate = () => {
+    if (input.trim() === "") return; // Prevent adding empty tasks
+
+    if (editingIndex !== null) {
+      // Update task if editing
+      const updatedTasks = [...tasks];
+      updatedTasks[editingIndex] = input;
+      setTasks(updatedTasks);
+      setEditingIndex(null); // Reset editing state
+    } else {
+      // Add new task
+      setTasks((prevTasks) => [...prevTasks, input]);
+    }
+
+    setInput(""); // Clear input field
+    focusRef.current.focus(); // Focus input field
+  };
+
+  // Function to delete a task
+  const handleDelete = (index) => {
+    setTasks(tasks.filter((_, i) => i !== index));
+  };
+
+  // Function to edit a task
+  const handleEdit = (index) => {
+    setInput(tasks[index]); // Set input field with task text
+    setEditingIndex(index); // Set task index for editing
+    focusRef.current.focus(); // Focus input field
+  };
+
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+      {/* Input and Button */}
+      <div className="flex gap-2 w-full max-w-md">
+        <input
+          className="flex-1 bg-white border border-gray-300 px-4 py-2 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          value={input}
+          ref={focusRef}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Enter a task..."
+        />
+        <button
+          className={px-4 py-2 rounded-md shadow-md transition { "editingIndex" !== "null" ? "bg-green-500 hover:bg-green-600" : "bg-red-500 hover:bg-red-600"
+          } text-white}
+          onClick={handleAddOrUpdate}
+        >
+          {editingIndex !== null ? "Update" : "Add"}
+        </button>
+      </div>
+
+      {/* List of Tasks */}
+      <ul className="mt-6 w-full max-w-md bg-white shadow-md rounded-md p-4">
+        {tasks.length === 0 ? (
+          <li className="text-gray-500 text-center">No tasks added</li>
+        ) : (
+          tasks.map((task, i) => (
+            <li
+              key={i}
+              className="flex items-center justify-between bg-blue-100 p-3 rounded-md mb-2 shadow-sm"
+            >
+              <span className="font-medium text-gray-700">{i + 1}. {task}</span>
+              <div className="flex gap-2">
+                <button
+                  className="bg-yellow-500 text-white px-2 py-1 rounded-md shadow-md hover:bg-yellow-600 transition"
+                  onClick={() => handleEdit(i)}
+                >
+                  Edit
+                </button>
+                <button
+                  className="bg-red-500 text-white px-2 py-1 rounded-md shadow-md hover:bg-red-600 transition"
+                  onClick={() => handleDelete(i)}
+                >
+                  Delete
+                </button>
+              </div>
+            </li>
+          ))
+        )}
+      </ul>
+    </div>
+  );
+};
+
+export default Crud;
+
   `}
             </code>
           </pre>

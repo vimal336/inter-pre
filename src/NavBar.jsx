@@ -47,22 +47,23 @@ const Navbar = () => {
           <li><Link to="/HtmlCss" className="hover:text-gray-400">Html&css</Link></li>
           <li><Link to="/Redux" className="hover:text-gray-400">Redux</Link></li>
           <li><Link to="/Bootstrap" className="hover:text-gray-400">Bootstrap</Link></li>
+          <li><Link to="/ProblemSolving" className="hover:text-gray-400">Problems</Link></li>
           <li><Link to="/Projects" className="hover:text-gray-400">Project</Link></li>
-          <li><Link to="/useCall" className="hover:text-gray-400">Usecall</Link></li>
+          <li><Link to="/TaskManager" className="hover:text-gray-400">CRUD</Link></li>
+          <li><Link to="/BoxModel" className="hover:text-gray-400">Model</Link></li>
+          <li><Link to="/mapping" className="hover:text-gray-400">Mapping</Link></li>
+          <li><Link to="/Todos" className="hover:text-gray-400">Todos</Link></li>
+          <li><Link to="/UseCallBack" className="hover:text-gray-400">UseCallBack</Link></li>
+          {/* <li><Link to="/useCall" className="hover:text-gray-400">Usecall</Link></li>
           <li><Link to="/use-reducer" className="hover:text-gray-400">UseReduce</Link></li>
           <li><Link to="/use-effect-hook" className="hover:text-gray-400">UseEffect</Link></li>
           <li><Link to="/use-layout-effect" className="hover:text-gray-400">UseLayout</Link></li>
           <li><Link to="/use-ref-hook" className="hover:text-gray-400">UseRef</Link></li>
           <li><Link to="/use-memo-hook" className="hover:text-gray-400">UseMemo</Link></li>
-          <li><Link to="/UseCallBack" className="hover:text-gray-400">UseCallBack</Link></li>
-          <li><Link to="/todos" className="hover:text-gray-400">Todos</Link></li>
-          <li><Link to="/axios" className="hover:text-gray-400">Axios</Link></li>
-          <li><Link to="/users-card" className="hover:text-gray-400">UsersCard</Link></li>
+          <li><Link to="/Axios" className="hover:text-gray-400">Axios</Link></li>
+          <li><Link to="/UsersCard" className="hover:text-gray-400">UsersCard</Link></li>
           <li><Link to="/quotes" className="hover:text-gray-400">Quotes</Link></li>
-          <li><Link to="/TaskManager" className="hover:text-gray-400">CRUD</Link></li>
-          <li><Link to="/BoxModel" className="hover:text-gray-400">Model</Link></li>
-          <li><Link to="/mapping" className="hover:text-gray-400">Mapping</Link></li>
-          <li><Link to="/useCall" className="hover:text-gray-400">Usecall</Link></li>
+          <li><Link to="/useCall" className="hover:text-gray-400">Usecall</Link></li> */}
         </ul>
 
         {/* Mobile Menu Button */}
@@ -82,20 +83,21 @@ const Navbar = () => {
             <li><Link to="/Redux" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>Redux</Link></li>
             <li><Link to="/Bootstrap" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>Bootstrap</Link></li>
             <li><Link to="/Projects" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>Projects</Link></li>
-            <li><Link to="/use-state-hook" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseState</Link></li>
+            <li><Link to="/ProblemSolving" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Problem</Link></li>
+            <li><Link to="/TaskManager" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>CRUD</Link></li>
+            <li><Link to="/BoxModel" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Model</Link></li>
+            <li><Link to="/useCallBack" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseCallBack</Link></li>
+            {/* <li><Link to="/use-state-hook" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseState</Link></li>
             <li><Link to="/use-reducer" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseReduce</Link></li>
             <li><Link to="/use-effect-hook" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseEffect</Link></li>
             <li><Link to="/use-layout-effect" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseLayout</Link></li>
             <li><Link to="/use-ref-hook" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseRef</Link></li>
             <li><Link to="/use-memo-hook" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseMemo</Link></li>
-            <li><Link to="/useCallBack" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseCallBack</Link></li>
             <li><Link to="/todos" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Todos</Link></li>
             <li><Link to="/axios" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Axios</Link></li>
             <li><Link to="/users-card" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UsersCard</Link></li>
             <li><Link to="/quotes" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Quotes</Link></li>
-            <li><Link to="/TaskManager" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>CRUD</Link></li>
-            <li><Link to="/BoxModel" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Model</Link></li>
-            <li><Link to="/mapping" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Mapping</Link></li>
+            <li><Link to="/mapping" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Mapping</Link></li> */}
           </ul>
         </div>
       )}
