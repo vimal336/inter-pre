@@ -168,6 +168,33 @@ console.log(para(0));
           </>
         ),
       },
+
+      {
+        question: "Factorial Sample program?",
+        answer: (
+          <>
+            <br />
+            <br />
+            Example:
+            <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+              <code className="whitespace-pre">
+                  
+                {`
+function findMaxAndSecondMax(arr) {
+    let maxi = arr.sort((a, b) => b - a); // Sort in descending order
+    console.log("Maximum:", maxi[0]); // First element is max
+    console.log("Second Maximum:", maxi[1]); // Second element is second max
+}
+
+// Example Usage:
+findMaxAndSecondMax([10, 20, 5, 30, 25]); // Output: Maximum: 30, Second Maximum: 25
+findMaxAndSecondMax([8, 8, 8]); // Output: Maximum: 8, Second Maximum: 8 (not ideal for unique second max)
+  `}
+              </code>
+            </pre>
+          </>
+        ),
+      },
       {
         question: "find method in js?",
         answer: (
