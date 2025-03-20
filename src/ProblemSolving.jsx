@@ -143,6 +143,32 @@ console.log(parseInt("F7M"));  // NaN
         ),
       },
       {
+        question: "Factorial Sample program?",
+        answer: (
+          <>
+            <br />
+            <br />
+            Example:
+            <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+              <code className="whitespace-pre">
+                  
+                {`
+function para(fact){
+    if(fact === 0 || fact === 1){
+    return 1;
+    }
+    else{
+       return fact * para(fact-1)
+        }
+    }
+console.log(para(0));
+  `}
+              </code>
+            </pre>
+          </>
+        ),
+      },
+      {
         question: "find method in js?",
         answer: (
           <>
