@@ -54,6 +54,8 @@ const Navbar = () => {
           <li><Link to="/mapping" className="hover:text-gray-400">Mapping</Link></li>
           <li><Link to="/Todos" className="hover:text-gray-400">Todos</Link></li>
           <li><Link to="/UseCallBack" className="hover:text-gray-400">UseCallBack</Link></li>
+          <li><Link to="/UseMemoHook" className="hover:text-gray-400">Usememohook</Link></li>
+          <li><Link to="/Challenges" className="hover:text-gray-400">Task</Link></li>
           {/* <li><Link to="/useCall" className="hover:text-gray-400">Usecall</Link></li>
           <li><Link to="/use-reducer" className="hover:text-gray-400">UseReduce</Link></li>
           <li><Link to="/use-effect-hook" className="hover:text-gray-400">UseEffect</Link></li>

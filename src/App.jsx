@@ -27,6 +27,7 @@ import Redux from "./Redux";
 import Bootstrap from "./Bootstrap";
 import Project from "./Project";
 import ProblemSolving from "./ProblemSolving";
+import Challenges from "./Challenge/Challenges";
 
 export const ThemeContext = createContext();
 
@@ -70,6 +71,7 @@ function App() {
       <Route path="HtmlCss" element={<HtmlCss/>}></Route>
       <Route path="Redux" element={<Redux/>}></Route>
       <Route path="Bootstrap" element={<Bootstrap/>}></Route>
+      <Route path="Challenges" element={<Challenges/>}></Route>
      </Routes>
      </BrowserRouter>
 

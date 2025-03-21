@@ -98,18 +98,18 @@ export const UseMemoHook = () => {
   const [ toggle, setToggle] = useState(false);
 
     //without usememo
-  const square = useMemo(() => {
-    console.log("Calculating square...");
-    return count * count;
-  },[count]);
+  // const square = useMemo(() => {
+  //   console.log("Calculating square...");
+  //   return count * count;
+  // },[count]);
 
 
 
   //without usememo
-  // const square = (() => {
-  //   console.log("Calculating square...");
-  //   return count * count;
-  // })();
+  const square = (() => {
+    console.log("Calculating square...");
+    return count * count;
+  })();
 
   return(
   <>
