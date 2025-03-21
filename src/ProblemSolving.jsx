@@ -291,11 +291,13 @@ console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
 //Method :2 
 
 function findLongestWord(str) {
-  return str.split(" ").sort((a, b) => b.length - a.length)[0];
+  return str.split(" ").reduce((longest, currentWord) => 
+    currentWord.length > longest.length ? currentWord : longest, "");
 }
 
-console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); 
-// Output: "jumped"
+console.log(findLongestWord("The quick brown fox jumps over the lazy dog")); 
+// Output: "jumps"
+
 
 
   `}

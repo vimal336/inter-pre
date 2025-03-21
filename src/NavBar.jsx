@@ -43,6 +43,7 @@ const Navbar = () => {
         <ul className="hidden md:flex items-center gap-x-6">
           <li><Link to="/" className="hover:text-gray-400">Home</Link></li>
           <li><Link to="/interview" className="hover:text-gray-400">Interview</Link></li>
+          <li><Link to="/HooksFaq" className="hover:text-gray-400">Hooks</Link></li>
           <li><Link to="/javascript" className="hover:text-gray-400">Javascript</Link></li>
           <li><Link to="/HtmlCss" className="hover:text-gray-400">Html&css</Link></li>
           <li><Link to="/Redux" className="hover:text-gray-400">Redux</Link></li>
@@ -83,6 +84,7 @@ const Navbar = () => {
             <li><Link to="/javascript" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Javascript</Link></li>
             <li><Link to="/HtmlCss" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>HtmlCss</Link></li>
             <li><Link to="/Redux" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>Redux</Link></li>
+            <li><Link to="/HooksFaq" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Hooks</Link></li>
             <li><Link to="/Bootstrap" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>Bootstrap</Link></li>
             <li><Link to="/Projects" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>Projects</Link></li>
             <li><Link to="/ProblemSolving" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Problem</Link></li>

@@ -28,6 +28,7 @@ import Bootstrap from "./Bootstrap";
 import Project from "./Project";
 import ProblemSolving from "./ProblemSolving";
 import Challenges from "./Challenge/Challenges";
+import HooksFaq from "./hooks/HooksFaq"
 
 export const ThemeContext = createContext();
 
@@ -54,6 +55,7 @@ function App() {
       <Route path="UseStateHook" element={<UseStateHook/>}></Route>
       <Route path="ProblemSolving" element={<ProblemSolving/>}></Route>
       <Route path="UseeffectHook" element={<Useeffecthook/>}></Route>
+      <Route path="HooksFaq" element={<HooksFaq/>}></Route>
       <Route path="UseLayoutEff" element={<UseLayoutEff/>}></Route>
       <Route path="Projects" element={<Project/>}></Route>
       <Route path="Todos" element={<Todos/>}></Route>
