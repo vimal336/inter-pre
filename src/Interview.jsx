@@ -515,6 +515,60 @@ export default App;
         </>
       ),
     },
+    {
+      question: "React Async Await",
+      answer: (
+        <>
+          <img src="" alt="" />
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
+              {`
+import { useEffect, useState } from "react";
+
+const App = () => {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+      const result = await response.json();
+      setData(result.slice(0, 5)); // Get first 5 posts
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    } finally {
+      setLoading(false); // Stop loading after data fetch
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  return (
+    <div>
+      <h1>Posts</h1>
+      {loading ? <p>Loading...</p> : 
+        data.map((post) => (
+          <div key={post.id}>
+            <h3>{post.title}</h3>
+            <p>{post.body}</p>
+          </div>
+        ))
+      }
+    </div>
+  );
+};
+
+export default App;
+
+              
+              `}
+            </code>
+          </pre>
+        </>
+      ),
+    },
   ];
 
   return (
