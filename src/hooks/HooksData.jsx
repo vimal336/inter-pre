@@ -242,6 +242,96 @@ const faqData = [
         </>
       ),
     },
+    {
+      question: "What is useMemo?",
+      answer: (
+        <>
+          <p>
+            <code>useMemo</code> optimizes performance by memoizing expensive calculations.
+          </p>
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
+  {`
+  import React, { useState, useMemo } from "react";
+  
+  //with usememo
+  const ExpensiveCalculation = ({ number }) => {
+    const squaredNumber = useMemo(() => {
+      console.log("Calculating...");
+      return number * number;
+    }, [number]);
+
+  //without usememo
+  const square = (() => {
+    console.log("Calculating square...");
+    return count * count;
+  })();
+
+  
+    return <h2>Squared: {squaredNumber}</h2>;
+  };
+  
+  const App = () => {
+    const [count, setCount] = useState(0);
+  
+    return (
+      <div>
+        <ExpensiveCalculation number={count} />
+        <button onClick={() => setCount(count + 1)}>Increase</button>
+      </div>
+    );
+  };
+  
+  export default App;
+  `}
+            </code>
+          </pre>
+        </>
+      ),
+    },
+    {
+      question: "UseState vs Useref?",
+      answer: (
+        <>
+          <p>
+            usestate vs useref
+          </p>
+          <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
+            <code className="whitespace-pre">
+  {`
+import React, { useState, useRef } from "react";
+
+const App = () => {
+  const [counter, setCounter] = useState(0);
+  const currentRef = useRef(0);
+
+  const handleAdd = () => {
+    setCounter(counter + 1);
+  };
+
+  const handleUse = () => {
+    currentRef.current++;
+    console.log("useRef value:", currentRef.current);
+  };
+
+  return (
+    <>
+      <h1>useRef</h1>
+      <h1>{counter}</h1>
+      <h1>{currentRef.current}</h1>
+      <button onClick={handleUse}>useRef</button>
+      <button onClick={handleAdd}>Counter</button>
+    </>
+  );
+};
+
+export default App;
+  `}
+            </code>
+          </pre>
+        </>
+      ),
+    },
   ];
   
   export default faqData;
