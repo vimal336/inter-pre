@@ -344,6 +344,15 @@ console.log(sum(1, 2, 3, 4)); //10
       ),
     },
     {
+      question: "JS Operators",
+      answer: (
+        <>
+<img src="https://usemynotes.com/wp-content/uploads/2021/04/Types-of-data-types-in-JS.jpg" alt="" />
+          
+        </>
+      ),
+    },
+    {
       question: "Event Bubbling vs delegation?",
       answer: (
         <>

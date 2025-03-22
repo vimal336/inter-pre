@@ -252,37 +252,42 @@ const faqData = [
           <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
             <code className="whitespace-pre">
   {`
-  import React, { useState, useMemo } from "react";
   
-  //with usememo
-  const ExpensiveCalculation = ({ number }) => {
-    const squaredNumber = useMemo(() => {
-      console.log("Calculating...");
-      return number * number;
-    }, [number]);
-
-  //without usememo
-  const square = (() => {
-    console.log("Calculating square...");
-    return count * count;
-  })();
-
+  import { useState, useMemo } from "react";
   
-    return <h2>Squared: {squaredNumber}</h2>;
-  };
   
-  const App = () => {
-    const [count, setCount] = useState(0);
+  export const UseMemoHook = () => {
   
-    return (
-      <div>
-        <ExpensiveCalculation number={count} />
-        <button onClick={() => setCount(count + 1)}>Increase</button>
-      </div>
-    );
-  };
+    const [ count, setCount] = useState(0);
+    const [ toggle, setToggle] = useState(false);
   
-  export default App;
+    //with usememo
+    const square = useMemo(() => {
+      console.log("Calculating square...");
+       return count * count;
+    },[count]);
+  
+  
+  
+    //without usememo
+    const square = (() => {
+      console.log("Calculating square...");
+      return count * count;
+    })();
+  
+    return(
+    <>
+    <h1>count:{count}</h1>
+    <h1>{square}</h1>
+    <button onClick={() => setCount(count + 1)}>Increment</button>
+    <button onClick={() => setToggle(!toggle)}>
+      Toggle {toggle ? "ON" : "OFF"}
+    </button>
+    </>
+  
+    )
+  }
+  
   `}
             </code>
           </pre>
