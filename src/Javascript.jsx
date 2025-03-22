@@ -1,4 +1,5 @@
 import ImageGallery from "./Gallery";
+import JavaScriptTree from "./JsTree";
 //import ProblemSolving from "./ProblemSolving";
 
 const Javascript = () => {
@@ -542,6 +543,7 @@ Web APIs (setTimeout, fetch, DOM events, etc.)
       <h2 className="text-2xl font-bold text-center">
         Javascript Interview Questions & Answers
       </h2>
+      <JavaScriptTree/>
       <div className="space-y-6">
         {questionsAndAnswers.map((item, index) => (
           <div key={index} className="border-b pb-4 flex flex-col gap-2">
