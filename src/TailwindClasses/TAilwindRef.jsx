@@ -1,5 +1,3 @@
-import React from "react";
-
 const tailwindUtilities = [
   {
     title: "Breakpoints",
@@ -40,6 +38,22 @@ const tailwindUtilities = [
     ],
   },
   {
+    title: "Border Classes",
+    values: [
+      { label: "border", description: "1px solid" },
+      { label: "border-2", description: "2px solid" },
+      { label: "border-4", description: "4px solid" },
+      { label: "border-8", description: "8px solid" },
+      { label: "border-dashed", description: "Dashed Border" },
+      { label: "border-dotted", description: "Dotted Border" },
+      { label: "border-double", description: "Double Border" },
+      { label: "border-collapse", description: "Collapse table borders" },
+      { label: "border-separate", description: "Separate table borders" },
+      { label: "border-gray-500", description: "Gray border color" },
+      { label: "border-blue-500", description: "Blue border color" },
+    ],
+  },
+  {
     title: "Backgrounds & Gradients",
     values: [
       { label: "bg-red-500", description: "Red background" },
@@ -67,6 +81,17 @@ const tailwindUtilities = [
       { label: "dark:text-white", description: "Text turns white in dark mode" },
     ],
   },
+  {
+    title: "Auto Flow (Grid & Flexbox)",
+    values: [
+      { label: "grid-flow-row", description: "Auto flow items in a row" },
+      { label: "grid-flow-col", description: "Auto flow items in a column" },
+      { label: "auto-cols-auto", description: "Auto-sized columns" },
+      { label: "auto-rows-auto", description: "Auto-sized rows" },
+      { label: "flex-wrap", description: "Wrap items in flexbox" },
+      { label: "flex-nowrap", description: "Prevent wrapping in flexbox" },
+    ],
+  },
 ];
 
 const TailwindGuide = () => {
@@ -76,7 +101,7 @@ const TailwindGuide = () => {
       {tailwindUtilities.map((section) => (
         <div key={section.title} className="mb-6">
           <h2 className="text-xl font-semibold mb-2 border-b-2 pb-1">{section.title}</h2>
-          <table className="w-full border border-gray-300 text-left text-sm md:text-base">
+          <table className="w-full border border-gray-300 text-left text-sm md:text-base border-collapse">
             <thead>
               <tr className="bg-gray-200">
                 <th className="border px-4 py-2">Class</th>
