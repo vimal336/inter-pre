@@ -1,4 +1,5 @@
-import TailwindReference from "./Tailwind.";
+import TailwindReference from "./TailwindClasses/Tailwind.";
+import TailwindGuide from "./TailwindClasses/TAilwindRef";
 
 const bootstrapClasses = {
   Layout: [
@@ -54,6 +55,7 @@ const BootstrapClasses = () => {
         ))}
       </div>
       <TailwindReference/> 
+      <TailwindGuide/>
     </div>
 
   );
