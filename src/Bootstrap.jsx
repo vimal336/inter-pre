@@ -1,3 +1,5 @@
+import TailwindReference from "./Tailwind.";
+
 const bootstrapClasses = {
   Layout: [
     { name: "container", desc: "Centers content and provides a responsive width." },
@@ -51,7 +53,9 @@ const BootstrapClasses = () => {
           </details>
         ))}
       </div>
+      <TailwindReference/> 
     </div>
+
   );
 };
 
