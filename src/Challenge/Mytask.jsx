@@ -24,7 +24,7 @@ useEffect(()=>{
         <th className="p-2 md:p-4">Name</th>
         <th className="p-2 md:p-4">Email</th>
         <th className="p-2 md:p-4">Username</th>
-        <th className="p-2 md:p-4">Address</th>
+        <th className="p-2 md:p-4">Address:</th>
       </tr>
     </thead>
     <tbody>
