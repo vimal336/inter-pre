@@ -125,3 +125,46 @@
 
 // export default DataTable;
 
+import { useState , useEffect } from "react";
+
+const App = () => {
+  const [data, setData] = useState([]);
+
+    const fetchData = async () =>{
+       const url = await fetch("https://jsonplaceholder.typicode.com/users");
+        const res = await url.json();
+        console.log(res);
+        setData(res);
+    }
+
+    useEffect(()=>{
+           fetchData();
+    },[])
+
+  return (
+    <div>
+      <table>
+        <thead className="bg-blue-200">
+            <tr >
+            <th>Name</th>
+            <th> Username </th>
+            <th>Email</th>
+            </tr>
+        </thead>
+        {
+            data.map((user,i)=>(
+              <tbody key={i} className="bg-gray-200">
+            <tr >
+            <td>{user.name}</td>
+            <td> {user.username} </td>
+            <td>{user.email}</td>
+            </tr>
+        </tbody>
+            ))
+        }
+                </table>
+    </div>
+  );
+};
+
+export default App;
