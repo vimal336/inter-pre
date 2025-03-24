@@ -1,73 +1,73 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
-const MyTask=() =>{
+// const MyTask=() =>{
 
-const [data, setData] = useState([]);
+// const [data, setData] = useState([]);
 
-const fetchData = async () =>{
-  const url = await fetch("https://jsonplaceholder.typicode.com/users");
-  const res = await url.json();
-  console.log(res)
-  setData(res)
-}
+// const fetchData = async () =>{
+//   const url = await fetch("https://jsonplaceholder.typicode.com/users");
+//   const res = await url.json();
+//   console.log(res)
+//   setData(res)
+// }
 
-useEffect(()=>{
- fetchData() 
-},[])
+// useEffect(()=>{
+//  fetchData() 
+// },[])
 
-  return (
-    <>
-  <div className="overflow-auto">
-  <table className="border-collapse border border-gray-300 w-full table-auto">
-    <thead>
-      <tr className="border-2 bg-blue-500 text-white text-sm md:text-base">
-        <th className="p-2 md:p-4">Name</th>
-        <th className="p-2 md:p-4">Email</th>
-        <th className="p-2 md:p-4">Username</th>
-        <th className="p-2 md:p-4">Address</th>
-      </tr>
-    </thead>
-    <tbody>
-      {data.map((users) => (
-        <tr key={users.id} className="border bg-white text-center text-sm md:text-base">
-          <td className="p-2 md:p-4">{users.name}</td>
-          <td className="p-2 md:p-4">{users.email}</td>
-          <td className="p-2 md:p-4">{users.username}</td>
-          <td className="p-2 md:p-4">{users.address.street}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-</div>
+//   return (
+//     <>
+//   <div className="overflow-auto">
+//   <table className="border-collapse border border-gray-300 w-full table-auto">
+//     <thead>
+//       <tr className="border-2 bg-blue-500 text-white text-sm md:text-base">
+//         <th className="p-2 md:p-4">Name</th>
+//         <th className="p-2 md:p-4">Email</th>
+//         <th className="p-2 md:p-4">Username</th>
+//         <th className="p-2 md:p-4">Address</th>
+//       </tr>
+//     </thead>
+//     <tbody>
+//       {data.map((users) => (
+//         <tr key={users.id} className="border bg-white text-center text-sm md:text-base">
+//           <td className="p-2 md:p-4">{users.name}</td>
+//           <td className="p-2 md:p-4">{users.email}</td>
+//           <td className="p-2 md:p-4">{users.username}</td>
+//           <td className="p-2 md:p-4">{users.address.street}</td>
+//         </tr>
+//       ))}
+//     </tbody>
+//   </table>
+// </div>
 
-<table className='border-5'>
-          <thead >
-            <tr className='border-2 bg-blue-500 '>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Username</th>
-              <th>Address</th>
-            </tr>
-          </thead>
-          <tbody>
-            {
-              data.map((users)=>(
+// <table className='border-5'>
+//           <thead >
+//             <tr className='border-2 bg-blue-500 '>
+//               <th>Name</th>
+//               <th>Email</th>
+//               <th>Username</th>
+//               <th>Address</th>
+//             </tr>
+//           </thead>
+//           <tbody>
+//             {
+//               data.map((users)=>(
 
-                <tr  key={users.id} className='border bg-white text-center '>
-                 <td className="py-2 px-4">{users.name}</td>
-                 <td className="py-2 px-4">{users.email}</td>
-                 <td className="py-2 px-4">{users.username}</td>
-                 <td className="py-2 px-4">{users.address.street}</td>
-                </tr>
-              ))
-            }
-          </tbody>
-        </table>
-    </>
-  );
-}
+//                 <tr  key={users.id} className='border bg-white text-center '>
+//                  <td className="py-2 px-4">{users.name}</td>
+//                  <td className="py-2 px-4">{users.email}</td>
+//                  <td className="py-2 px-4">{users.username}</td>
+//                  <td className="py-2 px-4">{users.address.street}</td>
+//                 </tr>
+//               ))
+//             }
+//           </tbody>
+//         </table>
+//     </>
+//   );
+// }
 
-export default MyTask
+// export default MyTask
 
 // import { useEffect, useState } from "react";
 
