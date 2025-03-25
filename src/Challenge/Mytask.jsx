@@ -142,10 +142,10 @@ const App = () => {
     },[])
 
   return (
-    <div>
-      <table>
+    <div className="">
+      <table className="w-full">
         <thead className="bg-blue-200">
-            <tr >
+            <tr className="text-center">
             <th>Name</th>
             <th> Username </th>
             <th>Email</th>
@@ -154,10 +154,10 @@ const App = () => {
         {
             data.map((user,i)=>(
               <tbody key={i} className="bg-gray-200">
-            <tr >
-            <td>{user.name}</td>
-            <td> {user.username} </td>
-            <td>{user.email}</td>
+            <tr className="text-center">
+            <td className="p-2">{user.name}</td>
+            <td className="p-2"> {user.username} </td>
+            <td className="p-2">{user.email}</td>
             </tr>
         </tbody>
             ))
