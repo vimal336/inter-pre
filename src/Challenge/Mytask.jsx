@@ -142,7 +142,7 @@ const App = () => {
     },[])
 
   return (
-    <div className="">
+    <div className="overflow-auto">
       <table className="w-full">
         <thead className="bg-blue-200">
             <tr className="text-center">
