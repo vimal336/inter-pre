@@ -29,6 +29,7 @@ import Project from "./Project";
 import ProblemSolving from "./ProblemSolving";
 import Challenges from "./Challenge/Challenges";
 import HooksFaq from "./hooks/HooksFaq"
+import Main from "./TailwindSite/Main";
 
 export const ThemeContext = createContext();
 
@@ -70,6 +71,7 @@ function App() {
       <Route path="UseCall" element={<UseCall/>}></Route>
       <Route path="*" element={<ErrorNotFound/>}></Route>
       <Route path="Javascript" element={<Javascript/>}></Route>
+      <Route path="TailwindSite" element={<Main/>}></Route>
       <Route path="HtmlCss" element={<HtmlCss/>}></Route>
       <Route path="Redux" element={<Redux/>}></Route>
       <Route path="Bootstrap" element={<Bootstrap/>}></Route>
