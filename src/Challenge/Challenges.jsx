@@ -1,15 +1,15 @@
-import ToggleComponent from "./Toggle"
-import MyTask from "./Mytask"
-import Accordian from "./Accordian"
+import ToggleComponent from "./Toggle";
+import MyTask from "./Mytask";
+import Accordian from "./Accordian";
 
 const Challenges = () => {
   return (
     <div>
-<ToggleComponent/>
-<MyTask/>
-<Accordian/>
+      <ToggleComponent />
+      <MyTask />
+      <Accordian />
     </div>
-  )
-}
+  );
+};
 
-export default Challenges
+export default Challenges;

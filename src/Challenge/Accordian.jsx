@@ -1,49 +1,51 @@
-import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { useState } from 'react';
 
-const Accordion = ({ items }) => {
-  const [openIndex, setOpenIndex] = useState(null);
+const Accordion = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
 
-  const toggleAccordion = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+  const items = [
+    {
+      title: 'What is React?',
+      content: 'React is a JavaScript library for building user interfaces.',
+    },
+    {
+      title: 'Why use Tailwind CSS?',
+      content: 'Tailwind CSS is a utility-first CSS framework that makes it easy to build responsive designs.',
+    },
+    {
+      title: 'How to learn programming?',
+      content: 'Start with the basics and practice regularly.',
+    },
+  ];
 
   return (
-    <div className="w-full max-w-md mx-auto">
+    <div className="max-w-2xl mx-auto mt-8">
       {items.map((item, index) => (
-        <div key={index} className="border rounded-lg mb-2">
+        <div key={item.title} className="border rounded-lg mb-2">
           <button
-            className="flex justify-between items-center w-full p-4 text-left bg-gray-100 hover:bg-gray-200"
-            onClick={() => toggleAccordion(index)}
+            className="w-full px-4 py-3 text-left bg-gray-50 hover:bg-gray-100 transition-colors flex justify-between items-center"
+            onClick={() => setActiveIndex(activeIndex === index ? null : index)}
+            aria-expanded={activeIndex === index}
+            aria-controls={`accordion-content-${index}`}
           >
-            <span className="font-semibold">{item.title}</span>
-            <ChevronDown
-              className={`transform transition-transform ${
-                openIndex === index ? "rotate-180" : ""
-              }`}
-            />
+            <span className="font-medium">{item.title}</span>
+            <span className="text-xl">
+              {activeIndex === index ? '−' : '+'}
+            </span>
           </button>
-          {openIndex === index && (
-            <div className="p-4 border-t bg-white">{item.content}</div>
-          )}
+          
+          <div
+            id={`accordion-content-${index}`}
+            className={`overflow-hidden transition-all duration-300 ${
+              activeIndex === index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+            }`}
+          >
+            <div className="p-4 bg-white">{item.content}</div>
+          </div>
         </div>
       ))}
     </div>
   );
 };
 
-// Usage Example
-const items = [
-  { title: "Section 1", content: "This is the content of Section 1." },
-  { title: "Section 2", content: "This is the content of Section 2." },
-  { title: "Section 3", content: "This is the content of Section 3." },
-];
-
-export default function App() {
-  return (
-    <div className="p-6">
-        <h1 className="text-center">Accordian</h1>
-      <Accordion items={items} />
-    </div>
-  );
-}
+export default Accordion;
