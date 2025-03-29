@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Mytask from "./Mytask";
 
 const ToggleComponent = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,7 +17,6 @@ const ToggleComponent = () => {
           <p>This is a toggled element!</p>
         </div>
       )}
-      <Mytask/>
     </div>
   );
 };

@@ -42,6 +42,7 @@ const items = [
 export default function App() {
   return (
     <div className="p-6">
+        <h1 className="text-center">Accordian</h1>
       <Accordion items={items} />
     </div>
   );
