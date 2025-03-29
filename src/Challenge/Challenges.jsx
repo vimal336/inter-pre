@@ -4,6 +4,7 @@ const Challenges = () => {
   return (
     <div>
 <ToggleComponent/>
+
     </div>
   )
 }
