@@ -53,32 +53,38 @@
 import { useState } from "react";
 
 const Accordion = () => {
-  const [items, setItems] = useState(null);
+  const [openIndex, setOpenIndex] = useState(null); 
 
-  const data = [
-    {
-      question:"hello, how are you?",
-      answer:"hi, im fine"
-    },
-    {
-      question:"what is your your name?",
-      answer:"john"
-    },
-    {
-      question:"where are you from ?",
-      answer:"usa"
-    }
-  ]
+  const toggleShow = (index) =>{
+    setOpenIndex(openIndex === index ? null : index)
+  }
+
+  const items = [
+        {
+          title: 'What is React?',
+          content: 'React is a JavaScript library for building user interfaces.',
+        },
+        {
+          title: 'Why use Tailwind CSS?',
+          content: 'Tailwind CSS is a utility-first CSS framework that makes it easy to build responsive designs.',
+        },
+        {
+          title: 'How to learn programming?',
+          content: 'Start with the basics and practice regularly.',
+        },
+      ];
 
   return (
     <>
       <h1>Accordian</h1>
-      <div className="text-center">
+      <div className="text-center p-4">
       {
-        data.map((que,i)=>(
-         <div key={i} className="border m-4 bg-white h-10">
-          <h1 className="text-xl ">{que.question}</h1>
-          <p className="hidden active">{que.answer}</p> 
+        items.map((item,index)=>(
+          <div key={index} className="m-4 bg-white shadow-md rounded cursor-pointer">
+          <h1 onClick={()=>toggleShow(index)}  className="text-xl border bg-gray-200 p-3 ">{item.title}</h1>
+          <div className={`${openIndex === index ? "block" : "hidden"} mt-4 p-4 border bg-green-400 rounded`}>
+          <p className="text-xl">{item.content}</p> 
+          </div>
          </div>
         ))
       }
