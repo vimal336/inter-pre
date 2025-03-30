@@ -76,9 +76,9 @@ const Accordion = () => {
       <div className="text-center">
       {
         data.map((que,i)=>(
-         <div key={i} className="border m-4 bg-white h-20">
+         <div key={i} className="border m-4 bg-white h-10">
           <h1 className="text-xl ">{que.question}</h1>
-          <p>{que.answer}</p> 
+          <p className="hidden active">{que.answer}</p> 
          </div>
         ))
       }
