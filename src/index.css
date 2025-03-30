@@ -150,3 +150,6 @@ button.primary{
   background-color: #0056b3; 
 }
 
+.active{
+  height: 5rem;
+}

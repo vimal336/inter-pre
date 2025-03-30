@@ -33,7 +33,7 @@
 //               {activeIndex === index ? '−' : '+'}
 //             </span>
 //           </button>
-          
+
 //           <div
 //             id={`accordion-content-${index}`}
 //             className={`overflow-hidden transition-all duration-300 ${
@@ -50,3 +50,41 @@
 
 // export default Accordion;
 
+import { useState } from "react";
+
+const Accordion = () => {
+  const [items, setItems] = useState(null);
+
+  const data = [
+    {
+      question:"hello, how are you?",
+      answer:"hi, im fine"
+    },
+    {
+      question:"what is your your name?",
+      answer:"john"
+    },
+    {
+      question:"where are you from ?",
+      answer:"usa"
+    }
+  ]
+
+  return (
+    <>
+      <h1>Accordian</h1>
+      <div className="text-center">
+      {
+        data.map((que,i)=>(
+         <div key={i} className="border m-4 bg-white h-20">
+          <h1 className="text-xl ">{que.question}</h1>
+          <p>{que.answer}</p> 
+         </div>
+        ))
+      }
+      </div>
+    </>
+  );
+};
+
+export default Accordion;
