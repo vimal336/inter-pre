@@ -76,7 +76,7 @@ const Accordion = () => {
 
   return (
     <>
-      <h1 className="text-center">Accordian</h1>
+      <h1 className="text-center text-xl">Accordian</h1>
       <div className="text-center p-4">
       {
         items.map((item,index)=>(
