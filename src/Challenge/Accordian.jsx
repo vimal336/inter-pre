@@ -81,7 +81,7 @@ const Accordion = () => {
       {
         items.map((item,index)=>(
           <div key={index} className="m-4 bg-white shadow-md rounded cursor-pointer">
-          <h1 onClick={()=>toggleShow(index)}  className="text-xl border bg-gray-200 p-3 ">{item.title}</h1>
+          <h1 onClick={()=>toggleShow(index)}  className="text-xl border bg-gray-300 p-3 ">{item.title}</h1>
           <div className={`${openIndex === index ? "block" : "hidden"} mt-4 p-4 border bg-green-400 rounded`}>
           <p className="text-xl">{item.content}</p> 
           </div>
