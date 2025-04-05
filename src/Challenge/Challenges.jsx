@@ -1,6 +1,7 @@
 import ToggleComponent from "./Toggle";
 import MyTask from "./Mytask";
 import Accordian from "./Accordian";
+import Model from "../BoxModel"
 
 const Challenges = () => {
   return (
@@ -8,6 +9,7 @@ const Challenges = () => {
       <ToggleComponent />
       <MyTask />
       <Accordian />
+      <Model/>
     </div>
   );
 };
