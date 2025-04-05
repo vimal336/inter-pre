@@ -90,7 +90,7 @@ const Navbar = () => {
             <li><Link to="/ProblemSolving" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Problem</Link></li>
             <li><Link to="/TaskManager" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>CRUD</Link></li>
             <li><Link to="/BoxModel" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Model</Link></li>
-            <li><Link to="/Cha" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseCallBack</Link></li>
+            <li><Link to="/Challanges" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseCallBack</Link></li>
             <li><Link to="/useCallBack" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseCallBack</Link></li>
             {/* <li><Link to="/use-state-hook" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseState</Link></li>
             <li><Link to="/use-reducer" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseReduce</Link></li>
