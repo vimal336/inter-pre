@@ -58,7 +58,7 @@ export default function FormWithValidation() {
       <h2 className="text-xl font-bold">Simple React Form</h2>
 
       <div>
-        <label className="block font-medium">Name</label>
+        <label className="block font-medium">username</label>
         <input
           name="name"
           type="text"
