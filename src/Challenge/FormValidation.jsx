@@ -55,7 +55,7 @@ export default function FormWithValidation() {
       onSubmit={handleSubmit}
       className="max-w-md mx-auto bg-white p-6 rounded shadow space-y-4"
     >
-      <h2 className="text-xl font-bold">Simple React Form</h2>
+      <h2 className="text-xl font-bold">SimpleReact Form</h2>
 
       <div>
         <label className="block font-medium">Name</label>
@@ -89,7 +89,7 @@ export default function FormWithValidation() {
         type="submit"
         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
       >
-        
+        Submit
       </button>
     </form>
   );
