@@ -57,6 +57,7 @@ const Navbar = () => {
           <li><Link to="/UseCallBack" className="hover:text-gray-400">UseCallBack</Link></li>
           <li><Link to="/UseMemoHook" className="hover:text-gray-400">Usememohook</Link></li>
           <li><Link to="/Challenges" className="hover:text-gray-400">Task</Link></li>
+          <li><Link to="/TailwindSite" className="hover:text-gray-400">Site</Link></li>
           {/* <li><Link to="/useCall" className="hover:text-gray-400">Usecall</Link></li>
           <li><Link to="/use-reducer" className="hover:text-gray-400">UseReduce</Link></li>
           <li><Link to="/use-effect-hook" className="hover:text-gray-400">UseEffect</Link></li>
@@ -92,6 +93,7 @@ const Navbar = () => {
             <li><Link to="/BoxModel" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Model</Link></li>
             <li><Link to="/Challanges" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseCallBack</Link></li>
             <li><Link to="/useCallBack" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Challanges</Link></li>
+            <li><Link to="/TailwindSite" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Site</Link></li>
             {/* <li><Link to="/use-state-hook" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseState</Link></li>
             <li><Link to="/use-reducer" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseReduce</Link></li>
             <li><Link to="/use-effect-hook" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseEffect</Link></li>
