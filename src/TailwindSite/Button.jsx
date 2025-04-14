@@ -1,6 +1,4 @@
 // components/Button.jsx
-import React from "react";
-
 const Button = ({
   children,
   onClick,
