@@ -1,11 +1,5 @@
 // components/Button.jsx
-const Button = ({
-  children,
-  onClick,
-  type = "button",
-  className = "",
-  disabled = false,
-}) => {
+const Button = ({children, onClick, type = "button", className = "", disabled = false,}) => {
   return (
     <button
       type={type}

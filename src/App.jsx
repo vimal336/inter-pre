@@ -29,7 +29,7 @@ import Project from "./Project";
 import ProblemSolving from "./ProblemSolving";
 import Challenges from "./Challenge/Challenges";
 import HooksFaq from "./hooks/HooksFaq"
-import Main from "./TailwindSite/Main";
+import Main from "./TailwindSite/MainPage";
 
 export const ThemeContext = createContext();
 
@@ -44,7 +44,7 @@ function App() {
   }
 
   return (
-    <main>
+    <>
      <BrowserRouter>
      <Navbar/>
      <Routes>
@@ -94,7 +94,7 @@ function App() {
     
 
 
-    </main>
+    </>
   );
 }
 
