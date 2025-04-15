@@ -70,7 +70,7 @@ export default function FormWithValidation() {
       </div>
 
       <div>
-        <label className="block font-medium bg-red-400">Email</label>
+        <label className="block font-medium">Email</label>
         <input
           name="email"
           type="email"
