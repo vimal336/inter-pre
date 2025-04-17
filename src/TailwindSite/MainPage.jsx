@@ -22,6 +22,10 @@ const MainPage = () =>{
           <Button disabled className="bg-red-500">
             Disabled
           </Button>
+
+          <Button >
+            red
+          </Button>
         </div>
       );
     };
