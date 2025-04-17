@@ -19,13 +19,13 @@ const MainPage = () =>{
             Submit
           </Button>
     
-          <Button disabled className="bg-red-500">
+          <Button disabled className="bg-white">
             Disabled
           </Button>
 
-          <Button >
+          {/* <Button >
             red
-          </Button>
+          </Button> */}
         </div>
       );
     };
