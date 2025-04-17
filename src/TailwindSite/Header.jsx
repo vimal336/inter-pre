@@ -1,4 +1,4 @@
-const Header = () =>{
+const Header = () => {
     return(
         <>
         <div className="bg-gray-500 h-10 flex ">
