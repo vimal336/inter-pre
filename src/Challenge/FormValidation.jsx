@@ -25,10 +25,15 @@ export default function FormWithValidation() {
   };
 
   const handleChange = (e) => {
+
     setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
     }));
+
+    setFormData((prev)=>({
+
+    }))
 
     // Clear error on input
     setErrors((prev) => ({
