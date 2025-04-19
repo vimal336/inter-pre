@@ -162,7 +162,7 @@ const App = () => {
         </tbody>
             ))
         }
-                </table>
+        </table>
     </div>
   );
 };
