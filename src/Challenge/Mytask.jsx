@@ -158,6 +158,7 @@ const App = () => {
             <td className="p-2">{user.name}</td>
             <td className="p-2"> {user.username} </td>
             <td className="p-2">{user.email}</td>
+            <td className="p-2">{user}</td>
             </tr>
         </tbody>
             ))
