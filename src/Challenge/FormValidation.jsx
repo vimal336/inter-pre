@@ -102,9 +102,12 @@ const formValidation = () => {
 <form onSubmit={handleSubmit}>
 
 
-
+<label>Email ID</label>
+<input name="email" type="text" />
 
 </form>
 
   )
 }
+
+export default formValidation;
