@@ -102,8 +102,8 @@ const formValidation = () => {
 <form onSubmit={handleSubmit}>
 
 
-<label>Email ID</label>
-<input name="email" type="text" />
+<label>Name</label>
+<input name="name" type="text" />
 <label>Email ID</label>
 <input name="email" type="text" />
 </form>
