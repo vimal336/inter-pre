@@ -94,16 +94,24 @@
 //   );
 // }
 
+import { useState } from "react";
 
 const formValidation = () => {
 
+  const [formValue, setFormValue] = useState({
+
+    name: "",
+    email: ""
+  })
 
   return(
+
+
 <form onSubmit={handleSubmit}>
 
 
 <label>Name</label>
-<input name="name" type="text" />
+<input name="name" type="text" value={formValue.name}/>
 <label>Email ID</label>
 <input name="email" type="text" />
 </form>
