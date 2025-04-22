@@ -113,7 +113,7 @@ const formValidation = () => {
 <label>Name</label>
 <input name="name" type="text" value={formValue.name}/>
 <label>Email ID</label>
-<input name="email" type="text" value={formValue.email} />
+<input name="email" type="text" value={formValue.email} onChange={} />
 </form>
 
   )
