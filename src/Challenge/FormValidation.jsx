@@ -104,7 +104,8 @@ const formValidation = () => {
 
 <label>Email ID</label>
 <input name="email" type="text" />
-
+<label>Email ID</label>
+<input name="email" type="text" />
 </form>
 
   )
