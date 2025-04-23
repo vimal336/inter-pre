@@ -104,9 +104,9 @@ const formValidation = () => {
     email: ""
   })
 
-  const handleChange = () ={
+  const handleChange = (e) ={
+  setFormValue()=>
 
-    
   }
 
   return(
