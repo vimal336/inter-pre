@@ -104,10 +104,7 @@ const formValidation = () => {
     email: ""
   })
 
-  const handleChange = (e) ={
-  setFormValue()=>
-
-  }
+  
 
   return(
 
