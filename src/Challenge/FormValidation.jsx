@@ -110,7 +110,7 @@ const formValidation = () => {
       [e.target.name]:e.target.name
      }))
 
-     setErrors((prev)=>({
+     setErrors((emp)=>({
       ...prev,
      [e.target.name]:""
     }))
