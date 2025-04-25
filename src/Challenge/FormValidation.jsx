@@ -112,7 +112,7 @@ const formValidation = () => {
 
      setErrors((emp)=>({
       ...emp,
-     [e.target.name]:""
+     [e.target.name]:" "
     }))
   }
 
