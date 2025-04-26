@@ -112,7 +112,7 @@ const formValidation = () => {
 
      setErrors((empo)=>({
       ...empo,
-     [e.target.name]:" "
+     [e.target.name]:""
     }))
   }
 
@@ -124,7 +124,7 @@ const formValidation = () => {
 <form onSubmit={handleSubmit}>
 
 
-<label>Name</label>
+<label className="bg-red-400">Name</label>
 <input name="name" type="text" value={formValue.name} onChange={handleChange}/>
 <label>Email ID</label>
 <input name="email" type="text" value={formValue.email} onChange={handleChange} />
