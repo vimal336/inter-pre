@@ -104,6 +104,8 @@ const formValidation = () => {
     email: ""
   })
 
+  const [errors, setErrors] = useState({});
+
   const handleChange = (e) =>{
      setFormValue((prev)=>({
        ...prev,
