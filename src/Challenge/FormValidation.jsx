@@ -114,7 +114,7 @@ const formValidation = () => {
       [e.target.name]:e.target.name
      }))
 
-     setErrors((empo)=>({
+     setErrors((empty)=>({
       ...empo,
      [e.target.name]:""
     }))
