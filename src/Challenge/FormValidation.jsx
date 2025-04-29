@@ -106,7 +106,10 @@ const formValidation = () => {
 
   const [errors, setErrors] = useState({});
 
-  const validate = () => {}
+  const validate = () => {
+
+    
+  }
 
   const handleChange = (e) =>{
      setFormValue((prev)=>({
