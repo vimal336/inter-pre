@@ -108,8 +108,13 @@ const formValidation = () => {
 
   const validate = () => {
 
-    if(!formValue.name)
-  }
+    const newErrors = {}
+
+    if(!formValue.name.trim()){
+
+      newErrors.name = "Name is required.";
+    }
+
 
   const handleChange = (e) =>{
      setFormValue((prev)=>({
