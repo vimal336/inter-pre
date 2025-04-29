@@ -108,7 +108,7 @@ const formValidation = () => {
 
   const validate = () => {
 
-    
+    if(!formValue.name)
   }
 
   const handleChange = (e) =>{
