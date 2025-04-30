@@ -111,8 +111,11 @@ const formValidation = () => {
     const newErrors = {}
 
     if(!formValue.name.trim()){
-
       newErrors.name = "Name is required.";
+    }
+
+    if(formValue.email.trim()){
+      newErrors.email = "email is re"
     }
 
 
