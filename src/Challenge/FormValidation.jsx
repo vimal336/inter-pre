@@ -131,7 +131,9 @@ const formValidation = () => {
     }))
   }
 
-  const handleSubmit = ()=>{
+  const handleSubmit = (e)=>{
+
+    e.preventDefault();
 
     if(validate()){
 
