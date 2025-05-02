@@ -138,7 +138,7 @@ const formValidation = () => {
     if(validate()){
       alert("Form submitted successfully!");
           console.log("Submitted data:", formData);
-            // Reset form
+          // Reset form
          setFormData({ name: "", email: "" });
     }
 
@@ -156,6 +156,13 @@ const formValidation = () => {
 <input name="name" type="text" value={formValue.name} onChange={handleChange}/>
 <label>Email ID:</label>
 <input name="email" type="text" value={formValue.email} onChange={handleChange} />
+
+<button
+        type="submit"
+       className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-800"
+     >
+       Submit 
+     </button>
 </form>
 
   )
