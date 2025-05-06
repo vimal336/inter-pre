@@ -152,9 +152,9 @@ const formValidation = () => {
 <form onSubmit={handleSubmit}>
 
 
-<label className="bg-blue-400">Name:</label>
+<label className="bg-blue-400">Name</label>
 <input name="name" type="text" value={formValue.name} onChange={handleChange}/>
-<label>Email ID:</label>
+<label>Email ID</label>
 <input name="email" type="text" value={formValue.email} onChange={handleChange} />
 
 <button
