@@ -9,6 +9,7 @@ const Mycard = () =>{
 
         <div>
             <h1>Card Heading </h1>
+            <span>$56</span>
         </div>
 
         <div>
