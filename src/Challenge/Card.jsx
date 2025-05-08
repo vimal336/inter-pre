@@ -8,6 +8,10 @@ const Mycard = () =>{
         </div>
 
         <div>
+            <h1>Card Heading </h1>
+        </div>
+
+        <div>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
             Sunt tempore quos rem accusamus voluptate. Blanditiis eaque eligendi nostrum distinctio ea.</p>
         </div>
