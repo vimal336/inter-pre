@@ -32,7 +32,7 @@
 const Mycard = () => {
   return (
     <>
-       <div className="max-w-sm mx-auto bg-white rounded-2xl shadow-md overflow-hidden md:max-w-md">
+      <div className="mx-auto rounded-2xl shadow-md overflow-hidden md:max-w-[600px]">
       <div className="flex justify-center items-center">
         <img
             src="https://tse2.mm.bing.net/th?id=OIP.G37tgeQqSNt7v2oPfj9ltQHaE7&pid=Api&P=0&h=220"
