@@ -42,7 +42,7 @@ const Mycard = () => {
 
         <div className="flex justify-between items-center">
           <h1>Card Heading </h1>
-          <span>$56</span>
+          <span>$58</span>
         </div>
 
         <div>
