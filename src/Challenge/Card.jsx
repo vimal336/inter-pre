@@ -41,7 +41,7 @@ const Mycard = () => {
         </div>
 
         <div className="flex justify-between items-center">
-          <h1>Card Heading </h1>
+          <h1>Card Heading h1 </h1>
           <span>$58</span>
         </div>
 
