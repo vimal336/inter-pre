@@ -38,6 +38,7 @@ const Mycard = () => {
             src="https://tse2.mm.bing.net/th?id=OIP.G37tgeQqSNt7v2oPfj9ltQHaE7&pid=Api&P=0&h=220"
             alt=""
           />
+          className="w-full h-48 object-cover"
         </div>
 
         <div className="flex justify-between items-center">
