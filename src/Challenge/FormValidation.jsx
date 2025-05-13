@@ -94,78 +94,80 @@
 //   );
 // }
 
-import { UseState } from "react";
+import { useState } from "react";
 
-const formValidation = () => {
-
-  const [formValue, setFormValue] = UseState({
-
+const FormValidation = () => {
+  const [formValue, setFormValue] = useState({
     name: "",
     email: ""
-  })
+  });
 
-  const [errors, setErrors] = UseState({});
+  const [errors, setErrors] = useState({});
 
   const validate = () => {
+    const newErrors = {};
 
-    const newErrors = {}
-
-    if(!formValue.name.trim()){
+    if (!formValue.name.trim()) {
       newErrors.name = "Name is required.";
     }
 
-    if(formValue.email.trim()){
-      newErrors.email = "email is required."
+    if (!formValue.email.trim()) {
+      newErrors.email = "Email is required.";
     }
-  }
 
-  const handleChange = (e) =>{
-     setFormValue((prev)=>({
-       ...prev,
-      [e.target.name]:e.target.name
-     }))
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
-     setErrors((empty)=>({
-      ...empty,
-     [e.target.name]:""
-    }))
-  }
+  const handleChange = (e) => {
+    setFormValue((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
 
-  const handleSubmit = (e)=>{
+    setErrors((prev) => ({
+      ...prev,
+      [e.target.name]: ""
+    }));
+  };
 
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    if(validate()){
+    if (validate()) {
       alert("Form submitted successfully!");
-          console.log("Submitted data:", formValue);
-          // Reset form 
-         setFormValue({ name: "", email: "" });
+      console.log("Submitted data:", formValue);
+      setFormValue({ name: "", email: "" });
     }
+  };
 
-  }
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>Name</label>
+      <input
+        name="name"
+        type="text"
+        value={formValue.name}
+        onChange={handleChange}
+      />
+      {errors.name && <p className="text-red-500">{errors.name}</p>}
 
-  
+      <label>Email ID</label>
+      <input
+        name="email"
+        type="text"
+        value={formValue.email}
+        onChange={handleChange}
+      />
+      {errors.email && <p className="text-red-500">{errors.email}</p>}
 
-  return(
-
-
-<form onSubmit={handleSubmit}>
-
-
-<label className="bg-blue-400">Name</label>
-<input name="name" type="text" value={formValue.name} onChange={handleChange}/>
-<label>Email ID</label>
-<input name="email" type="text" value={formValue.email} onChange={handleChange} />
-
-<button
+      <button
         type="submit"
-       className="bg-blue-400 text-white px-4 py-2 rounded hover:bg-gray-600"
-     >
-       Submit 
-     </button>
-</form>
+        className="bg-blue-400 text-white px-4 py-2 rounded hover:bg-gray-600"
+      >
+        Submit
+      </button>
+    </form>
+  );
+};
 
-  )
-}
-
-export default formValidation;
+export default FormValidation;
