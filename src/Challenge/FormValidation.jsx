@@ -158,7 +158,7 @@ const FormValidation = () => {
         value={formValue.email}
         onChange={handleChange}
       />
-      {errors.email && <p className="text-red-500">{errors.email}</p>}
+      {errors.email && <p className="text-red-400">{errors.email}</p>}
 
       <button
         type="submit"
