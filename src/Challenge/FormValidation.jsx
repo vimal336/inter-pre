@@ -141,7 +141,7 @@ const FormValidation = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="" onSubmit={handleSubmit}>
       <label>Name</label>
       <input
         name="name"
