@@ -141,7 +141,7 @@ const FormValidation = () => {
   };
 
   return (
-    <form className="" onSubmit={handleSubmit}>
+    <form className="flex" onSubmit={handleSubmit}>
       <label>Name</label>
       <input
         name="name"
