@@ -141,7 +141,7 @@ const FormValidation = () => {
   };
 
   return (
-    <form className="flex" onSubmit={handleSubmit}>
+    <form className="flex mx-auto" onSubmit={handleSubmit}>
       <label>Name</label>
       <input
         name="name"
