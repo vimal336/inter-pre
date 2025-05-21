@@ -149,7 +149,7 @@ const FormValidation = () => {
         value={formValue.name}
         onChange={handleChange}
       />
-      {errors.name && <p className="text-red-500">{errors.name}</p>}
+      {errors.name && <p className="text-red-300">{errors.name}</p>}
 
       <label>Email ID</label>
       <input
