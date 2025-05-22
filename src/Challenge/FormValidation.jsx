@@ -104,7 +104,7 @@ const FormValidation = () => {
   })
   return(
     <>
-    <div className="bg-gray-200 flex flex-col w-1/4">
+    <div className="bg-gray-200 flex flex-col w-1/4 mx-auto">
     <label htmlFor="">Name</label>
     <input type="text" name="name" />
     <label htmlFor="">Age</label>
