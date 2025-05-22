@@ -98,7 +98,8 @@ import { useState } from "react";
 
 const FormValidation = () =>{
   return(
-    
+    <input type="text" />
+    <input type="text" />
   )
 }
 
