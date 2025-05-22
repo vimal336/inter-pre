@@ -110,12 +110,14 @@ const FormValidation = () => {
     type="text" 
     name="name"
     value={FormData.name}
+    onChange={handleChange}
    />
     <label htmlFor="">Age</label>
     <input 
     type="number" 
     name="age" 
     value={FormData.age}
+    onChange={handleChange}
     />
     <button className="bg-red-400">Submit</button>
     </div>
