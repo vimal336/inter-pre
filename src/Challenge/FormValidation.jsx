@@ -96,10 +96,19 @@
 
 import { useState } from "react";
 
-const FormValidation = () =>{
+const FormValidation = () => {
+
+  const [FormData, setFormData] = useState({
+    name : "",
+    age: "",
+  })
   return(
+    <>
+    <div className="bg-gray-200">
     <input type="text" />
-    <input type="text" />
+    <input type="number" />
+    </div>
+    </>
   )
 }
 
