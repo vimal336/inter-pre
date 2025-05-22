@@ -102,6 +102,11 @@ const FormValidation = () => {
     name: "",
     age: "",
   })
+
+  const handleChange = (e) =>{
+    
+  }
+
   return(
     <>
     <div className="bg-gray-200 flex flex-col w-1/4 h-[10rem] mx-auto p-2 m-4">
