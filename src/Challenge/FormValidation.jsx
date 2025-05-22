@@ -99,7 +99,7 @@ import { useState } from "react";
 const FormValidation = () => {
 
   const [FormData, setFormData] = useState({
-    name : "",
+    name: "",
     age: "",
   })
   return(
