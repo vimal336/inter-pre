@@ -104,11 +104,28 @@ const FormValidation = () => {
   })
 
   const handleChange = (e) =>{
-    
+    setFormData(()=>({
+      ...FormData,
+      [e.target.name]:[e.target.value]
+    }))
   }
+
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+
+
+          alert("Form submitted successfully!");
+          console.log("Submitted data:", FormData);
+          // Reset form
+          setFormData({ name: "", age: "" });
+        
+  }
+
+
 
   return(
     <>
+      <form onSubmit={handleSubmit}> 
     <div className="bg-gray-200 flex flex-col w-1/4 h-[10rem] mx-auto p-2 m-4">
     <label htmlFor="">Name</label>
     <input 
@@ -124,8 +141,11 @@ const FormValidation = () => {
     value={FormData.age}
     onChange={handleChange}
     />
-    <button className="bg-red-400">Submit</button>
+    <button onSubmit={handleSubmit} type="submit" className="bg-red-400 mt-2">
+          Submit
+        </button>
     </div>
+    {/* </form> */}
     </>
   )
 }
