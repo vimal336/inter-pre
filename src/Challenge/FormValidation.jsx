@@ -145,7 +145,7 @@ const FormValidation = () => {
           Submit
         </button>
     </div>
-    {/* </form> */}
+    </form> 
     </>
   )
 }
