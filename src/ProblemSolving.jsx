@@ -48,7 +48,7 @@ console.log(countOccurrences); //{ '2': 3, '3': 1, '4': 1, '5': 2 }
   
             <br />
             <br />
-            Example:
+            Example: with and without inbuilt function
             <pre className="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto max-w-full">
               <code className="whitespace-pre">
                   
@@ -58,6 +58,22 @@ console.log(countOccurrences); //{ '2': 3, '3': 1, '4': 1, '5': 2 }
   return maxval;
 }
 console.log(findMax([10, 5, 20, 8])); // Output: 20
+
+
+let arr = [34,45,22,26];
+
+let max = arr[0];
+
+function findMax(arr){
+    for(let i=1; i<arr.length; i++){
+        if(arr[i]>max){
+            max=arr[i]
+        }
+    }
+    return max
+}
+
+console.log(findMax([34,67,89,44]));
   
   `}
               </code>
