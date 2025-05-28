@@ -141,6 +141,13 @@ const FormValidation = () => {
     value={FormData.age}
     onChange={handleChange}
     />
+     <label htmlFor="">Age:</label>
+    <input 
+    type="number" 
+    name="age" 
+    value={FormData.age}
+    onChange={handleChange}
+    />
     <button onSubmit={handleSubmit} type="submit" className="bg-red-400 mt-2">
           Submit
         </button>
