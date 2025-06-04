@@ -134,7 +134,7 @@ const FormValidation = () => {
     value={FormData.name}
     onChange={handleChange}
    />
-    <label htmlFor=""> userAge:</label>
+    <label htmlFor=""> user Age:</label>
     <input 
     type="number" 
     name="age" 
