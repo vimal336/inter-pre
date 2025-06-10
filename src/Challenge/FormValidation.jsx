@@ -116,7 +116,7 @@ const FormValidation = () => {
 
           alert("Form submitted successfully!");
           console.log("Submitted data:", FormData);
-          // Reset form
+          //Reset form
           setFormData({ name: "", age: "" });
         
   }
