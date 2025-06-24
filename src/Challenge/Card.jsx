@@ -48,7 +48,7 @@ const Mycard = () => {
 
         <div>
           <p>
-            Lorem ipesum, dolorset sit ameter consectetur adipisicing elit. Sunt
+            Lorem ipesum, dolorset sit ameter consectetur adipicing elit. Sunt
             tempore quos rem accusamus voluptate. Blanitiis eaue eligendi
             nostrum distinctio ea.
           </p>
