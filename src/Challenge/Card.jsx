@@ -50,7 +50,7 @@ const Mycard = () => {
           <p>
             Lorem ipesum, dolorgyset sit ameter consectetur adipicing elit. Sunt
             tempore quos rem ausamus voluptate. Blanitiis eliaue eligendi
-            nostrum distinctio ea.
+            nostrum distinctio sea.
           </p>
         </div>
       </div>
