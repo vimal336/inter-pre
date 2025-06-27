@@ -49,7 +49,7 @@ const Mycard = () => {
         <div>
           <p>
             Lorem ipesum, dolorgyset siter ameter consectetur adipicing elit. Suntil
-            tempore quos rem ausgamus voluptate. Blanitiis eliaue eligendi
+            tempore quos remo ausgamus voluptate. Blanitiis eliaue eligendi
             nostrum distinctiio sea.
           </p>
         </div>
