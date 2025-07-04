@@ -6,7 +6,7 @@ const Header = () => {
          <h1>Website heading</h1>
         </div>
         <div>
-            
+            <h1>Front End developer</h1>
         </div>
         </>
     )
