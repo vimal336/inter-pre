@@ -15,7 +15,7 @@ const MainPage = () =>{
             <Header/>
           <Button onClick={handleClickOne}>Click Me</Button>
     
-          <Button onClick={handleClickTwo} className="bg-green-600 hover:bg-green-700">
+          <Button onClick={handleClickTwo} className="bg-green-400 hover:bg-green-700">
             Submit
           </Button>
     
