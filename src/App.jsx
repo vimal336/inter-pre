@@ -76,6 +76,7 @@ function App() {
       <Route path="Redux" element={<Redux/>}></Route>
       <Route path="Bootstrap" element={<Bootstrap/>}></Route>
       <Route path="Challenges" element={<Challenges/>}></Route>
+      <Route path="Table" element={<TableFilter/>}></Route>
      </Routes>
      </BrowserRouter>
 
