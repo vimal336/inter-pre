@@ -1,35 +1,3 @@
-// import { Link } from 'react-router-dom'
-// import './NavBar.css';
-
-// const Navbar = () => {
-//   return (
-//     <nav className="navbar">
-//       <ul className="navbar-list">
-//         <li className="navbar-item"><Link to="/">Home</Link></li>
-//         <li className="navbar-item"><Link to="Interview">Interview</Link></li>
-//         <li className="navbar-item"><Link to="Javascript">Javascript</Link></li>
-//         <li className="navbar-item"><Link to="UseStateHook">UseState</Link></li>
-//         <li className="navbar-item"><Link to="UseReduce">UseReduce</Link></li>
-//         <li className="navbar-item"><Link to="UseeffectHook">UseeffectHook</Link></li>
-//         <li className="navbar-item"><Link to="UseLayoutEff">UseLayout</Link></li>
-//         <li className="navbar-item"><Link to="UserefHook">UseRef</Link></li>
-//         <li className="navbar-item"><Link to="UseMemoHook">UseMemo</Link></li>
-//         <li className="navbar-item"><Link to="UseCallBack">UseCallBack</Link></li>
-//         <li className="navbar-item"><Link to="Todos">Todos</Link></li>
-//         <li className="navbar-item"><Link to="Axios">Axios</Link></li>
-//         <li className="navbar-item"><Link to="UsersCard">UsersCard</Link></li>
-//         <li className="navbar-item"><Link to="Quotes">Quotes</Link></li>
-//         <li className="navbar-item"><Link to="TaskManager">Crud</Link></li>
-//         <li className="navbar-item"><Link to="BoxModel">Model</Link></li>
-//         <li className="navbar-item"><Link to="Mapping">Mapping</Link></li>
-//       </ul>
-//     </nav>
-//   )
-// }
-
-// export default Navbar
-
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -37,76 +5,128 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const categories = [
+    {
+      name: "Home",
+      path: "/",
+    },
+    {
+      name: "Frontend Basics",
+      links: [
+        { name: "HTML & CSS", path: "/HtmlCss" },
+        { name: "JavaScript", path: "/javascript" },
+        { name: "Bootstrap", path: "/Bootstrap" },
+        { name: "Box Model", path: "/BoxModel" },
+        { name: "Mapping", path: "/mapping" },
+      ],
+    },
+    {
+      name: "React Hooks",
+      links: [
+        { name: "UseState", path: "/UseStateHook" },
+        { name: "UseEffect", path: "/UseeffectHook" },
+        { name: "UseReducer", path: "/UseReduce" },
+        { name: "UseLayout", path: "/UseLayoutEff" },
+        { name: "UseRef", path: "/UserefHook" },
+        { name: "UseMemo", path: "/UseMemoHook" },
+        { name: "UseCallback", path: "/UseCallBack" },
+        { name: "Hooks FAQ", path: "/HooksFaq" },
+      ],
+    },
+    {
+      name: "Projects",
+      links: [
+        { name: "Task Manager", path: "/TaskManager" },
+        { name: "Todos", path: "/Todos" },
+        { name: "Users Card", path: "/UsersCard" },
+        { name: "Quotes", path: "/Quotes" },
+        { name: "Table Filter", path: "/TableFilter" },
+        { name: "Tailwind Site", path: "/TailwindSite" },
+      ],
+    },
+    {
+      name: "Advanced",
+      links: [
+        { name: "Redux", path: "/Redux" },
+        { name: "Axios", path: "/Axios" },
+        { name: "Problem Solving", path: "/ProblemSolving" },
+        { name: "Challenges", path: "/Challenges" },
+        { name: "Interview", path: "/interview" },
+      ],
+    },
+  ];
+
   return (
     <nav className="bg-gray-900 text-white px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <ul className="hidden md:flex items-center gap-x-6">
-          <li><Link to="/" className="hover:text-gray-400">Home</Link></li>
-          <li><Link to="/interview" className="hover:text-gray-400">Interview</Link></li>
-          <li><Link to="/HooksFaq" className="hover:text-gray-400">Hooks</Link></li>
-          <li><Link to="/javascript" className="hover:text-gray-400">Javascript</Link></li>
-          <li><Link to="/HtmlCss" className="hover:text-gray-400">Html&css</Link></li>
-          <li><Link to="/Redux" className="hover:text-gray-400">Redux</Link></li>
-          <li><Link to="/Bootstrap" className="hover:text-gray-400">Bootstrap</Link></li>
-          <li><Link to="/ProblemSolving" className="hover:text-gray-400">Problems</Link></li>
-          <li><Link to="/Projects" className="hover:text-gray-400">Project</Link></li>
-          <li><Link to="/TaskManager" className="hover:text-gray-400">CRUD</Link></li>
-          <li><Link to="/BoxModel" className="hover:text-gray-400">Model</Link></li>
-          <li><Link to="/mapping" className="hover:text-gray-400">Mapping</Link></li>
-          <li><Link to="/Todos" className="hover:text-gray-400">Todos</Link></li>
-          <li><Link to="/UseCallBack" className="hover:text-gray-400">UseCallBack</Link></li>
-          <li><Link to="/UseMemoHook" className="hover:text-gray-400">Usememohook</Link></li>
-           <li><Link to="/TableFilter" className="hover:text-gray-400">TableFilter</Link></li>
-          <li><Link to="/Challenges" className="hover:text-gray-400">Task</Link></li>
-          <li><Link to="/TailwindSite" className="hover:text-gray-400">Site</Link></li>
-          {/* <li><Link to="/useCall" className="hover:text-gray-400">Usecall</Link></li>
-          <li><Link to="/use-reducer" className="hover:text-gray-400">UseReduce</Link></li>
-          <li><Link to="/use-effect-hook" className="hover:text-gray-400">UseEffect</Link></li>
-          <li><Link to="/use-layout-effect" className="hover:text-gray-400">UseLayout</Link></li>
-          <li><Link to="/use-ref-hook" className="hover:text-gray-400">UseRef</Link></li>
-          <li><Link to="/use-memo-hook" className="hover:text-gray-400">UseMemo</Link></li>
-          <li><Link to="/Axios" className="hover:text-gray-400">Axios</Link></li>
-          <li><Link to="/UsersCard" className="hover:text-gray-400">UsersCard</Link></li>
-          <li><Link to="/quotes" className="hover:text-gray-400">Quotes</Link></li>
-          <li><Link to="/useCall" className="hover:text-gray-400">Usecall</Link></li> */}
+        {/* Desktop Nav */}
+        <ul className="hidden md:flex gap-x-6 items-center mx-auto">
+          {categories.map((category) =>
+            category.links ? (
+              <li className="relative group" key={category.name}>
+                <span className="cursor-pointer hover:text-gray-400">
+                  {category.name}
+                </span>
+                <ul className="absolute left-0 mt-2 bg-gray-800 p-2 rounded shadow-lg hidden group-hover:block z-50">
+                  {category.links.map((link) => (
+                    <li key={link.path} className="py-1 px-2 hover:bg-gray-700 rounded">
+                      <Link to={link.path}>{link.name}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li key={category.name}>
+                <Link to={category.path} className="hover:text-gray-400">
+                  {category.name}
+                </Link>
+              </li>
+            )
+          )}
         </ul>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Toggle */}
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden flex flex-col items-center bg-gray-800 py-4 space-y-4">
-          <ul className="flex flex-col items-center space-y-4">
-            <li><Link to="/" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Home</Link></li>
-            <li><Link to="/interview" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Interview</Link></li>
-            <li><Link to="/javascript" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Javascript</Link></li>
-            <li><Link to="/HtmlCss" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>HtmlCss</Link></li>
-            <li><Link to="/Redux" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>Redux</Link></li>
-            <li><Link to="/HooksFaq" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Hooks</Link></li>
-            <li><Link to="/Bootstrap" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>Bootstrap</Link></li>
-            <li><Link to="/Projects" className="hover:text-gray-400"onClick={() => setIsOpen(false)}>Projects</Link></li>
-            <li><Link to="/ProblemSolving" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Problem</Link></li>
-            <li><Link to="/TaskManager" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>CRUD</Link></li>
-            <li><Link to="/BoxModel" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Model</Link></li>
-            <li><Link to="/Challanges" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseCallBack</Link></li>
-            <li><Link to="/useCallBack" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Challanges</Link></li>
-            <li><Link to="/TailwindSite" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Site</Link></li>
-             <li><Link to="/TableFilter" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Table Filter</Link></li>
-            {/* <li><Link to="/use-state-hook" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseState</Link></li>
-            <li><Link to="/use-reducer" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseReduce</Link></li>
-            <li><Link to="/use-effect-hook" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseEffect</Link></li>
-            <li><Link to="/use-layout-effect" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseLayout</Link></li>
-            <li><Link to="/use-ref-hook" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseRef</Link></li>
-            <li><Link to="/use-memo-hook" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UseMemo</Link></li>
-            <li><Link to="/todos" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Todos</Link></li>
-            <li><Link to="/axios" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Axios</Link></li>
-            <li><Link to="/users-card" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>UsersCard</Link></li>
-            <li><Link to="/quotes" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Quotes</Link></li>
-            <li><Link to="/mapping" className="hover:text-gray-400" onClick={() => setIsOpen(false)}>Mapping</Link></li> */}
+        <div className="md:hidden mt-2 space-y-4">
+          <ul className="flex flex-col gap-4 bg-gray-800 p-4 rounded">
+            {categories.map((category) =>
+              category.links ? (
+                <li key={category.name}>
+                  <details>
+                    <summary className="cursor-pointer text-white">{category.name}</summary>
+                    <ul className="ml-4 mt-2 space-y-2">
+                      {category.links.map((link) => (
+                        <li key={link.path}>
+                          <Link
+                            to={link.path}
+                            className="text-gray-300 hover:text-white"
+                            onClick={() => setIsOpen(false)}
+                          >
+                            {link.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              ) : (
+                <li key={category.name}>
+                  <Link
+                    to={category.path}
+                    className="hover:text-gray-300"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {category.name}
+                  </Link>
+                </li>
+              )
+            )}
           </ul>
         </div>
       )}
