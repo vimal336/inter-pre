@@ -64,17 +64,19 @@ const Navbar = () => {
           {categories.map((category) =>
             category.links ? (
               <li className="relative group" key={category.name}>
-                <span className="cursor-pointer hover:text-gray-400">
-                  {category.name}
-                </span>
-                <ul className="absolute left-0 mt-2 bg-gray-800 p-2 rounded shadow-lg hidden group-hover:block z-50">
-                  {category.links.map((link) => (
-                    <li key={link.path} className="py-1 px-2 hover:bg-gray-700 rounded">
-                      <Link to={link.path}>{link.name}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
+  <span className="cursor-pointer hover:text-gray-400">
+    {category.name}
+  </span>
+
+  <ul className="absolute top-full left-0 bg-gray-800 p-2 rounded shadow-lg hidden group-hover:flex flex-col z-50 min-w-max">
+    {category.links.map((link) => (
+      <li key={link.path} className="py-1 px-4 hover:bg-gray-700 rounded whitespace-nowrap">
+        <Link to={link.path}>{link.name}</Link>
+      </li>
+    ))}
+  </ul>
+</li>
+
             ) : (
               <li key={category.name}>
                 <Link to={category.path} className="hover:text-gray-400">
