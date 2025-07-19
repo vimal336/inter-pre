@@ -5,6 +5,7 @@ import { BrowserRouter , Routes, Route } from "react-router-dom";
 import { UsersCard } from "./UsersCard";
 import Quotes from "./Quotes";
 import { Useeffecthook } from "./Useeffecthook";
+import TableFilter from "./Challenge/TableFilter";
 import { Todos } from "./Todos";
 import { Axios } from "./Axios";
 import { User } from "./use_context_hook/User";
@@ -76,7 +77,7 @@ function App() {
       <Route path="Redux" element={<Redux/>}></Route>
       <Route path="Bootstrap" element={<Bootstrap/>}></Route>
       <Route path="Challenges" element={<Challenges/>}></Route>
-      <Route path="Table" element={<TableFilter/>}></Route>
+      <Route path="TableFilter" element={<TableFilter/>}></Route>
      </Routes>
      </BrowserRouter>
 
