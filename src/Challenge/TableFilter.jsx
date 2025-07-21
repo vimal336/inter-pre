@@ -2,7 +2,7 @@ import { useState } from "react";
 
 
 const TableFilter = () => {
-  const [fetchData]
+  const [fetchData, setFetchData]
   return( 
   <>
   <h1>Table data</h1>
