@@ -5,7 +5,7 @@ const TableFilter = () => {
   const [fetchData, setFetchData] = useState()
   return( 
   <>
-  <h1>Table data</h1>
+  <h1>Table with data</h1>
   </>)
 };
 
