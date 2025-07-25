@@ -7,7 +7,7 @@ const TableFilter = () => {
   const data = fetch("")
   return( 
   <>
-  <h1>Table data</h1>
+  <h1>Table</h1>
   </>)
 };
 
