@@ -4,7 +4,7 @@ import { useState } from "react";
 const TableFilter = () => {
   const [fetchData, setFetchData] = useState([])
 
-  const data = fetch("")
+  const data = fetch("https")
   return( 
   <>
   <h1>Table</h1>
