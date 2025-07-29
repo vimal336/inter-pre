@@ -7,7 +7,7 @@ const TableFilter = () => {
   const data = fetch("https://jsonplaceholder.typicode.com")
   return( 
   <>
-  <h1>Table</h1>
+  <h1>Table Filter</h1>
   </>)
 };
 
