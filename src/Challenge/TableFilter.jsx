@@ -12,6 +12,7 @@ const TableFilter = () => {
   return( 
   <>
   <h1>Table Filter</h1>
+  <h1>{}</h1>
   </>)
 };
 
