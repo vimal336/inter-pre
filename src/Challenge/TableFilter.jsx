@@ -6,7 +6,7 @@ const TableFilter = () => {
 
   const data = fetch("https://jsonplaceholder.typicode.com/posts").then(((res)=>(res.json())));
 
-  setFetchData
+  setFetchData(data)
 
 
   return( 
