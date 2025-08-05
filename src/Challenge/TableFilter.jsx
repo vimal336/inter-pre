@@ -9,8 +9,6 @@ const TableFilter = () => {
   console.log(data)
 
   setFetchData(data)
-
-
   return( 
   <>
   <h1>Table Filter</h1>
