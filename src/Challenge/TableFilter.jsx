@@ -8,7 +8,7 @@ const TableFilter = () => {
 
   console.log(data)
 
-  setFetchData(fetchdata)
+  setFetchData(fetcdata)
   return( 
   <>
   <h1>Table Filter</h1>
