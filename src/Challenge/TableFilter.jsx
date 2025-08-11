@@ -4,9 +4,9 @@ import { useState } from "react";
 const TableFilter = () => {
   const [fetchData, setFetchData] = useState([])
 
-  const data = fetch("https://jsonplaceholder.typicode.com/post").then(((res)=>(res.json())));
+  const datas = fetch("https://jsonplaceholder.typicode.com/post").then(((res)=>(res.json())));
 
-  console.log(data)
+  console.log(datas)
 
   setFetchData(data)
   return( 
