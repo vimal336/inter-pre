@@ -1,19 +1,5 @@
-import { useState } from "react";
+const Tablefilter = () =>{
 
+}
 
-const TableFilter = () => {
-  const [fetchData, setFetchData] = useState([])
-
-  const datas = fetch("https://jsonplaceholder.typicode.com/post").then(((res)=>(res.json())));
-
-  console.log(datas)
-
-  setFetchData(data)
-  return( 
-  <>
-  <h1>Table Filter data</h1>
-  <h1>{fetchData}</h1>
-  </>)
-};
-
-export default TableFilter;
+export default Tablefilter;
