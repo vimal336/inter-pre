@@ -1,7 +1,7 @@
 const Tablefilter = () => {
   return (
     <div>
-      <h2>Table Design</h2>
+      <h1>Table Design</h2>
     </div>
   );
 };
