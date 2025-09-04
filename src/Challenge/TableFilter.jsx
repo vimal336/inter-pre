@@ -1,4 +1,4 @@
-import uses
+import {usestae}
 
 const Tablefilter = () => {
   return (
