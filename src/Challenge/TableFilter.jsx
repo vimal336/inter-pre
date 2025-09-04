@@ -1,4 +1,4 @@
-import {usestae}
+import {useState} from "react"
 
 const Tablefilter = () => {
   const [data, tableData] = useState([])
