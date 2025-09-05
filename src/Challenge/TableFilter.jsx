@@ -5,6 +5,7 @@ const Tablefilter = () => {
   return (
     <div>
       <h1>Table Data</h1>
+      <table></table>
     </div>
   );
 };
