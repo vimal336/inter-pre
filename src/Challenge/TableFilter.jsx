@@ -4,7 +4,7 @@ const Tablefilter = () => {
   const [data, tableData] = useState([])
   return (
     <div>
-      <h1>Table Design</h1>
+      <h1>Table </h1>
     </div>
   );
 };
