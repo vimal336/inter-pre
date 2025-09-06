@@ -3,8 +3,8 @@ import {useState} from "react"
 const Tablefilter = () => {
   const [data, tableData] = useState([])
 
-  const data = [
-    
+  const info = [
+     {name: 'vimal', age:'23'},
   ]
 
   return (
