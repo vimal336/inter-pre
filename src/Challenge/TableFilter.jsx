@@ -11,7 +11,7 @@ const Tablefilter = () => {
   return (
     <div>
       <h1>Table</h1>
-      <table></table>
+      info.map()
     </div>
   );
 };
