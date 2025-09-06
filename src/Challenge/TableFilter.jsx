@@ -5,6 +5,7 @@ const Tablefilter = () => {
 
   const info = [
      {name: 'vimal', age:'23'},
+          {name: 'raj', age:'23'},
   ]
 
   return (
