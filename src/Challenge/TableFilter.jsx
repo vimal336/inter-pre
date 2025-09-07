@@ -11,9 +11,7 @@ const Tablefilter = () => {
   return (
     <div>
       <h1>Table</h1>
-      info.map(((={">"}{
-        
-      })))
+      info.map(())
     </div>
   );
 };
