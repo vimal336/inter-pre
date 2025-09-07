@@ -8,6 +8,10 @@ const Tablefilter = () => {
           {name: 'raj', age:'23'},
   ]
 
+    const items = ['Apple', 'Banana', 
+                'Orange', 'Papaya', 'Guava', 
+                'Grapes', 'Date'];
+
   return (
     <div>
       <h1>Table</h1>
