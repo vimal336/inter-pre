@@ -15,7 +15,7 @@ const Tablefilter = () => {
   return (
     <div>
       {
-        items.map((item)=>{
+        items.map((i,item)=>{
           return <li key={i}>{item}</li>
         })
       }
