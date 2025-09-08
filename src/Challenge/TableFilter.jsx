@@ -15,8 +15,8 @@ const Tablefilter = () => {
   return (
     <div>
       {
-        items.map(()=>{
-          
+        items.map((item)=>{
+
         })
       }
     </div>
