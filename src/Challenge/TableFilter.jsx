@@ -10,7 +10,7 @@ const Tablefilter = () => {
 
     const items = ['Apple', 'Banana', 
                 'Orange', 'Papaya', 'Guava', 
-                'Grapes', 'Date'];
+                'Grape', 'Date'];
 
   return (
     <div>
