@@ -4,7 +4,7 @@ const Tablefilter = () => {
   const [data, tableData] = useState([])
 
   const info = [
-     {name: 'vimal', age:'23'},
+     {name: 'vimal', age:'25'},
           {name: 'raj', age:'23'},
   ]
 
