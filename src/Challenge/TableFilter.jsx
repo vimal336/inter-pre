@@ -8,7 +8,7 @@ const Tablefilter = () => {
           {name: 'raj', age:'23'},
   ]
 
-    const items = ['Apple', 'Banana', 
+    const items = ['Apple', 'Bananas', 
                 'Orange', 'Papaya', 'Guava', 
                 'Grape', 'Dates'];
 
