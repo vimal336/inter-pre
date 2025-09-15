@@ -16,7 +16,7 @@ const Tablefilter = () => {
     <div>
       {
         items.map((item,i)=>{
-          return <li className="bg-gray-200 text-red-500" key={i}>{i}:{item}</li>
+          return <li className="bg-gray-200 text-red-400" key={i}>{i}:{item}</li>
         })
       }
     </div>
