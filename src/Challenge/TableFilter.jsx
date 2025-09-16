@@ -3,6 +3,10 @@ import {useState, useEffect} from "react"
 const Tablefilter = () => {
   const [data, tableData] = useState([])
 
+  useEffect(()=>{
+
+  },[])
+
   const info = [
      {name: 'vimal', age:'25'},
           {name: 'raj', age:'23'},
