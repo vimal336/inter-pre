@@ -5,11 +5,11 @@ const Tablefilter = () => {
 
   useEffect(()=>{
      const url = "https://jsonplaceholder.typicode.com/posts";
-     fetch()
+     fetch
   },[])
 
   const info = [
-     {name: 'vimal', age:'25'},
+     {name: 'vimal', age:'27'},
           {name: 'raj', age:'23'},
   ]
 
