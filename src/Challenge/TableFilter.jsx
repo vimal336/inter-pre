@@ -4,11 +4,11 @@ const Tablefilter = () => {
   const [data, tableData] = useState([])
 
   useEffect(()=>{
-     const url = "https://jsonplaceholder.typicode.com/posts".then((url.json()).then((res)))
+     const url = "https://jsonplaceholder.typicode.com/posts".then((url.json()).then((data)))
   },[])
 
   const info = [
-     {name: 'vimal', age:'27'},
+     {name: 'vimal', age:'22'},
           {name: 'raj', age:'23'},
   ]
 
