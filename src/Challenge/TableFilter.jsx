@@ -8,7 +8,7 @@ const Tablefilter = () => {
   },[])
 
   const info = [
-     {name: 'ravi ram', age:'30', },
+     {name: 'ravi ram', age:'20', },
           {name: 'raj', age:'23'},
   ]
 
