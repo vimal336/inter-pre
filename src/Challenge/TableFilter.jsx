@@ -4,7 +4,7 @@ const Tablefilter = () => {
   const [data, tableData] = useState([])
 
   useEffect(()=>{
-     const url = "https://jsonplaceholder.typicode.com/likes".then((url.json()).then((data)))
+     const url = "https://jsonplaceholder.typicode.com/posts".then((url.json()).then((data)))
   },[])
 
   const info = [
