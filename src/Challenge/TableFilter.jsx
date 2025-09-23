@@ -13,7 +13,7 @@ const Tablefilter = () => {
   ]
 
     const items = ['Apples','kiwi', 'Bananas', 
-                'Orange', 'Papaya', 'Guava', 
+                'Orange', 'Papaya', 'Guavas', 
                 'Grape', 'Dates'];
 
   return (
