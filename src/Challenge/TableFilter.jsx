@@ -7,7 +7,7 @@ const Tablefilter = () => {
      const url = "https://jsonplaceholder.typicode.com/posts".then((url.json()).then((data)))
   },[])
 
-  const info = [
+  const information = [
      {name: 'ravi ram', age:'20', },
           {name: 'raj', age:'24'},
                {name: 'ram', age:'22'},
