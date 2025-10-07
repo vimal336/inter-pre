@@ -13,7 +13,7 @@ const Tablefilter = () => {
                {name: 'ram', age:'22'},
   ]
 
-    const items = ['Apples','kiwi', 'Banana', 
+    const items = ['Apples','kiwi', 'Bananas', 
                 'Orange', 'Papaya', 'Guavas', 
                 'Grape'];
 
