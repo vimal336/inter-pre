@@ -6,7 +6,7 @@ const Header = () => {
          <h1>Website header</h1>
         </div>
         <div className="flex h-[10rem] bg-red-200">
-            <h1>FrontEnd </h1>
+            <h1>FrontEnd developer </h1>
             <p>Lorem ipsum, dolor  adipisicing elit. posus Possimus, illo.</p>
         </div>
         </>
