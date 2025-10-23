@@ -1,5 +1,6 @@
 import Header from "./Header"
 import Button from "./Button";
+import Footer from "./Footer";
 
 const MainPage = () =>{
     const handleClickOne = () => {
