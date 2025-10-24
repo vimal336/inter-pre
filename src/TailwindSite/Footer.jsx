@@ -1,6 +1,6 @@
 const Footer = () => {
 
-    <p>Copyright @Vimal @2025</p>
+    <p className="">Copyright @Vimal @2025</p>
 }
 
 export default Footer;
