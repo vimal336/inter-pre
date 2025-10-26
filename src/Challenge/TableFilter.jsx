@@ -71,6 +71,9 @@ import { useState, useEffect } from "react";
 const FetchData = async () => {
 
 const [data, setData] = useState([]);
+const [loading, setLoading] = useState(true);
+const [error, setError] = useState([]);
+
 
    try{
 const url = fetch("https://jsonplaceholder.typicode.com/posts");
