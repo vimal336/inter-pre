@@ -74,3 +74,5 @@ const FetchData = async () => {
 }
 
 console.log(FetchData);
+
+export default FetchData;
