@@ -70,6 +70,7 @@ import { useState } from "react";
 
 const FetchData = async () => {
    const url = await fetch("https://jsonplaceholder.typicode.com/posts");
+   console.log(url);
 }
 
 console.log(FetchData);
