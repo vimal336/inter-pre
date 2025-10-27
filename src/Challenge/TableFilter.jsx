@@ -94,6 +94,21 @@ const FetchData = async () => {
 
   if(loading)return<><h1>loading....</h1></>
 
+  if(error)return<><h1>{error}</h1></>
+
+  return(
+    <div>
+      {
+        data.map((item)=>{
+        <div key={item.id}>
+
+          {item.title}
+        </div>
+        })
+      }
+    </div>
+  )
+
 }
 
 export default FetchData;
