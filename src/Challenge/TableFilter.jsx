@@ -81,7 +81,7 @@ const FetchData = async () => {
     const response = await url.json();
     setData(response)
   } catch (err) {
-
+setError(err.message)
   }
   finally {
     setLoading(false)
