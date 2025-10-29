@@ -102,7 +102,7 @@ const FetchData = () => {
   return (
     <div>
        {data.map((item) => ( <div key={item.id}>
-            <h1 className="bg-green-500">
+            <h1 className="bg-green-400">
               {item.title}</h1>
           </div>))}
     </div>
