@@ -95,7 +95,9 @@ const FetchData = () => {
   }, [])
 
 
-  if (loading) 
+  if (loading) {
+    return
+  }
 
   if (error) return <h2>{error}</h2>
 
