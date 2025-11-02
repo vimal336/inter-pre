@@ -97,8 +97,7 @@ const FetchData = () => {
 
   if (loading) {
     return(
-      div
-      
+    <div></div>
     )
   }
 
