@@ -97,7 +97,7 @@ const FetchData = () => {
 
   if (loading) {
     return(
-    <div className></div>
+    <div className=""></div>
     )
   }
 
