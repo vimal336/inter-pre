@@ -101,7 +101,7 @@ const FetchData = () => {
     )
   }
 
-  if (error) return <h2>{error}</h2>
+  if (error) return <h1>{error}</h1>
 
   return (
     <div>
