@@ -104,7 +104,7 @@ const FetchData = () => {
   if (error) return <h1>{error}</h1>
 
   return (
-    <div className="bg-red-500">
+    <div className="bg-red-00">
        {data.map((item) => ( <div key={item.id}>
             <h1 className="bg-green-400 text-white">
               {item.title}</h1>
