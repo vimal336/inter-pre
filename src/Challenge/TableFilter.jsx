@@ -101,7 +101,7 @@ const FetchData = () => {
     )
   }
 
-  if (error) return <h1>{error}</h1>
+  if (error) return <h12>{error}</h1>
 
   return (
     <div className="bg-red-400">
