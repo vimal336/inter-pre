@@ -66,55 +66,55 @@
 
 
 
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
-const FetchData = () => {
+// const FetchData = () => {
 
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-
-  useEffect(() => {
-    const urldata = async () => {
-      try {
-        setLoading(true)
-        const url = await fetch("https://jsonplaceholder.typicode.com/posts");
-        const response = await url.json();
-        setData(response)
-      } catch (err) {
-        setError(err.message)
-      }
-      finally {
-        setLoading(false)
-      }
-
-    }
-
-    urldata();
-  }, [])
+//   const [data, setData] = useState([]);
+//   const [loading, setLoading] = useState(true);
+//   const [error, setError] = useState(null);
 
 
-  if (loading) {
-    return(
-    <div className="bg-400"></div>
-    )
-  }
+//   useEffect(() => {
+//     const urldata = async () => {
+//       try {
+//         setLoading(true)
+//         const url = await fetch("https://jsonplaceholder.typicode.com/posts");
+//         const response = await url.json();
+//         setData(response)
+//       } catch (err) {
+//         setError(err.message)
+//       }
+//       finally {
+//         setLoading(false)
+//       }
 
-  if (error) return <h2>{error}</h2>
+//     }
 
-  return (
-    <div className="bg-red-500">
-       {data.map((item) => ( <div key={item.id}>
-            <h1 className="bg-green-400 text-white">
-              {item.title}</h1>
-          </div>))}
-    </div>
-  )
+//     urldata();
+//   }, [])
 
-}
 
-export default FetchData;
+//   if (loading) {
+//     return(
+//     <div className="bg-400"></div>
+//     )
+//   }
+
+//   if (error) return <h2>{error}</h2>
+
+//   return (
+//     <div className="bg-red-500">
+//        {data.map((item) => ( <div key={item.id}>
+//             <h1 className="bg-green-400 text-white">
+//               {item.title}</h1>
+//           </div>))}
+//     </div>
+//   )
+
+// }
+
+//export default FetchData;
 
 
 // import { useState, useEffect } from "react";
@@ -166,3 +166,60 @@ export default FetchData;
 // };
 
 // export default FetchData;
+
+
+import { useState } from "react";
+
+export default function App() {
+  const [query, setQuery] = useState("");
+
+  const items = [
+    "Apple",
+    "Banana",
+    "Cherry",
+    "Date",
+    "Elderberry",
+    "Fig",
+    "Grape",
+  ];
+
+  const filteredItems = items.filter((item) =>
+    item.toLowerCase().includes(query.toLowerCase())
+  );
+
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
+      <h1 className="text-2xl font-semibold mb-4 text-gray-700">
+        Simple Search
+      </h1>
+
+      <div className="w-full max-w-md">
+        <div className="relative">
+          <input
+            type="text"
+            placeholder="Search fruits..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            className="w-full p-2 pl-10 border border-gray-300 rounded-md bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
+          />
+          <span className="absolute left-3 top-2.5 text-gray-400">🔍</span>
+        </div>
+
+        <ul className="mt-4 space-y-2">
+          {filteredItems.length > 0 ? (
+            filteredItems.map((item, index) => (
+              <li
+                key={index}
+                className="p-2 bg-white border rounded-md shadow-sm hover:bg-orange-50 transition"
+              >
+                {item}
+              </li>
+            ))
+          ) : (
+            <li className="text-gray-500 text-center">No results found</li>
+          )}
+        </ul>
+      </div>
+    </div>
+  );
+}
