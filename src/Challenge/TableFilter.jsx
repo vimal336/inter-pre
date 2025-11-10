@@ -180,7 +180,7 @@ export default function App() {
     "Dates",
     "Elderberry",
     "Fig",
-    "Grape",
+    "Grapes",
   ];
 
   const filteredItems = items.filter((item) =>
