@@ -6,6 +6,7 @@ import { UsersCard } from "./UsersCard";
 import Quotes from "./Quotes";
 import { Useeffecthook } from "./Useeffecthook";
 import TableFilter from "./Challenge/TableFilter";
+import TanstackQuery from "./Challenge/TanstackQuery";
 import { Todos } from "./Todos";
 import { Axios } from "./Axios";
 import { User } from "./use_context_hook/User";
