@@ -42,6 +42,7 @@ const Navbar = () => {
         { name: "Quotes", path: "/Quotes" },
         { name: "Table Filter", path: "/TableFilter" },
         { name: "Tailwind Site", path: "/TailwindSite" },
+        { name: "Tanstack Query", path: "/Tanstack" },
       ],
     },
     {

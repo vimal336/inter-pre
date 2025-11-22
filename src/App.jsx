@@ -79,6 +79,7 @@ function App() {
       <Route path="Bootstrap" element={<Bootstrap/>}></Route>
       <Route path="Challenges" element={<Challenges/>}></Route>
       <Route path="TableFilter" element={<TableFilter/>}></Route>
+      <Route path="Tanstack" element={<TanstackQuery/>}></Route>
      </Routes>
      </BrowserRouter>
 
