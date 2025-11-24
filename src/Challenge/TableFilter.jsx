@@ -1,37 +1,3 @@
-import {useState, useEffect} from "react"
-
-const Tablefilter = () => {
-  const [data, tableData] = useState([])
-
-  useEffect(()=>{
-     const url = "https://jsonplaceholder.typicode.com/posts".then((url.json()).then((data)))
-  },[])
-
-  const information = [
-     {name: 'ravi', age:'35', },
-          {name: 'raj', age:'24'},
-               {name: 'ram', age:'28'},
-  ]
-
-    const items = ['Apple','kiwi', 'Bananas', 
-                'Orange', 'Papayas', 'Guavas', 
-                'grape'];
-
-  return (
-    <div>
-      {
-        items.map((item,i)=>{
-          return <li className="bg-gray-400 text-red-600" key={i}>{i}:{item}</li>
-        })
-      }
-    </div>
-  )
-
-// }
-
-//export default FetchData;
-
-
 // import { useState, useEffect } from "react";
 
 // const FetchData = () => {
