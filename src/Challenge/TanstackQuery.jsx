@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-const TanstackQuery = () =>{
+const TanstackQuery = () => {
+const [data, setData] = useState([]);
 
 }
 
