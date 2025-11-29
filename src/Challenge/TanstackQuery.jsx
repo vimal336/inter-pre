@@ -4,9 +4,8 @@ const TanstackQuery = () => {
 const [data, setData] = useState([]);
 
 const fetch = async = () =>{
-const url = 
+const url = fetch("")
 }
-
 }
 
 export default TanstackQuery;
