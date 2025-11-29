@@ -4,7 +4,7 @@ const TanstackQuery = () => {
 const [data, setData] = useState([]);
 
 const fetch = async = () =>{
-const url = fetch("")
+const url = fetch("jsonplaceholder")
 }
 }
 
