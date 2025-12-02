@@ -4,7 +4,7 @@ const TanstackQuery = () => {
 const [data, setData] = useState([]);
 
 const fetch = async = () =>{
-const url = fetch("jsonplaceholder.typicode.com/comments")
+const url = fetch("jsonplaceholder.typicode.com/posts/1")
 }
 }
 
