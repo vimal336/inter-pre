@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const TanstackQuery = () => {
-const { data, isLoading}
+const { data, isLoading, error }
 
 const fetch = async = () =>{
 const url = fetch("jsonplaceholder.typicode.com/comments")
