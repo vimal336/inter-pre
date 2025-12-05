@@ -1,16 +1,16 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-const TanstackQuery = () => {
-const { data, isLoading, error } = useQuery({
-  
-})
+// const TanstackQuery = () => {
+// const { data, isLoading, error } = useQuery({
 
-const fetch = async = () =>{
-const url = fetch("jsonplaceholder.typicode.com/comments")
-}
-}
+// })
 
-export default TanstackQuery;
+// const fetch = async = () =>{
+// const url = fetch("jsonplaceholder.typicode.com/comments")
+// }
+// }
+
+// export default TanstackQuery;
 
 
 import { useQuery } from "@tanstack/react-query";
