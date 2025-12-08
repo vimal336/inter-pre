@@ -25,7 +25,7 @@ const TanstackQuery = () => {
   });
 
   if (isLoading) return <p>Loading...</p>;
-  if (error) return <p>Error fetching data</p>;
+  if (error) return <p>Error fetching data...</p>;
 
   return (
     <div>
