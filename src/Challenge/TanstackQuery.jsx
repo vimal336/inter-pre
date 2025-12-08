@@ -29,7 +29,7 @@ const TanstackQuery = () => {
 
   return (
     <div>
-      <h1 className="text-red-400">Comment lists</h1>
+      <h1 className="text-green-400">Comment lists</h1>
       {data.slice(0, 5).map((item) => (
         <p key={item.id}>{item.email}</p>
       ))}
