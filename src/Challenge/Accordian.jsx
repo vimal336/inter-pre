@@ -104,6 +104,10 @@
 
 import { useState } from "react";
 
+const items = [
+  
+]
+
 const Accordian = () =>{
 return(
   <h1 className="bg-green-400">accordian</h1>
