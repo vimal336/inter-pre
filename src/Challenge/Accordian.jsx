@@ -105,7 +105,11 @@
 import { useState } from "react";
 
 const items = [
-  
+  {
+    title 
+  },{
+
+  }
 ]
 
 const Accordian = () =>{
