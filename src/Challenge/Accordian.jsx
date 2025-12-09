@@ -106,25 +106,34 @@ import { useState } from "react";
 
 const items = [
   {
-    title : "what is javascript?",
-    content : "js is a programming language"
-  },{
- title: 'Why use Tailwind CSS?',
-      content: 'Tailwind CSS is a utility-first CSS framework that makes it easy to build responsive designs.',
+    title: "what is javascript?",
+    content: "js is a programming language"
+  }, {
+    title: 'Why use Tailwind CSS?',
+    content: 'Tailwind CSS is a utility-first CSS framework that makes it easy to build responsive designs.',
   }
 ]
 
-const Accordian = () =>{
-return(
-  <h1 className="bg-green-400">accordian</h1>
-  {
-    items.map((item)=>(
-      <div key={i}>
-        <h1>{item}</h1>
-      </div>
-    ))
-  }
-)
+const Accordian = () => {
+
+  const [openIndex, setOpenindex ] = useState([]) 
+  return (
+    <>
+      <h1 className="">accordian</h1>
+      {items.map((item, i) => (
+        <div className="" key={i}>
+          <h1 className="bg-gray-400 flex justify-between items-center p-4">{item.title}
+            <span className="text-2xl font-bold">+</span>
+          </h1>
+          <p className="bg-green-500 p-4">{item.content}</p>
+        </div>
+      ))}
+    </>
+  )
+
 }
 
+
+
 export default Accordian;
+
