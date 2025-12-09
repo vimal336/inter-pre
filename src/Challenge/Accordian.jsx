@@ -106,15 +106,24 @@ import { useState } from "react";
 
 const items = [
   {
-    title 
+    title : "what is javascript?",
+    content : "js is a programming language"
   },{
-
+ title: 'Why use Tailwind CSS?',
+      content: 'Tailwind CSS is a utility-first CSS framework that makes it easy to build responsive designs.',
   }
 ]
 
 const Accordian = () =>{
 return(
   <h1 className="bg-green-400">accordian</h1>
+  {
+    items.map((item)=>(
+      <div key={i}>
+        <h1>{item}</h1>
+      </div>
+    ))
+  }
 )
 }
 
