@@ -116,18 +116,26 @@ const items = [
 
 const Accordian = () => {
 
-  const [openIndex, setOpenindex ] = useState([]) 
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleShow = (i) =>{
+    setOpenIndex(openIndex === i? null : i)
+  }
+  
   return (
     <>
       <h1 className="">accordian</h1>
-      {items.map((item, i) => (
-        <div className="" key={i}>
-          <h1 className="bg-gray-400 flex justify-between items-center p-4">{item.title}
-            <span className="text-2xl font-bold">+</span>
-          </h1>
-          <p className="bg-green-500 p-4">{item.content}</p>
-        </div>
-      ))}
+      {
+        items.map((item, i)=>(
+          <div key={i}>
+            <h1 onClick={()=>toggleShow(i)} className="bg-green-400">{item.title}</h1>
+            {
+              openIndex == i && (
+              <p>{item.content}</p>)
+            }
+          </div>
+        ))
+      }
     </>
   )
 
