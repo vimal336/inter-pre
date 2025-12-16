@@ -97,7 +97,7 @@ export default function App() {
               </li>
             ))
           ) : (
-            <li className="text-gray-500 text-center">No results found</li>
+            <li className="text-gray-500 text-center">No result found</li>
           )}
         </ul>
       </div>
