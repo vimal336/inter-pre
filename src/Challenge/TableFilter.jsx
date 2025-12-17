@@ -58,7 +58,7 @@ export default function App() {
     "Apple",
     "Bananas",
     "Cherry",
-    "Dates",
+    "Date",
     "Elderberry",
     "Fig",
     "Grapes",
