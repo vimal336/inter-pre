@@ -121,8 +121,6 @@ const FormValidation = () => {
         
   }
 
-
-
   return(
     <>
       <form onSubmit={handleSubmit}> 
