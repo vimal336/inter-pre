@@ -100,7 +100,7 @@ const FormValidation = () => {
 
   const [FormData, setFormData] = useState({
     name: "",
-    age: "",
+    age: ,
   })
 
   const handleChange = (e) =>{
