@@ -124,7 +124,7 @@ const FormValidation = () => {
   return(
     <>
       <form onSubmit={handleSubmit}> 
-    <div className="bg-gray-800 flex flex-col w-1/4 h-[10rem] mx-auto p-4 m-4">
+    <div className="bg-gray-600 flex flex-col w-1/4 h-[10rem] mx-auto p-4 m-4">
     <label htmlFor="">Name</label>
     <input 
     type="text" 
