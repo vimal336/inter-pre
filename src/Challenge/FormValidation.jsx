@@ -140,7 +140,7 @@ const FormValidation = () => {
     onChange={handleChange}
     />
     <button onSubmit={handleSubmit} type="submit" className="bg-red-200 mt-4">
-          Submit.
+          Submit
         </button>
     </div>
     </form> 
