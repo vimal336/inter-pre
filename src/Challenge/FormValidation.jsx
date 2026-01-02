@@ -139,7 +139,7 @@ const FormValidation = () => {
     value={FormData.age}
     onChange={handleChange}
     />
-    <button onSubmit={handleSubmit} type="submit" className="bg-red-300 mt-2">
+    <button onSubmit={handleSubmit} type="submit" className="bg-red-300 mt-4">
           Login
         </button>
     </div>
