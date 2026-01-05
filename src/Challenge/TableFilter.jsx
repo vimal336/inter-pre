@@ -87,7 +87,7 @@ export default function App() {
         </div>
 
         <ul className="mt-4 space-y-2">
-          {filteredItems.length > 1 ? (
+          {filteredItems.length > 0 ? (
             filteredItems.map((item, index) => (
               <li
                 key={index}
