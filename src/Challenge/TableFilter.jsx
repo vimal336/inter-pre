@@ -91,7 +91,7 @@ export default function App() {
             filteredItems.map((item, index) => (
               <li
                 key={index}
-                className="p-2 bg-white border rounded-md shadow-sm hover:bg-orange-50 transition"
+                className="p-4 bg-white border rounded-md shadow-sm hover:bg-orange-50 transition"
               >
                 {item}
               </li>
