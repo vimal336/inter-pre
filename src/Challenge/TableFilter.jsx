@@ -86,7 +86,7 @@ export default function App() {
           <span className="absolute left-3 top-2.5 text-gray-400">🔍</span>
         </div>
 
-        <ul className="mt-4 space-y-2">
+        <ul className="mt-2 space-y-2">
           {filteredItems.length > 0 ? (
             filteredItems.map((item, index) => (
               <li
