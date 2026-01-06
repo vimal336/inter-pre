@@ -83,7 +83,7 @@ export default function App() {
             onChange={(e) => setQuery(e.target.value)}
             className="w-full p-2 pl-10 border border-gray-300 rounded-md bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
           />
-          <span className="absolute left-3 top-2.5 text-gray-400">🔍</span>
+          <span className="absolute left-3 top-2.5 text-gray-500">🔍</span>
         </div>
 
         <ul className="mt-2 space-y-2">
