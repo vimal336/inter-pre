@@ -144,7 +144,7 @@ const App = () => {
   return (
     <div className="overflow-auto">
       <table className="w-full">
-        <thead className="bg-blue-300">
+        <thead className="bg-blue-400">
             <tr className="text-center">
             <th>Name</th>
             <th> Username</th>
