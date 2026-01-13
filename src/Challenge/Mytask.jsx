@@ -148,7 +148,7 @@ const App = () => {
             <tr className="text-center">
             <th>Name</th>
             <th> Username</th>
-            <th> </th>
+            <th>Email id</th>
             </tr>
         </thead>
         {
