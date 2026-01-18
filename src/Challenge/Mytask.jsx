@@ -146,7 +146,7 @@ const App = () => {
       <table className="w-full">
         <thead className="bg-blue-400">
             <tr className="text-center">
-            <th>Name :</th>
+            <th>Name</th>
             <th> Username</th>
             <th>Email</th>
             </tr>
