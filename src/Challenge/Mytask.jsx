@@ -153,7 +153,7 @@ const App = () => {
         </thead>
         {
             data.map((user,i)=>(
-              <tbody key={i} className="bg-red-400">
+              <tbody key={i} className="bg-red-500">
             <tr className="text-center">
             <td className="p-2">{user.name}</td>
             <td className="p-2">{user}</td>
