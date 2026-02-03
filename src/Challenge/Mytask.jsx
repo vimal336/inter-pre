@@ -157,7 +157,7 @@ const App = () => {
             <tr className="text-center">
             <td className="p-2">{user.name}</td>
             <td className="p-2">{user.address}</td>
-            <td className="p-2"> {user.username} </td>
+            <td className="p-2"> {user} </td>
             <td className="p-2">{user.email}</td>
             <td className="p-2">{user.number}</td>
             </tr>
