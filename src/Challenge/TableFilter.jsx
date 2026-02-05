@@ -61,7 +61,7 @@ export default function App() {
     "Date",
     "Elderberry",
     "Fig",
-    "Grapes",
+    "Grape",
   ];
 
   const filteredItems = items.filter((item) =>
