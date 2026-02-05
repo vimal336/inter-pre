@@ -55,7 +55,7 @@ export default function App() {
   const [query, setQuery] = useState("");
 
   const items = [
-    "Apples",
+    "Apple",
     "Banana",
     "Cherry",
     "Date",
