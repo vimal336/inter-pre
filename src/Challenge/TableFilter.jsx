@@ -56,6 +56,7 @@ export default function App() {
 
   const items = [
     "Apple",
+    "cherry"
     "Banana",
     "Cherry",
     "Date",
