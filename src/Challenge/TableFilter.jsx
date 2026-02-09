@@ -59,7 +59,7 @@ export default function App() {
     "amla",
     "Banana",
     "Cherry",
-    "watermelon"
+    "watermelon",
     "Date",
     "Elderberry",
     "Fig",
